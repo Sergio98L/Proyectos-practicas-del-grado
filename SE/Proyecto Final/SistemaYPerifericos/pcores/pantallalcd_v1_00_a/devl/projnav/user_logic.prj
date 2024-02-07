@@ -1,0 +1,4 @@
+vhdl proc_common_v3_00_a "../../../../../../../../Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd"
+vhdl work "../../hdl/vhdl/lcd_controller.vhd"
+vhdl work "../../hdl/vhdl/bannerDesp.vhd"
+vhdl pantallalcd_v1_00_a "../../hdl/vhdl/user_logic.vhd"

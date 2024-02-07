@@ -1,0 +1,1008 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:\Users\VUser\Desktop\Practica5SE\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_xst.prj"
+Verilog Include Directory          : {"C:\Users\VUser\Desktop\Practica5SE\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc3s1000ft256-5
+Output File Name                   : "../implementation/system.ngc"
+
+---- Source Options
+Top Module Name                    : system
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 10000
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" in Library work.
+Entity <system> compiled.
+Entity <system> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system> in library <work> (architecture <STRUCTURE>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system> in library <work> (Architecture <STRUCTURE>).
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'INTERRUPT_ACK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'MB_Halted' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'MB_Error' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'LOCKSTEP_MASTER_OUT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'LOCKSTEP_OUT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'INSTR_ADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'IFETCH' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'I_AS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DATA_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DATA_ADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'D_AS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'READ_STROBE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'WRITE_STROBE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'BYTE_ENABLE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IP_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DP_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_AWUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_WUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_ARUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_IC_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_AWUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_WDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_WSTRB' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_WLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_WVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_WUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_BREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARADDR' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARLEN' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARSIZE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARBURST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARLOCK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARCACHE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARPROT' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARQOS' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_ARUSER' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M_AXI_DC_RREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DBG_TDO' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Instruction' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Valid_Instr' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_PC' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Reg_Write' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Reg_Addr' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_MSR_Reg' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_PID_Reg' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_New_Reg_Value' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Exception_Taken' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Exception_Kind' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Jump_Taken' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Delay_Slot' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Data_Address' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Data_Access' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Data_Read' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Data_Write' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Data_Write_Value' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Data_Byte_Enable' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_DCache_Req' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_DCache_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_DCache_Rdy' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_DCache_Read' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_ICache_Req' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_ICache_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_ICache_Rdy' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_OF_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_EX_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_MEM_PipeRun' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_MB_Halted' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'Trace_Jump_Hit' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL0_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL0_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL0_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL0_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL0_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL0_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL1_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL1_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL1_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL1_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL1_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL1_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL2_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL2_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL2_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL2_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL2_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL2_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL3_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL3_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL3_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL3_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL3_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL3_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL4_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL4_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL4_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL4_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL4_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL4_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL5_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL5_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL5_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL5_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL5_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL5_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL6_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL6_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL6_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL6_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL6_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL6_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL7_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL7_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL7_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL7_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL7_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL7_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL8_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL8_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL8_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL8_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL8_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL8_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL9_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL9_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL9_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL9_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL9_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL9_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL10_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL10_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL10_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL10_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL10_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL10_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL11_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL11_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL11_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL11_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL11_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL11_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL12_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL12_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL12_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL12_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL12_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL12_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL13_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL13_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL13_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL13_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL13_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL13_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL14_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL14_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL14_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL14_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL14_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL14_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL15_S_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL15_S_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL15_M_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL15_M_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL15_M_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'FSL15_M_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M0_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M0_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M0_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S0_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M1_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M1_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M1_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S1_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M2_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M2_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M2_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S2_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M3_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M3_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M3_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S3_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M4_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M4_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M4_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S4_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M5_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M5_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M5_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S5_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M6_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M6_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M6_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S6_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M7_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M7_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M7_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S7_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M8_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M8_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M8_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S8_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M9_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M9_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M9_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S9_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M10_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M10_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M10_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S10_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M11_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M11_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M11_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S11_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M12_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M12_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M12_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S12_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M13_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M13_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M13_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S13_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M14_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M14_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M14_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S14_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M15_AXIS_TLAST' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M15_AXIS_TDATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'M15_AXIS_TVALID' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'S15_AXIS_TREADY' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'ICACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'ICACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'ICACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'ICACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'ICACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'ICACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DCACHE_FSL_IN_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DCACHE_FSL_IN_READ' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DCACHE_FSL_OUT_CLK' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DCACHE_FSL_OUT_WRITE' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DCACHE_FSL_OUT_DATA' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1291: Unconnected output port 'DCACHE_FSL_OUT_CONTROL' of component 'system_microblaze_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_Rst' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'MPLB_Rst' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_dcrAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_dcrDBus' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SaddrAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SMRdErr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SMWrErr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SMBusy' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SrdBTerm' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SrdComp' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SrdDAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SrdDBus' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SrdWdAddr' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_Srearbitrate' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_Sssize' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_Swait' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SwrBTerm' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SwrComp' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'PLB_SwrDAck' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1892: Unconnected output port 'Bus_Error_Det' of component 'system_plb_v46_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 1993: Unconnected output port 'BRAM_Din_B' of component 'system_bram_block_0_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2011: Unconnected output port 'IP2INTC_Irpt' of component 'system_xps_gpio_leds_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2011: Unconnected output port 'GPIO2_IO_O' of component 'system_xps_gpio_leds_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2011: Unconnected output port 'GPIO2_IO_T' of component 'system_xps_gpio_leds_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2064: Unconnected output port 'IP2INTC_Irpt' of component 'system_xps_gpio_switches_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2064: Unconnected output port 'GPIO2_IO_O' of component 'system_xps_gpio_switches_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2064: Unconnected output port 'GPIO2_IO_T' of component 'system_xps_gpio_switches_wrapper'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2117: Unconnected output port 'Interrupt' of component 'system_xps_uartlite_0_wrapper'.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2370: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2378: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2386: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2394: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2402: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2410: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2418: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2426: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2434: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2442: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2450: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2458: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2466: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2474: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2482: Instantiating black box module <IOBUF>.
+WARNING:Xst:2211 - "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd" line 2490: Instantiating black box module <IOBUF>.
+Entity <system> analyzed. Unit <system> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <system>.
+    Related source file is "C:/Users/VUser/Desktop/Practica5SE/hdl/system.vhd".
+WARNING:Xst:647 - Input <microblaze_0_MB_RESET_pin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <plb_v46_0_PLB_Clk_pin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <plb_v46_0_SYS_Rst_pin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <system> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../implementation/system_microblaze_0_wrapper.ngc>.
+Reading core <../implementation/system_plb_v46_0_wrapper.ngc>.
+Reading core <../implementation/system_bram_block_0_wrapper.ngc>.
+Reading core <../implementation/system_xps_gpio_leds_wrapper.ngc>.
+Reading core <../implementation/system_xps_gpio_switches_wrapper.ngc>.
+Reading core <../implementation/system_xps_uartlite_0_wrapper.ngc>.
+Reading core <../implementation/system_xps_bram_if_cntlr_0_wrapper.ngc>.
+Reading core <../implementation/system_pantalla_0_wrapper.ngc>.
+Reading core <../implementation/system_pantallalcd_0_wrapper.ngc>.
+Reading core <../implementation/system_tecladokeypad_0_wrapper.ngc>.
+Loading core <system_microblaze_0_wrapper> for timing and area information for instance <microblaze_0>.
+Loading core <system_plb_v46_0_wrapper> for timing and area information for instance <plb_v46_0>.
+Loading core <system_bram_block_0_wrapper> for timing and area information for instance <bram_block_0>.
+Loading core <system_xps_gpio_leds_wrapper> for timing and area information for instance <xps_gpio_leds>.
+Loading core <system_xps_gpio_switches_wrapper> for timing and area information for instance <xps_gpio_switches>.
+Loading core <system_xps_uartlite_0_wrapper> for timing and area information for instance <xps_uartlite_0>.
+Loading core <system_xps_bram_if_cntlr_0_wrapper> for timing and area information for instance <xps_bram_if_cntlr_0>.
+Loading core <system_pantalla_0_wrapper> for timing and area information for instance <pantalla_0>.
+Loading core <system_pantallalcd_0_wrapper> for timing and area information for instance <pantallalcd_0>.
+Loading core <system_tecladokeypad_0_wrapper> for timing and area information for instance <tecladokeypad_0>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance ramb16_s2_s2_0 in unit ramb16_s2_s2_0 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_1 in unit ramb16_s2_s2_1 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_2 in unit ramb16_s2_s2_2 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_3 in unit ramb16_s2_s2_3 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_4 in unit ramb16_s2_s2_4 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_5 in unit ramb16_s2_s2_5 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_6 in unit ramb16_s2_s2_6 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_7 in unit ramb16_s2_s2_7 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_8 in unit ramb16_s2_s2_8 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_9 in unit ramb16_s2_s2_9 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_10 in unit ramb16_s2_s2_10 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_11 in unit ramb16_s2_s2_11 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_12 in unit ramb16_s2_s2_12 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_13 in unit ramb16_s2_s2_13 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_14 in unit ramb16_s2_s2_14 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_15 in unit ramb16_s2_s2_15 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 in unit pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 of type RAMB16_S36_S36 has been replaced by RAMB16
+INFO:Xst:1901 - Instance pantallalcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 in unit pantallalcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32 of type RAMB16_S36_S36 has been replaced by RAMB16
+
+Optimizing unit <system> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_2> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 9 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/sync_reset> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/sync_reset_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_2> 
+INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_2> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0> in Unit <plb_v46_0> is equivalent to the following 2 FFs/Latches : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1> <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3> in Unit <plb_v46_0> is equivalent to the following FF/Latch : <plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1> 
+INFO:Xst:2260 - The FF/Latch <plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST> in Unit <plb_v46_0> is equivalent to the following 9 FFs/Latches : <plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST> <plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST> <plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST> <plb_v46_0/I_PLB_RST> 
+INFO:Xst:2260 - The FF/Latch <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK> in Unit <xps_bram_if_cntlr_0> is equivalent to the following FF/Latch : <xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 57
+
+Cell Usage :
+# BELS                             : 4535
+#      GND                         : 28
+#      INV                         : 70
+#      LUT1                        : 122
+#      LUT2                        : 404
+#      LUT2_D                      : 13
+#      LUT2_L                      : 26
+#      LUT3                        : 874
+#      LUT3_D                      : 30
+#      LUT3_L                      : 32
+#      LUT4                        : 1438
+#      LUT4_D                      : 42
+#      LUT4_L                      : 47
+#      MULT_AND                    : 34
+#      MUXCY                       : 524
+#      MUXCY_L                     : 161
+#      MUXF5                       : 321
+#      VCC                         : 9
+#      XORCY                       : 360
+# FlipFlops/Latches                : 2700
+#      FD                          : 60
+#      FDC                         : 37
+#      FDCE                        : 87
+#      FDE                         : 200
+#      FDP                         : 13
+#      FDPE                        : 40
+#      FDR                         : 1117
+#      FDRE                        : 994
+#      FDRS                        : 22
+#      FDRSE                       : 6
+#      FDS                         : 62
+#      FDSE                        : 62
+# RAMS                             : 219
+#      RAM16X1D                    : 201
+#      RAMB16                      : 18
+# Shift Registers                  : 100
+#      SRL16                       : 16
+#      SRL16E                      : 84
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 53
+#      IBUF                        : 10
+#      IOBUF                       : 16
+#      OBUF                        : 27
+# MULTs                            : 3
+#      MULT18X18S                  : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                     2435  out of   7680    31%  
+ Number of Slice Flip Flops:           2700  out of  15360    17%  
+ Number of 4 input LUTs:               3600  out of  15360    23%  
+    Number used as logic:              3098
+    Number used as Shift registers:     100
+    Number used as RAMs:                402
+ Number of IOs:                          57
+ Number of bonded IOBs:                  54  out of    173    31%  
+ Number of BRAMs:                        18  out of     24    75%  
+ Number of MULT18X18s:                    3  out of     24    12%  
+ Number of GCLKs:                         3  out of      8    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------+--------------------------------------------------------------+-------+
+Clock Signal                                         | Clock buffer(FF name)                                        | Load  |
+-----------------------------------------------------+--------------------------------------------------------------+-------+
+Clk_pin                                              | BUFGP                                                        | 2845  |
+N0                                                   | NONE(bram_block_0/bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
+pantalla_0/pantalla_0/USER_LOGIC_I/clock1            | BUFG                                                         | 131   |
+pantalla_0/hsyncb                                    | NONE(pantalla_0/pantalla_0/USER_LOGIC_I/vga/vcnt_9)          | 11    |
+tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/reloj121| BUFG                                                         | 35    |
+-----------------------------------------------------+--------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                     | Buffer(FF name)                                                                                                                                      | Load  |
+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+pantalla_0/pantalla_0/USER_LOGIC_I/Bus2IP_Reset_inv(pantalla_0/pantalla_0/USER_LOGIC_I/vga/debouncer_izquierdo/rst_inv1_INV_0:O)                   | NONE(pantalla_0/pantalla_0/USER_LOGIC_I/vga/debouncer_abajo/count_0)                                                                                 | 96    |
+plb_v46_0/SPLB_Rst<4>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST:Q)                                                                            | NONE(pantalla_0/pantalla_0/USER_LOGIC_I/cuenta_0)                                                                                                    | 41    |
+plb_v46_0/SPLB_Rst<6>(plb_v46_0/plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST:Q)                                                                            | NONE(tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/aux1)                                                                               | 40    |
+microblaze_0/Trace_EX_PipeRun(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Use_MuxCy[2].OF_Piperun_Stage/Using_FPGA.MUXCY_I:LO)| NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
+microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1(microblaze_0/microblaze_0/MicroBlaze_Core_I/sync_reset_1:Q)                               | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Data_Flow_I/MUL_Unit_I/Use_HW_MUL.Using_MULT18x18_Architecture.Using_FPGA.MULT18x18S_AD)| 3     |
+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.910ns (Maximum Frequency: 83.963MHz)
+   Minimum input arrival time before clock: 5.481ns
+   Maximum output required time after clock: 13.754ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk_pin'
+  Clock period: 11.910ns (frequency: 83.963MHz)
+  Total number of paths / destination ports: 376605 / 8419
+-------------------------------------------------------------------------
+Delay:               11.910ns (Levels of Logic = 35)
+  Source:            pantallalcd_0/pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (FF)
+  Destination:       pantallalcd_0/pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_0 (FF)
+  Source Clock:      Clk_pin rising
+  Destination Clock: Clk_pin rising
+
+  Data Path: pantallalcd_0/pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 to pantallalcd_0/pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.626   1.040  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_2 (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count<2>)
+     LUT1:I0->O            1   0.479   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>_rt)
+     MUXCY:S->O            1   0.435   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<6> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<7> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<8> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<9> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<10> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<11> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<12> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<13> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<14> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<15> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<16> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<17> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<18> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<19> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<20> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<21> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<22> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<23> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<24> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_cy<28>)
+     XORCY:CI->O           9   0.786   1.250  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Madd_state_add0000_xor<29> (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/state_add0000<29>)
+     LUT2:I0->O            1   0.479   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4 (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4)
+     MUXCY:S->O            1   0.435   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>_3 (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>4)
+     MUXCY:CI->O           4   0.265   1.074  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_3 (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>4)
+     LUT4_D:I0->O          2   0.479   0.804  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114 (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>114)
+     LUT4_D:I2->O         15   0.479   1.180  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<0>1 (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/N01)
+     LUT2:I1->O            1   0.479   0.000  pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>1 (pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_mux0009<22>)
+     FD:D                      0.176          pantallalcd_0/USER_LOGIC_I/lcd_controller_i/clk_count_9
+    ----------------------------------------
+    Total                     11.910ns (6.561ns logic, 5.350ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pantalla_0/pantalla_0/USER_LOGIC_I/clock1'
+  Clock period: 6.689ns (frequency: 149.490MHz)
+  Total number of paths / destination ports: 7215 / 236
+-------------------------------------------------------------------------
+Delay:               6.689ns (Levels of Logic = 3)
+  Source:            pantalla_0/pantalla_0/USER_LOGIC_I/vga/debouncer_abajo/xSync (FF)
+  Destination:       pantalla_0/pantalla_0/USER_LOGIC_I/vga/voffset_3 (FF)
+  Source Clock:      pantalla_0/pantalla_0/USER_LOGIC_I/clock1 rising
+  Destination Clock: pantalla_0/pantalla_0/USER_LOGIC_I/clock1 rising
+
+  Data Path: pantalla_0/pantalla_0/USER_LOGIC_I/vga/debouncer_abajo/xSync to pantalla_0/pantalla_0/USER_LOGIC_I/vga/voffset_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q             28   0.626   1.851  pantalla_0/USER_LOGIC_I/vga/debouncer_abajo/xSync (pantalla_0/USER_LOGIC_I/vga/debouncer_abajo/xSync)
+     LUT3:I0->O            2   0.479   0.768  pantalla_0/USER_LOGIC_I/vga/debouncer_abajo/xDebFallingEdge1 (pantalla_0/USER_LOGIC_I/vga/sign_boton_aba)
+     LUT4:I3->O            1   0.479   0.704  pantalla_0/USER_LOGIC_I/vga/voffset_not00011_SW0 (N23)
+     LUT4:I3->O            4   0.479   0.779  pantalla_0/USER_LOGIC_I/vga/voffset_not00011 (pantalla_0/USER_LOGIC_I/vga/voffset_not0001)
+     FDCE:CE                   0.524          pantalla_0/USER_LOGIC_I/vga/voffset_0
+    ----------------------------------------
+    Total                      6.689ns (2.587ns logic, 4.102ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pantalla_0/hsyncb'
+  Clock period: 6.785ns (frequency: 147.374MHz)
+  Total number of paths / destination ports: 702 / 11
+-------------------------------------------------------------------------
+Delay:               6.785ns (Levels of Logic = 11)
+  Source:            pantalla_0/pantalla_0/USER_LOGIC_I/vga/vcnt_0 (FF)
+  Destination:       pantalla_0/pantalla_0/USER_LOGIC_I/vga/vcnt_9 (FF)
+  Source Clock:      pantalla_0/hsyncb rising
+  Destination Clock: pantalla_0/hsyncb rising
+
+  Data Path: pantalla_0/pantalla_0/USER_LOGIC_I/vga/vcnt_0 to pantalla_0/pantalla_0/USER_LOGIC_I/vga/vcnt_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  pantalla_0/USER_LOGIC_I/vga/vcnt_0 (pantalla_0/USER_LOGIC_I/vga/vcnt<0>)
+     LUT4_D:I0->O          2   0.479   0.804  pantalla_0/USER_LOGIC_I/vga/vcnt_not0001_inv212 (pantalla_0/USER_LOGIC_I/vga/vcnt_not0001_inv212)
+     LUT4:I2->O            6   0.479   1.148  pantalla_0/USER_LOGIC_I/vga/vcnt_not0001_inv251 (pantalla_0/USER_LOGIC_I/vga/vcnt_not0001_inv)
+     LUT2:I0->O            1   0.479   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_lut<2> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_lut<2>)
+     MUXCY:S->O            1   0.435   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<2> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<3> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<4> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<5> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<6> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<7> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<7>)
+     MUXCY:CI->O           0   0.056   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<8> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_cy<8>)
+     XORCY:CI->O           1   0.786   0.000  pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt_xor<9> (pantalla_0/USER_LOGIC_I/vga/Mcount_vcnt9)
+     FDC:D                     0.176          pantalla_0/USER_LOGIC_I/vga/vcnt_9
+    ----------------------------------------
+    Total                      6.785ns (3.793ns logic, 2.992ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/reloj121'
+  Clock period: 6.134ns (frequency: 163.038MHz)
+  Total number of paths / destination ports: 1533 / 58
+-------------------------------------------------------------------------
+Delay:               6.134ns (Levels of Logic = 7)
+  Source:            tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 (FF)
+  Destination:       tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count_1 (FF)
+  Source Clock:      tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/reloj121 rising
+  Destination Clock: tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 to tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   1.040  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count_7 (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count<7>)
+     LUT4:I0->O            1   0.479   0.000  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_lut<0> (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<0> (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<1> (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<2> (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<3> (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           5   0.265   0.806  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd_cmp_eq0000_wg_cy<4> (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/timerEnd)
+     LUT4:I3->O           20   0.479   1.313  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count_not00011 (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count_not0001)
+     FDCE:CE                   0.524          tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/count_1
+    ----------------------------------------
+    Total                      6.134ns (2.974ns logic, 3.160ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk_pin'
+  Total number of paths / destination ports: 316 / 316
+-------------------------------------------------------------------------
+Offset:              4.477ns (Levels of Logic = 2)
+  Source:            Rst_pin (PAD)
+  Destination:       microblaze_0/microblaze_0/LOCKSTEP_Out_3765 (FF)
+  Destination Clock: Clk_pin rising
+
+  Data Path: Rst_pin to microblaze_0/microblaze_0/LOCKSTEP_Out_3765
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           298   0.715   2.870  Rst_pin_IBUF (Rst_pin_IBUF)
+     begin scope: 'microblaze_0'
+     FDR:R                     0.892          microblaze_0/LOCKSTEP_Out_111
+    ----------------------------------------
+    Total                      4.477ns (1.607ns logic, 2.870ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pantalla_0/pantalla_0/USER_LOGIC_I/clock1'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              1.572ns (Levels of Logic = 2)
+  Source:            boton_izquierda_pin (PAD)
+  Destination:       pantalla_0/pantalla_0/USER_LOGIC_I/vga/debouncer_izquierdo/aux1 (FF)
+  Destination Clock: pantalla_0/pantalla_0/USER_LOGIC_I/clock1 rising
+
+  Data Path: boton_izquierda_pin to pantalla_0/pantalla_0/USER_LOGIC_I/vga/debouncer_izquierdo/aux1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.715   0.681  boton_izquierda_pin_IBUF (boton_izquierda_pin_IBUF)
+     begin scope: 'pantalla_0'
+     FDP:D                     0.176          pantalla_0/USER_LOGIC_I/vga/debouncer_izquierdo/aux1
+    ----------------------------------------
+    Total                      1.572ns (0.891ns logic, 0.681ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/reloj121'
+  Total number of paths / destination ports: 73 / 16
+-------------------------------------------------------------------------
+Offset:              5.481ns (Levels of Logic = 5)
+  Source:            R_pin<1> (PAD)
+  Destination:       tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3 (FF)
+  Destination Clock: tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: R_pin<1> to tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   0.715   1.201  R_pin_1_IBUF (R_pin_1_IBUF)
+     begin scope: 'tecladokeypad_0'
+     LUT2:I0->O            1   0.479   0.976  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>4 (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>4)
+     LUT4:I0->O            1   0.479   0.976  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>10 (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>10)
+     LUT2:I0->O            1   0.479   0.000  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>21 (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/xCode<3>)
+     FDCE:D                    0.176          tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/regcode_3
+    ----------------------------------------
+    Total                      5.481ns (2.328ns logic, 3.153ns route)
+                                       (42.5% logic, 57.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk_pin'
+  Total number of paths / destination ports: 44 / 28
+-------------------------------------------------------------------------
+Offset:              6.491ns (Levels of Logic = 2)
+  Source:            xps_gpio_switches/xps_gpio_switches/gpio_core_1/gpio_OE_0 (FF)
+  Destination:       xps_gpio_switches_GPIO_IO<0> (PAD)
+  Source Clock:      Clk_pin rising
+
+  Data Path: xps_gpio_switches/xps_gpio_switches/gpio_core_1/gpio_OE_0 to xps_gpio_switches_GPIO_IO<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             2   0.626   0.745  xps_gpio_switches/gpio_core_1/gpio_OE_0 (GPIO_IO_T<0>)
+     end scope: 'xps_gpio_switches'
+     IOBUF:T->IO               5.120          iobuf_8 (xps_gpio_switches_GPIO_IO<0>)
+    ----------------------------------------
+    Total                      6.491ns (5.746ns logic, 0.745ns route)
+                                       (88.5% logic, 11.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pantalla_0/pantalla_0/USER_LOGIC_I/clock1'
+  Total number of paths / destination ports: 361 / 10
+-------------------------------------------------------------------------
+Offset:              13.754ns (Levels of Logic = 7)
+  Source:            pantalla_0/pantalla_0/USER_LOGIC_I/vga/voffset_3 (FF)
+  Destination:       pantalla_0_rgb_pin<0> (PAD)
+  Source Clock:      pantalla_0/pantalla_0/USER_LOGIC_I/clock1 rising
+
+  Data Path: pantalla_0/pantalla_0/USER_LOGIC_I/vga/voffset_3 to pantalla_0_rgb_pin<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.626   1.201  pantalla_0/USER_LOGIC_I/vga/voffset_3 (pantalla_0/USER_LOGIC_I/vga/voffset<3>)
+     LUT2:I0->O            1   0.479   0.976  pantalla_0/USER_LOGIC_I/vga/rgb_and00005 (pantalla_0/USER_LOGIC_I/vga/rgb_and00005)
+     LUT4:I0->O            1   0.479   0.740  pantalla_0/USER_LOGIC_I/vga/rgb_and000022 (pantalla_0/USER_LOGIC_I/vga/rgb_and000022)
+     LUT3:I2->O            1   0.479   0.976  pantalla_0/USER_LOGIC_I/vga/rgb_and000080_SW0 (N65)
+     LUT4:I0->O            9   0.479   1.250  pantalla_0/USER_LOGIC_I/vga/rgb_and000080 (pantalla_0/USER_LOGIC_I/vga/rgb_and000080)
+     LUT4:I0->O            1   0.479   0.681  pantalla_0/USER_LOGIC_I/vga/rgb<8>1 (rgb<0>)
+     end scope: 'pantalla_0'
+     OBUF:I->O                 4.909          pantalla_0_rgb_pin_0_OBUF (pantalla_0_rgb_pin<0>)
+    ----------------------------------------
+    Total                     13.754ns (7.930ns logic, 5.824ns route)
+                                       (57.7% logic, 42.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pantalla_0/hsyncb'
+  Total number of paths / destination ports: 100 / 10
+-------------------------------------------------------------------------
+Offset:              13.643ns (Levels of Logic = 7)
+  Source:            pantalla_0/pantalla_0/USER_LOGIC_I/vga/vcnt_9 (FF)
+  Destination:       pantalla_0_rgb_pin<0> (PAD)
+  Source Clock:      pantalla_0/hsyncb rising
+
+  Data Path: pantalla_0/pantalla_0/USER_LOGIC_I/vga/vcnt_9 to pantalla_0_rgb_pin<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              8   0.626   1.091  pantalla_0/USER_LOGIC_I/vga/vcnt_9 (pantalla_0/USER_LOGIC_I/vga/vcnt<9>)
+     LUT2:I1->O            1   0.479   0.976  pantalla_0/USER_LOGIC_I/vga/rgb_and00005 (pantalla_0/USER_LOGIC_I/vga/rgb_and00005)
+     LUT4:I0->O            1   0.479   0.740  pantalla_0/USER_LOGIC_I/vga/rgb_and000022 (pantalla_0/USER_LOGIC_I/vga/rgb_and000022)
+     LUT3:I2->O            1   0.479   0.976  pantalla_0/USER_LOGIC_I/vga/rgb_and000080_SW0 (N65)
+     LUT4:I0->O            9   0.479   1.250  pantalla_0/USER_LOGIC_I/vga/rgb_and000080 (pantalla_0/USER_LOGIC_I/vga/rgb_and000080)
+     LUT4:I0->O            1   0.479   0.681  pantalla_0/USER_LOGIC_I/vga/rgb<8>1 (rgb<0>)
+     end scope: 'pantalla_0'
+     OBUF:I->O                 4.909          pantalla_0_rgb_pin_0_OBUF (pantalla_0_rgb_pin<0>)
+    ----------------------------------------
+    Total                     13.643ns (7.930ns logic, 5.713ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/reloj121'
+  Total number of paths / destination ports: 12 / 4
+-------------------------------------------------------------------------
+Offset:              8.027ns (Levels of Logic = 3)
+  Source:            tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 (FF)
+  Destination:       S_pin<2> (PAD)
+  Source Clock:      tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/reloj121 rising
+
+  Data Path: tecladokeypad_0/tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 to S_pin<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.626   1.267  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3 (tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_FFd3)
+     LUT3:I0->O            2   0.479   0.745  tecladokeypad_0/USER_LOGIC_I/TeclaDetecInst/state_FSM_Out91 (S<2>)
+     end scope: 'tecladokeypad_0'
+     OBUF:I->O                 4.909          S_pin_2_OBUF (S_pin<2>)
+    ----------------------------------------
+    Total                      8.027ns (6.014ns logic, 2.013ns route)
+                                       (74.9% logic, 25.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 49.00 secs
+Total CPU time to Xst completion: 48.36 secs
+ 
+--> 
+
+Total memory usage is 358580 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  374 (   0 filtered)
+Number of infos    :   41 (   0 filtered)
+

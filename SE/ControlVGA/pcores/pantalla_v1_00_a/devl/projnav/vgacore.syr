@@ -1,0 +1,673 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: vgacore.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "vgacore.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "vgacore"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : vgacore
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd" in Library work.
+Entity <debouncer> compiled.
+Entity <debouncer> (Architecture <debouncerArch>) compiled.
+Compiling vhdl file "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" in Library work.
+Entity <vgacore> compiled.
+Entity <vgacore> (Architecture <vgacore_arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <vgacore> in library <work> (architecture <vgacore_arch>).
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <debouncerArch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <vgacore> in library <work> (Architecture <vgacore_arch>).
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 127: Unconnected output port 'xDeb' of component 'debouncer'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 127: Unconnected output port 'xDebFallingEdge' of component 'debouncer'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 136: Unconnected output port 'xDeb' of component 'debouncer'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 136: Unconnected output port 'xDebFallingEdge' of component 'debouncer'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 145: Unconnected output port 'xDeb' of component 'debouncer'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 145: Unconnected output port 'xDebFallingEdge' of component 'debouncer'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 154: Unconnected output port 'xDeb' of component 'debouncer'.
+WARNING:Xst:753 - "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd" line 154: Unconnected output port 'xDebFallingEdge' of component 'debouncer'.
+Entity <vgacore> analyzed. Unit <vgacore> generated.
+
+Analyzing Entity <debouncer> in library <work> (Architecture <debouncerArch>).
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debouncer>.
+    Related source file is "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <aux1>.
+    Found 22-bit up counter for signal <count>.
+    Found 1-bit register for signal <xSync>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <vgacore>.
+    Related source file is "C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd".
+    Found 128x9-bit dual-port RAM <Mram_RAM> for signal <RAM>.
+    Found 1-bit register for signal <vsyncb>.
+    Found 9-bit up counter for signal <hcnt>.
+    Found 10-bit comparator less for signal <hcnt$cmp_lt0000> created at line 200.
+    Found 3-bit updown counter for signal <hoffset>.
+    Found 4-bit comparator greater for signal <hoffset$cmp_gt0000> created at line 169.
+    Found 4-bit comparator less for signal <hoffset$cmp_lt0000> created at line 168.
+    Found 1-bit register for signal <hsyncbAux>.
+    Found 10-bit comparator greatequal for signal <hsyncbAux$cmp_ge0000> created at line 232.
+    Found 10-bit comparator less for signal <hsyncbAux$cmp_lt0000> created at line 232.
+    Found 10-bit up counter for signal <vcnt>.
+    Found 11-bit comparator less for signal <vcnt$cmp_lt0000> created at line 216.
+    Found 2-bit updown counter for signal <voffset>.
+    Found 3-bit comparator greater for signal <voffset$cmp_gt0000> created at line 183.
+    Found 3-bit comparator less for signal <voffset$cmp_lt0000> created at line 182.
+    Found 11-bit comparator greatequal for signal <vsyncb$cmp_ge0000> created at line 248.
+    Found 11-bit comparator less for signal <vsyncb$cmp_lt0000> created at line 248.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   4 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+Unit <vgacore> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 128x9-bit dual-port RAM                               : 1
+# Counters                                             : 8
+ 10-bit up counter                                     : 1
+ 2-bit updown counter                                  : 1
+ 22-bit up counter                                     : 4
+ 3-bit updown counter                                  : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 10
+ 1-bit register                                        : 10
+# Comparators                                          : 10
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator less                                : 2
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator less                                : 2
+ 3-bit comparator greater                              : 1
+ 3-bit comparator less                                 : 1
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <debouncer_izquierdo/state/FSM> on signal <state[1:2]> with gray encoding.
+Optimizing FSM <debouncer_derecho/state/FSM> on signal <state[1:2]> with gray encoding.
+Optimizing FSM <debouncer_arriba/state/FSM> on signal <state[1:2]> with gray encoding.
+Optimizing FSM <debouncer_abajo/state/FSM> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+WARNING:Xst:1290 - Hierarchical block <debouncer_izquierdo> is unconnected in block <vgacore>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <debouncer_derecho> is unconnected in block <vgacore>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <debouncer_arriba> is unconnected in block <vgacore>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <debouncer_abajo> is unconnected in block <vgacore>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <vgacore>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 9-bit                    |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <rectangulo>    |          |
+    |     diA            | connected to signal <color>         |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 128-word x 9-bit                    |          |
+    |     addrB          | connected to signal <vcnt>          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <vgacore> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 1
+ 128x9-bit dual-port distributed RAM                   : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 1
+ 22-bit up counter                                     : 4
+ 9-bit up counter                                      : 1
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+# Comparators                                          : 6
+ 10-bit comparator greatequal                          : 1
+ 10-bit comparator less                                : 2
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator less                                : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <vgacore> ...
+
+Optimizing unit <debouncer> ...
+WARNING:Xst:2677 - Node <debouncer_abajo/state_FSM_FFd2> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/state_FSM_FFd1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_21> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_20> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_18> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_17> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_19> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_15> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_14> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_16> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_12> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_11> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_13> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_9> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_8> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_10> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_6> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_5> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_7> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_3> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_2> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_4> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_0> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/count_1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/xSync> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_abajo/aux1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/state_FSM_FFd2> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/state_FSM_FFd1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_21> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_20> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_18> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_17> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_19> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_15> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_14> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_16> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_12> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_11> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_13> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_9> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_8> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_10> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_6> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_5> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_7> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_3> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_2> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_4> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_0> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/count_1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/xSync> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_arriba/aux1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/state_FSM_FFd2> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/state_FSM_FFd1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_21> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_20> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_18> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_17> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_19> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_15> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_14> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_16> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_12> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_11> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_13> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_9> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_8> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_10> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_6> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_5> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_7> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_3> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_2> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_4> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_0> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/count_1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/xSync> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_derecho/aux1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/state_FSM_FFd2> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/state_FSM_FFd1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_21> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_20> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_18> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_17> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_19> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_15> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_14> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_16> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_12> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_11> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_13> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_9> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_8> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_10> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_6> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_5> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_7> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_3> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_2> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_4> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_0> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/count_1> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/xSync> of sequential type is unconnected in block <vgacore>.
+WARNING:Xst:2677 - Node <debouncer_izquierdo/aux1> of sequential type is unconnected in block <vgacore>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block vgacore, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : vgacore.ngr
+Top Level Output File Name         : vgacore
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 167
+#      GND                         : 1
+#      LUT2                        : 17
+#      LUT2_L                      : 1
+#      LUT3                        : 39
+#      LUT4                        : 40
+#      LUT4_D                      : 2
+#      LUT4_L                      : 3
+#      MUXCY                       : 17
+#      MUXF5                       : 19
+#      MUXF6                       : 9
+#      XORCY                       : 19
+# FlipFlops/Latches                : 21
+#      FDC                         : 19
+#      FDP                         : 2
+# RAMS                             : 72
+#      RAM16X1D                    : 72
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 29
+#      IBUF                        : 18
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                       54  out of   7680     0%  
+ Number of Slice Flip Flops:             21  out of  15360     0%  
+ Number of 4 input LUTs:                246  out of  15360     1%  
+    Number used as logic:               102
+    Number used as RAMs:                144
+ Number of IOs:                          34
+ Number of bonded IOBs:                  30  out of    173    17%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 82    |
+hsyncbAux                          | NONE(vsyncb)           | 11    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+reset                              | IBUF                   | 21    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.315ns (Maximum Frequency: 158.347MHz)
+   Minimum input arrival time before clock: 3.687ns
+   Maximum output required time after clock: 11.756ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 5.824ns (frequency: 171.714MHz)
+  Total number of paths / destination ports: 438 / 10
+-------------------------------------------------------------------------
+Delay:               5.824ns (Levels of Logic = 11)
+  Source:            hcnt_3 (FF)
+  Destination:       hcnt_8 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: hcnt_3 to hcnt_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             43   0.626   1.652  hcnt_3 (hcnt_3)
+     LUT4_D:I3->O          4   0.479   0.802  hcnt_not0001_inv1_SW0 (N22)
+     LUT4:I3->O            1   0.479   0.000  Mcount_hcnt_lut<0> (Mcount_hcnt_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  Mcount_hcnt_cy<0> (Mcount_hcnt_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_hcnt_cy<1> (Mcount_hcnt_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_hcnt_cy<2> (Mcount_hcnt_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_hcnt_cy<3> (Mcount_hcnt_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_hcnt_cy<4> (Mcount_hcnt_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_hcnt_cy<5> (Mcount_hcnt_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_hcnt_cy<6> (Mcount_hcnt_cy<6>)
+     MUXCY:CI->O           0   0.056   0.000  Mcount_hcnt_cy<7> (Mcount_hcnt_cy<7>)
+     XORCY:CI->O           1   0.786   0.000  Mcount_hcnt_xor<8> (Mcount_hcnt8)
+     FDC:D                     0.176          hcnt_8
+    ----------------------------------------
+    Total                      5.824ns (3.370ns logic, 2.454ns route)
+                                       (57.9% logic, 42.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'hsyncbAux'
+  Clock period: 6.315ns (frequency: 158.347MHz)
+  Total number of paths / destination ports: 506 / 11
+-------------------------------------------------------------------------
+Delay:               6.315ns (Levels of Logic = 12)
+  Source:            vcnt_7 (FF)
+  Destination:       vcnt_9 (FF)
+  Source Clock:      hsyncbAux rising
+  Destination Clock: hsyncbAux rising
+
+  Data Path: vcnt_7 to vcnt_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             76   0.626   2.084  vcnt_7 (vcnt_7)
+     LUT4_D:I0->O          5   0.479   0.806  vcnt_not0001_inv251_SW0 (N42)
+     LUT4:I3->O            1   0.479   0.000  Mcount_vcnt_lut<0> (Mcount_vcnt_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  Mcount_vcnt_cy<0> (Mcount_vcnt_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_vcnt_cy<1> (Mcount_vcnt_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_vcnt_cy<2> (Mcount_vcnt_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_vcnt_cy<3> (Mcount_vcnt_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_vcnt_cy<4> (Mcount_vcnt_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_vcnt_cy<5> (Mcount_vcnt_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_vcnt_cy<6> (Mcount_vcnt_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  Mcount_vcnt_cy<7> (Mcount_vcnt_cy<7>)
+     MUXCY:CI->O           0   0.056   0.000  Mcount_vcnt_cy<8> (Mcount_vcnt_cy<8>)
+     XORCY:CI->O           1   0.786   0.000  Mcount_vcnt_xor<9> (Mcount_vcnt9)
+     FDC:D                     0.176          vcnt_9
+    ----------------------------------------
+    Total                      6.315ns (3.425ns logic, 2.890ns route)
+                                       (54.2% logic, 45.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 648 / 432
+-------------------------------------------------------------------------
+Offset:              3.687ns (Levels of Logic = 2)
+  Source:            rectangulo<4> (PAD)
+  Destination:       Mram_RAM2 (RAM)
+  Destination Clock: clock rising
+
+  Data Path: rectangulo<4> to Mram_RAM2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.715   1.216  rectangulo_4_IBUF (rectangulo_4_IBUF)
+     LUT4:I0->O            9   0.479   0.955  write_ctrl1 (write_ctrl1)
+     RAM16X1D:WE               0.322          Mram_RAM2
+    ----------------------------------------
+    Total                      3.687ns (1.516ns logic, 2.171ns route)
+                                       (41.1% logic, 58.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'hsyncbAux'
+  Total number of paths / destination ports: 307 / 10
+-------------------------------------------------------------------------
+Offset:              11.756ns (Levels of Logic = 6)
+  Source:            vcnt_7 (FF)
+  Destination:       rgb<8> (PAD)
+  Source Clock:      hsyncbAux rising
+
+  Data Path: vcnt_7 to rgb<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             76   0.626   1.789  vcnt_7 (vcnt_7)
+     RAM16X1D:DPRA3->DPO    1   0.479   0.851  Mram_RAM1 (N11)
+     LUT3:I1->O            1   0.479   0.000  inst_LPM_MUX_6 (inst_LPM_MUX_6)
+     MUXF5:I0->O           1   0.314   0.000  inst_LPM_MUX_4_f5 (inst_LPM_MUX_4_f5)
+     MUXF6:I0->O           1   0.298   0.851  inst_LPM_MUX_2_f6 (_varindex0000<0>)
+     LUT2:I1->O            1   0.479   0.681  rgb<0>1 (rgb_0_OBUF)
+     OBUF:I->O                 4.909          rgb_0_OBUF (rgb<0>)
+    ----------------------------------------
+    Total                     11.756ns (7.584ns logic, 4.172ns route)
+                                       (64.5% logic, 35.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 163 / 10
+-------------------------------------------------------------------------
+Offset:              10.560ns (Levels of Logic = 5)
+  Source:            hcnt_3 (FF)
+  Destination:       rgb<8> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: hcnt_3 to rgb<8>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             43   0.626   1.924  hcnt_3 (hcnt_3)
+     LUT3:I0->O            1   0.479   0.000  inst_LPM_MUX1_4 (inst_LPM_MUX1_4)
+     MUXF5:I1->O           1   0.314   0.000  inst_LPM_MUX1_3_f5 (inst_LPM_MUX1_3_f5)
+     MUXF6:I1->O           1   0.298   0.851  inst_LPM_MUX1_2_f6 (_varindex0000<1>)
+     LUT2:I1->O            1   0.479   0.681  rgb<1>1 (rgb_1_OBUF)
+     OBUF:I->O                 4.909          rgb_1_OBUF (rgb<1>)
+    ----------------------------------------
+    Total                     10.560ns (7.105ns logic, 3.455ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.17 secs
+ 
+--> 
+
+Total memory usage is 264756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  116 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

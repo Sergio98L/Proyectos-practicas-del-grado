@@ -1,0 +1,829 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> Reading design: user_logic.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "user_logic.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "user_logic"
+Output Format                      : NGC
+Target Device                      : xc3s1000-5-ft256
+
+---- Source Options
+Top Module Name                    : user_logic
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Architecture proc_common_pkg of Entity proc_common_pkg is up to date.
+Compiling vhdl file "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/lcd_controller.vhd" in Library work.
+Architecture controller of Entity lcd_controller is up to date.
+Compiling vhdl file "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" in Library work.
+Architecture banner_arch of Entity bannerdesp is up to date.
+Compiling vhdl file "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/user_logic.vhd" in Library pantallalcd_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <IMP>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <user_logic> in library <pantallalcd_v1_00_a> (architecture <IMP>) with generics.
+	C_NUM_REG = 1
+	C_SLV_DWIDTH = 32
+
+Analyzing hierarchy for entity <lcd_controller> in library <work> (architecture <controller>).
+
+Analyzing hierarchy for entity <bannerDesp> in library <work> (architecture <banner_arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <user_logic> in library <pantallalcd_v1_00_a> (Architecture <IMP>).
+	C_NUM_REG = 1
+	C_SLV_DWIDTH = 32
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "SIGIS". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:819 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/user_logic.vhd" line 311: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <lcd_rs>, <lcd_rw>, <lcd_e>, <lcd_data>, <banner_col_s_o>, <banner_col_clk>, <banner_rs1_out>, <banner_row_s_o>, <banner_row_clk>, <banner_rs2_out>
+Entity <user_logic> analyzed. Unit <user_logic> generated.
+
+Analyzing Entity <lcd_controller> in library <work> (Architecture <controller>).
+Entity <lcd_controller> analyzed. Unit <lcd_controller> generated.
+
+Analyzing Entity <bannerDesp> in library <work> (Architecture <banner_arch>).
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 98: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 254: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 255: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 256: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 257: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 258: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 259: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 260: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 261: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd" line 279: Index value(s) does not match array range, simulation mismatch.
+Entity <bannerDesp> analyzed. Unit <bannerDesp> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <lcd_controller>.
+    Related source file is "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/lcd_controller.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | power_up                                       |
+    | Power Up State     | power_up                                       |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <lcd_data>.
+    Found 1-bit register for signal <e>.
+    Found 1-bit register for signal <busy>.
+    Found 1-bit register for signal <rs>.
+    Found 1-bit register for signal <rw>.
+    Found 32-bit register for signal <clk_count>.
+    Found 32-bit comparator less for signal <e$cmp_lt0000> created at line 166.
+    Found 32-bit comparator less for signal <e$cmp_lt0001> created at line 167.
+    Found 32-bit adder for signal <state$add0000> created at line 91.
+    Found 32-bit comparator less for signal <state$cmp_lt0000> created at line 77.
+    Found 32-bit comparator less for signal <state$cmp_lt0001> created at line 92.
+    Found 32-bit comparator less for signal <state$cmp_lt0002> created at line 98.
+    Found 32-bit comparator less for signal <state$cmp_lt0003> created at line 102.
+    Found 32-bit comparator less for signal <state$cmp_lt0004> created at line 113.
+    Found 32-bit comparator less for signal <state$cmp_lt0005> created at line 117.
+    Found 32-bit comparator less for signal <state$cmp_lt0006> created at line 121.
+    Found 32-bit comparator less for signal <state$cmp_lt0007> created at line 125.
+    Found 32-bit comparator less for signal <state$cmp_lt0008> created at line 132.
+    Found 32-bit comparator less for signal <state$cmp_lt0009> created at line 164.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  44 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  12 Comparator(s).
+Unit <lcd_controller> synthesized.
+
+
+Synthesizing Unit <bannerDesp>.
+    Related source file is "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd".
+    Found 56x5-bit dual-port RAM <Mram_RAM> for signal <RAM>.
+    Found 56x5-bit dual-port RAM <Mram_RAM_ren> for signal <RAM>.
+    Found 56x5-bit dual-port RAM <Mram_RAM_ren_1> for signal <RAM>.
+    Found 56x5-bit dual-port RAM <Mram_RAM_ren_2> for signal <RAM>.
+    Found 56x5-bit dual-port RAM <Mram_RAM_ren_3> for signal <RAM>.
+    Found 56x5-bit dual-port RAM <Mram_RAM_ren_4> for signal <RAM>.
+    Found 56x5-bit dual-port RAM <Mram_RAM_ren_5> for signal <RAM>.
+    Found 56x5-bit dual-port RAM <Mram_RAM_ren_6> for signal <RAM>.
+    Found 1-bit register for signal <col_clk>.
+    Found 1-bit register for signal <row_clk>.
+    Found 1-bit register for signal <col_serial_out>.
+    Found 1-bit 40-to-1 multiplexer for signal <row_serial_out>.
+    Found 1-bit register for signal <ce_row_clk>.
+    Found 4-bit up counter for signal <count>.
+    Found 27-bit up counter for signal <count2>.
+    Found 6-bit up counter for signal <desplazamiento>.
+    Found 1-bit register for signal <fin_per>.
+    Found 13-bit comparator less for signal <fin_per$cmp_lt0000> created at line 167.
+    Found 1-bit register for signal <fin_pixel_cont>.
+    Found 6-bit comparator less for signal <fin_pixel_cont$cmp_lt0000> created at line 185.
+    Found 40-bit register for signal <miregistro>.
+    Found 6-bit adder for signal <miregistro$sub0000> created at line 279.
+    Found 6-bit register for signal <pixel_count>.
+    Found 6-bit adder for signal <pixel_count$addsub0000> created at line 186.
+    Found 6-bit adder for signal <RAM$add0000> created at line 255.
+    Found 6-bit adder for signal <RAM$add0001> created at line 256.
+    Found 6-bit adder for signal <RAM$add0002> created at line 257.
+    Found 6-bit adder for signal <RAM$add0003> created at line 258.
+    Found 6-bit adder for signal <RAM$add0004> created at line 259.
+    Found 6-bit adder for signal <RAM$add0005> created at line 260.
+    Found 6-bit adder for signal <RAM$add0006> created at line 261.
+    Found 1-bit register for signal <reloj12>.
+    Found 3-bit up counter for signal <row_number>.
+    Found 13-bit up counter for signal <t_persistencia>.
+    Summary:
+	inferred   8 RAM(s).
+	inferred   5 Counter(s).
+	inferred  53 D-type flip-flop(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <bannerDesp> synthesized.
+
+
+Synthesizing Unit <user_logic>.
+    Related source file is "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:647 - Input <Bus2IP_Data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_RdCE<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WFIFO2IP_AlmostEmpty> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_WrCE<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WFIFO2IP_Data<0:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WFIFO2IP_Data<8:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <WFIFO2IP_Data<16:18>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <lcd_enable> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <IP2WFIFO_RdReq>.
+    Found 1-bit register for signal <currentStateLectura<0>>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <user_logic> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 8
+ 56x5-bit dual-port RAM                                : 8
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 1
+ 6-bit adder                                           : 9
+# Counters                                             : 5
+ 13-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 56
+ 1-bit register                                        : 53
+ 32-bit register                                       : 1
+ 6-bit register                                        : 1
+ 8-bit register                                        : 1
+# Comparators                                          : 14
+ 13-bit comparator less                                : 1
+ 32-bit comparator less                                : 12
+ 6-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 1-bit 40-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <lcd_controller_i/state/FSM> on signal <state[1:2]> with gray encoding.
+------------------------
+ State      | Encoding
+------------------------
+ power_up   | 00
+ initialize | 01
+ ready      | 11
+ send       | 10
+------------------------
+
+Synthesizing (advanced) Unit <bannerDesp>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <columna>       |          |
+    |     diA            | connected to signal <dato>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <columna>       |          |
+    |     diA            | connected to signal <dato>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <columna>       |          |
+    |     diA            | connected to signal <dato>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <columna>       |          |
+    |     diA            | connected to signal <dato>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_3> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <columna>       |          |
+    |     diA            | connected to signal <dato>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_4> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <columna>       |          |
+    |     diA            | connected to signal <dato>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_5> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <columna>       |          |
+    |     diA            | connected to signal <dato>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_RAM_ren_6> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     clkA           | connected to signal <clock>         | rise     |
+    |     weA            | connected to signal <load>          | high     |
+    |     addrA          | connected to signal <columna>       |          |
+    |     diA            | connected to signal <dato>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 56-word x 5-bit                     |          |
+    |     addrB          | connected to internal node          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <bannerDesp> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 8
+ 56x5-bit dual-port distributed RAM                    : 8
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 1
+ 6-bit adder                                           : 9
+# Counters                                             : 5
+ 13-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 99
+ Flip-Flops                                            : 99
+# Comparators                                          : 14
+ 13-bit comparator less                                : 1
+ 32-bit comparator less                                : 12
+ 6-bit comparator less                                 : 1
+# Multiplexers                                         : 1
+ 1-bit 40-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <lcd_controller> ...
+
+Optimizing unit <bannerDesp> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block user_logic, actual ratio is 5.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 154
+ Flip-Flops                                            : 154
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : user_logic.ngr
+Top Level Output File Name         : user_logic
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 123
+
+Cell Usage :
+# BELS                             : 925
+#      GND                         : 1
+#      INV                         : 44
+#      LUT1                        : 80
+#      LUT2                        : 104
+#      LUT3                        : 204
+#      LUT3_D                      : 3
+#      LUT3_L                      : 4
+#      LUT4                        : 111
+#      LUT4_D                      : 6
+#      LUT4_L                      : 3
+#      MUXCY                       : 230
+#      MUXF5                       : 54
+#      MUXF6                       : 5
+#      MUXF7                       : 2
+#      MUXF8                       : 1
+#      VCC                         : 1
+#      XORCY                       : 72
+# FlipFlops/Latches                : 154
+#      FD                          : 37
+#      FDC                         : 46
+#      FDCE                        : 56
+#      FDE                         : 1
+#      FDP                         : 3
+#      FDR                         : 2
+#      FDRS                        : 1
+#      FDRSE                       : 1
+#      FDS                         : 7
+# RAMS                             : 160
+#      RAM16X1D                    : 160
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 70
+#      IBUF                        : 23
+#      OBUF                        : 47
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                      352  out of   7680     4%  
+ Number of Slice Flip Flops:            154  out of  15360     1%  
+ Number of 4 input LUTs:                879  out of  15360     5%  
+    Number used as logic:               559
+    Number used as RAMs:                320
+ Number of IOs:                         123
+ Number of bonded IOBs:                  71  out of    173    41%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Bus2IP_Clk                         | BUFGP                  | 247   |
+mybanner/reloj121                  | BUFG                   | 67    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Bus2IP_Reset                       | IBUF                   | 105   |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.910ns (Maximum Frequency: 83.963MHz)
+   Minimum input arrival time before clock: 6.599ns
+   Maximum output required time after clock: 13.398ns
+   Maximum combinational path delay: 8.919ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Bus2IP_Clk'
+  Clock period: 11.910ns (frequency: 83.963MHz)
+  Total number of paths / destination ports: 187595 / 262
+-------------------------------------------------------------------------
+Delay:               11.910ns (Levels of Logic = 35)
+  Source:            lcd_controller_i/clk_count_2 (FF)
+  Destination:       lcd_controller_i/clk_count_31 (FF)
+  Source Clock:      Bus2IP_Clk rising
+  Destination Clock: Bus2IP_Clk rising
+
+  Data Path: lcd_controller_i/clk_count_2 to lcd_controller_i/clk_count_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.626   1.040  lcd_controller_i/clk_count_2 (lcd_controller_i/clk_count_2)
+     LUT1:I0->O            1   0.479   0.000  lcd_controller_i/Madd_state_add0000_cy<2>_rt (lcd_controller_i/Madd_state_add0000_cy<2>_rt)
+     MUXCY:S->O            1   0.435   0.000  lcd_controller_i/Madd_state_add0000_cy<2> (lcd_controller_i/Madd_state_add0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<3> (lcd_controller_i/Madd_state_add0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<4> (lcd_controller_i/Madd_state_add0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<5> (lcd_controller_i/Madd_state_add0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<6> (lcd_controller_i/Madd_state_add0000_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<7> (lcd_controller_i/Madd_state_add0000_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<8> (lcd_controller_i/Madd_state_add0000_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<9> (lcd_controller_i/Madd_state_add0000_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<10> (lcd_controller_i/Madd_state_add0000_cy<10>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<11> (lcd_controller_i/Madd_state_add0000_cy<11>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<12> (lcd_controller_i/Madd_state_add0000_cy<12>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<13> (lcd_controller_i/Madd_state_add0000_cy<13>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<14> (lcd_controller_i/Madd_state_add0000_cy<14>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<15> (lcd_controller_i/Madd_state_add0000_cy<15>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<16> (lcd_controller_i/Madd_state_add0000_cy<16>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<17> (lcd_controller_i/Madd_state_add0000_cy<17>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<18> (lcd_controller_i/Madd_state_add0000_cy<18>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<19> (lcd_controller_i/Madd_state_add0000_cy<19>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<20> (lcd_controller_i/Madd_state_add0000_cy<20>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<21> (lcd_controller_i/Madd_state_add0000_cy<21>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<22> (lcd_controller_i/Madd_state_add0000_cy<22>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<23> (lcd_controller_i/Madd_state_add0000_cy<23>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<24> (lcd_controller_i/Madd_state_add0000_cy<24>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<25> (lcd_controller_i/Madd_state_add0000_cy<25>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<26> (lcd_controller_i/Madd_state_add0000_cy<26>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<27> (lcd_controller_i/Madd_state_add0000_cy<27>)
+     MUXCY:CI->O           1   0.056   0.000  lcd_controller_i/Madd_state_add0000_cy<28> (lcd_controller_i/Madd_state_add0000_cy<28>)
+     XORCY:CI->O           9   0.786   1.250  lcd_controller_i/Madd_state_add0000_xor<29> (lcd_controller_i/state_add0000<29>)
+     LUT2:I0->O            1   0.479   0.000  lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4 (lcd_controller_i/Mcompar_state_cmp_lt0008_lut<9>4)
+     MUXCY:S->O            1   0.435   0.000  lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>_3 (lcd_controller_i/Mcompar_state_cmp_lt0008_cy<9>4)
+     MUXCY:CI->O           4   0.265   1.074  lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>_3 (lcd_controller_i/Mcompar_state_cmp_lt0008_cy<10>4)
+     LUT4_D:I0->O          2   0.479   0.804  lcd_controller_i/clk_count_mux0009<0>114 (lcd_controller_i/clk_count_mux0009<0>114)
+     LUT4_D:I2->O         15   0.479   1.180  lcd_controller_i/clk_count_mux0009<0>1 (lcd_controller_i/N01)
+     LUT2:I1->O            1   0.479   0.000  lcd_controller_i/clk_count_mux0009<22>1 (lcd_controller_i/clk_count_mux0009<22>)
+     FD:D                      0.176          lcd_controller_i/clk_count_9
+    ----------------------------------------
+    Total                     11.910ns (6.561ns logic, 5.350ns route)
+                                       (55.1% logic, 44.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mybanner/reloj121'
+  Clock period: 6.957ns (frequency: 143.748MHz)
+  Total number of paths / destination ports: 1975 / 116
+-------------------------------------------------------------------------
+Delay:               6.957ns (Levels of Logic = 23)
+  Source:            mybanner/t_persistencia_0 (FF)
+  Destination:       mybanner/t_persistencia_12 (FF)
+  Source Clock:      mybanner/reloj121 rising
+  Destination Clock: mybanner/reloj121 rising
+
+  Data Path: mybanner/t_persistencia_0 to mybanner/t_persistencia_12
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.626   1.040  mybanner/t_persistencia_0 (mybanner/t_persistencia_0)
+     LUT2:I0->O            1   0.479   0.000  mybanner/Mcompar_fin_per_cmp_lt0000_lut<0> (mybanner/Mcompar_fin_per_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.435   0.000  mybanner/Mcompar_fin_per_cmp_lt0000_cy<0> (mybanner/Mcompar_fin_per_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcompar_fin_per_cmp_lt0000_cy<1> (mybanner/Mcompar_fin_per_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcompar_fin_per_cmp_lt0000_cy<2> (mybanner/Mcompar_fin_per_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcompar_fin_per_cmp_lt0000_cy<3> (mybanner/Mcompar_fin_per_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcompar_fin_per_cmp_lt0000_cy<4> (mybanner/Mcompar_fin_per_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcompar_fin_per_cmp_lt0000_cy<5> (mybanner/Mcompar_fin_per_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcompar_fin_per_cmp_lt0000_cy<6> (mybanner/Mcompar_fin_per_cmp_lt0000_cy<6>)
+     MUXCY:CI->O          15   0.246   1.010  mybanner/Mcompar_fin_per_cmp_lt0000_cy<7> (mybanner/Mcompar_fin_per_cmp_lt0000_cy<7>)
+     INV:I->O              1   0.479   0.681  mybanner/Mcompar_fin_per_cmp_lt0000_cy<7>_inv_INV_0 (mybanner/fin_per_mux0001_inv)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<0> (mybanner/Mcount_t_persistencia_cy<0>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<1> (mybanner/Mcount_t_persistencia_cy<1>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<2> (mybanner/Mcount_t_persistencia_cy<2>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<3> (mybanner/Mcount_t_persistencia_cy<3>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<4> (mybanner/Mcount_t_persistencia_cy<4>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<5> (mybanner/Mcount_t_persistencia_cy<5>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<6> (mybanner/Mcount_t_persistencia_cy<6>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<7> (mybanner/Mcount_t_persistencia_cy<7>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<8> (mybanner/Mcount_t_persistencia_cy<8>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<9> (mybanner/Mcount_t_persistencia_cy<9>)
+     MUXCY:CI->O           1   0.056   0.000  mybanner/Mcount_t_persistencia_cy<10> (mybanner/Mcount_t_persistencia_cy<10>)
+     MUXCY:CI->O           0   0.056   0.000  mybanner/Mcount_t_persistencia_cy<11> (mybanner/Mcount_t_persistencia_cy<11>)
+     XORCY:CI->O           1   0.786   0.000  mybanner/Mcount_t_persistencia_xor<12> (mybanner/Mcount_t_persistencia12)
+     FDC:D                     0.176          mybanner/t_persistencia_12
+    ----------------------------------------
+    Total                      6.957ns (4.226ns logic, 2.731ns route)
+                                       (60.7% logic, 39.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Bus2IP_Clk'
+  Total number of paths / destination ports: 1456 / 940
+-------------------------------------------------------------------------
+Offset:              6.599ns (Levels of Logic = 6)
+  Source:            cntl_mux (PAD)
+  Destination:       lcd_controller_i/lcd_data_7 (FF)
+  Destination Clock: Bus2IP_Clk rising
+
+  Data Path: cntl_mux to lcd_controller_i/lcd_data_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   0.715   1.054  cntl_mux_IBUF (cntl_mux_IBUF)
+     LUT3_D:I2->LO         1   0.479   0.395  lcd_load1 (N71)
+     LUT3:I0->O           14   0.479   1.179  lcd_controller_i/N231 (lcd_controller_i/N23)
+     LUT3:I1->O            1   0.479   0.000  lcd_controller_i/lcd_data_mux0000<6>11_SW2_G (N60)
+     MUXF5:I1->O           1   0.314   0.851  lcd_controller_i/lcd_data_mux0000<6>11_SW2 (N48)
+     LUT4:I1->O            1   0.479   0.000  lcd_controller_i/lcd_data_mux0000<7>1 (lcd_controller_i/lcd_data_mux0000<7>)
+     FD:D                      0.176          lcd_controller_i/lcd_data_7
+    ----------------------------------------
+    Total                      6.599ns (3.121ns logic, 3.478ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Bus2IP_Clk'
+  Total number of paths / destination ports: 65 / 12
+-------------------------------------------------------------------------
+Offset:              13.398ns (Levels of Logic = 8)
+  Source:            mybanner/desplazamiento_3 (FF)
+  Destination:       lcd_data_ba_rso_rc_rst2<0> (PAD)
+  Source Clock:      Bus2IP_Clk rising
+
+  Data Path: mybanner/desplazamiento_3 to lcd_data_ba_rso_rc_rst2<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            25   0.626   1.711  mybanner/desplazamiento_3 (mybanner/desplazamiento_3)
+     LUT2:I1->O            8   0.479   0.921  mybanner/Madd_miregistro_sub0000_xor<4>11 (mybanner/miregistro_sub0000<4>)
+     MUXF5:S->O            1   0.540   0.000  mybanner/Mmux_row_serial_out_8_f5 (mybanner/Mmux_row_serial_out_8_f5)
+     MUXF6:I1->O           1   0.298   0.000  mybanner/Mmux_row_serial_out_7_f6 (mybanner/Mmux_row_serial_out_7_f6)
+     MUXF7:I1->O           1   0.298   0.000  mybanner/Mmux_row_serial_out_6_f7 (mybanner/Mmux_row_serial_out_6_f7)
+     MUXF8:I1->O           1   0.298   0.976  mybanner/Mmux_row_serial_out_5_f8 (mybanner/Mmux_row_serial_out_5_f8)
+     LUT4:I0->O            1   0.479   0.704  lcd_data_ba_rso_rc_rst2_0_mux000090_SW0 (N65)
+     LUT4:I3->O            1   0.479   0.681  lcd_data_ba_rso_rc_rst2_0_mux000090 (lcd_data_ba_rso_rc_rst2_0_OBUF)
+     OBUF:I->O                 4.909          lcd_data_ba_rso_rc_rst2_0_OBUF (lcd_data_ba_rso_rc_rst2<0>)
+    ----------------------------------------
+    Total                     13.398ns (8.406ns logic, 4.992ns route)
+                                       (62.7% logic, 37.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mybanner/reloj121'
+  Total number of paths / destination ports: 42 / 3
+-------------------------------------------------------------------------
+Offset:              11.456ns (Levels of Logic = 8)
+  Source:            mybanner/miregistro_0 (FF)
+  Destination:       lcd_data_ba_rso_rc_rst2<0> (PAD)
+  Source Clock:      mybanner/reloj121 rising
+
+  Data Path: mybanner/miregistro_0 to lcd_data_ba_rso_rc_rst2<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.626   0.915  mybanner/miregistro_0 (mybanner/miregistro_0)
+     LUT3:I1->O            1   0.479   0.000  mybanner/Mmux_row_serial_out_13 (mybanner/Mmux_row_serial_out_13)
+     MUXF5:I0->O           1   0.314   0.000  mybanner/Mmux_row_serial_out_11_f5 (mybanner/Mmux_row_serial_out_11_f5)
+     MUXF6:I0->O           1   0.298   0.000  mybanner/Mmux_row_serial_out_9_f6 (mybanner/Mmux_row_serial_out_9_f6)
+     MUXF7:I0->O           1   0.298   0.000  mybanner/Mmux_row_serial_out_7_f7 (mybanner/Mmux_row_serial_out_7_f7)
+     MUXF8:I0->O           1   0.298   0.976  mybanner/Mmux_row_serial_out_5_f8 (mybanner/Mmux_row_serial_out_5_f8)
+     LUT4:I0->O            1   0.479   0.704  lcd_data_ba_rso_rc_rst2_0_mux000090_SW0 (N65)
+     LUT4:I3->O            1   0.479   0.681  lcd_data_ba_rso_rc_rst2_0_mux000090 (lcd_data_ba_rso_rc_rst2_0_OBUF)
+     OBUF:I->O                 4.909          lcd_data_ba_rso_rc_rst2_0_OBUF (lcd_data_ba_rso_rc_rst2<0>)
+    ----------------------------------------
+    Total                     11.456ns (8.180ns logic, 3.276ns route)
+                                       (71.4% logic, 28.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 13 / 11
+-------------------------------------------------------------------------
+Delay:               8.919ns (Levels of Logic = 3)
+  Source:            Bus2IP_Reset (PAD)
+  Destination:       lcd_e_ba_ro (PAD)
+
+  Data Path: Bus2IP_Reset to lcd_e_ba_ro
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           112   0.715   2.135  Bus2IP_Reset_IBUF (Bus2IP_Reset_IBUF)
+     LUT3:I1->O            1   0.479   0.681  lcd_e_ba_ro1 (lcd_e_ba_ro_OBUF)
+     OBUF:I->O                 4.909          lcd_e_ba_ro_OBUF (lcd_e_ba_ro)
+    ----------------------------------------
+    Total                      8.919ns (6.103ns logic, 2.816ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.59 secs
+ 
+--> 
+
+Total memory usage is 274676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

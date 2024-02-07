@@ -1,0 +1,87 @@
+Release 14.1 ngdbuild P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.1\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc3s1000ft256-5 -nt timestamp -bm system.bmm
+C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system.ngc -uc
+system.ucf system.ngd
+
+Reading NGO file
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system.ngc" ...
+Loading design module
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system_microblaze_0_
+wrapper.ngc"...
+Loading design module
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system_plb_v46_0_wra
+pper.ngc"...
+Loading design module
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system_bram_block_0_
+wrapper.ngc"...
+Loading design module
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system_xps_gpio_leds
+_wrapper.ngc"...
+Loading design module
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system_xps_gpio_swit
+ches_wrapper.ngc"...
+Loading design module
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system_xps_uartlite_
+0_wrapper.ngc"...
+Loading design module
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system_xps_bram_if_c
+ntlr_0_wrapper.ngc"...
+Loading design module
+"C:/Users/VUser/Desktop/Practica4SEDiciembre/implementation/system_pantalla_0_wr
+apper.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "system.bmm" ...
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[31].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[30].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[29].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[28].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/Using_FPGA.
+   Gen_Bits[27].MEM_EX_Result_Inst' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'pantalla_0/pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKE
+   T_FEATURES.I_WRITE_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'pantalla_0/pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.I_DP_CONTROLLER/OMIT_PACKE
+   T_FEATURES.I_READ_ADDR_CNTR/I_UP_DWN_COUNTER/I_CARRY_OUT' has unconnected
+   output pin
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   7
+
+Total memory usage is 193080 kilobytes
+
+Writing NGD file "system.ngd" ...
+Total REAL time to NGDBUILD completion:  12 sec
+Total CPU time to NGDBUILD completion:   12 sec
+
+Writing NGDBUILD log file "system.bld"...

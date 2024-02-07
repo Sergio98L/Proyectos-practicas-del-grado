@@ -1,0 +1,100 @@
+
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT microblaze_0_MB_RESET_pin = microblaze_0_MB_RESET, DIR = I, SIGIS = RST
+ PORT plb_v46_0_PLB_Clk_pin = plb_v46_0_PLB_Clk, DIR = I, SIGIS = CLK
+ PORT plb_v46_0_SYS_Rst_pin = plb_v46_0_SYS_Rst, DIR = I, SIGIS = RST
+ PORT xps_gpio_leds_GPIO_IO = xps_gpio_leds_GPIO_IO, DIR = IO, VEC = [0:7]
+ PORT xps_gpio_switches_GPIO_IO = xps_gpio_switches_GPIO_IO, DIR = IO, VEC = [0:7]
+ PORT xps_uartlite_0_RX_pin = xps_uartlite_0_RX, DIR = I
+ PORT xps_uartlite_0_TX_pin = xps_uartlite_0_TX, DIR = O
+ PORT Rst_pin = net_Rst_pin, DIR = I, SIGIS = RST
+ PORT Clk_pin = net_Clk_pin, DIR = I, SIGIS = CLK
+ PORT pantalla_0_hsyncb_pin = pantalla_0_hsyncb, DIR = O
+ PORT pantalla_0_vsyncb_pin = pantalla_0_vsyncb, DIR = O
+ PORT pantalla_0_rgb_pin = pantalla_0_rgb, DIR = O, VEC = [0:8]
+ PORT boton_izquierda_pin = pantalla_0_boton_izquierda, DIR = I
+ PORT boton_arriba_pin = pantalla_0_boton_arriba, DIR = I
+ PORT boton_abajo_pin = pantalla_0_boton_abajo, DIR = I
+ PORT boton_derecha_pin = pantalla_0_boton_derecha, DIR = I
+
+
+BEGIN microblaze
+ PARAMETER INSTANCE = microblaze_0
+ PARAMETER HW_VER = 8.30.a
+ BUS_INTERFACE DPLB = plb_v46_0
+ BUS_INTERFACE IPLB = plb_v46_0
+ PORT MB_RESET = net_Rst_pin
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = plb_v46_0
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = net_Clk_pin
+ PORT SYS_Rst = net_Rst_pin
+END
+
+BEGIN bram_block
+ PARAMETER INSTANCE = bram_block_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = xps_gpio_leds
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 8
+ PARAMETER C_BASEADDR = 0x81420000
+ PARAMETER C_HIGHADDR = 0x8142ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT GPIO_IO = xps_gpio_leds_GPIO_IO
+END
+
+BEGIN xps_gpio
+ PARAMETER INSTANCE = xps_gpio_switches
+ PARAMETER HW_VER = 2.00.a
+ PARAMETER C_GPIO_WIDTH = 8
+ PARAMETER C_BASEADDR = 0x81400000
+ PARAMETER C_HIGHADDR = 0x8140ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT GPIO_IO = xps_gpio_switches_GPIO_IO
+END
+
+BEGIN xps_uartlite
+ PARAMETER INSTANCE = xps_uartlite_0
+ PARAMETER HW_VER = 1.02.a
+ PARAMETER C_USE_PARITY = 0
+ PARAMETER C_SPLB_CLK_FREQ_HZ = 50000000
+ PARAMETER C_BASEADDR = 0x84000000
+ PARAMETER C_HIGHADDR = 0x8400ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT RX = xps_uartlite_0_RX
+ PORT TX = xps_uartlite_0_TX
+END
+
+BEGIN xps_bram_if_cntlr
+ PARAMETER INSTANCE = xps_bram_if_cntlr_0
+ PARAMETER HW_VER = 1.00.b
+ PARAMETER C_SPLB_NATIVE_DWIDTH = 32
+ PARAMETER C_BASEADDR = 0x00000000
+ PARAMETER C_HIGHADDR = 0x00007fff
+ BUS_INTERFACE SPLB = plb_v46_0
+ BUS_INTERFACE PORTA = xps_bram_if_cntlr_0_PORTA
+END
+
+BEGIN pantalla
+ PARAMETER INSTANCE = pantalla_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0xcd400000
+ PARAMETER C_HIGHADDR = 0xcd40ffff
+ BUS_INTERFACE SPLB = plb_v46_0
+ PORT hsyncb = pantalla_0_hsyncb
+ PORT vsyncb = pantalla_0_vsyncb
+ PORT rgb = pantalla_0_rgb
+ PORT boton_izquierda = pantalla_0_boton_izquierda
+ PORT boton_arriba = pantalla_0_boton_arriba
+ PORT boton_abajo = pantalla_0_boton_abajo
+ PORT boton_derecha = pantalla_0_boton_derecha
+END
+

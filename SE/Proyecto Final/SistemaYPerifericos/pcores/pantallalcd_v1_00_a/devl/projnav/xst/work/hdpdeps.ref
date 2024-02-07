@@ -1,0 +1,16 @@
+V3 6
+FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd 2024/01/23.17:38:55 P.15xf
+EN work/bannerDesp 1706034052 \
+      FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/bannerDesp/banner_arch 1706034053 \
+      FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd \
+      EN work/bannerDesp 1706034052
+FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/lcd_controller.vhd 2023/12/18.19:39:08 P.15xf
+EN work/lcd_controller 1706034050 \
+      FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/lcd_controller.vhd \
+      PB ieee/std_logic_1164 1335251622
+AR work/lcd_controller/controller 1706034051 \
+      FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/lcd_controller.vhd \
+      EN work/lcd_controller 1706034050

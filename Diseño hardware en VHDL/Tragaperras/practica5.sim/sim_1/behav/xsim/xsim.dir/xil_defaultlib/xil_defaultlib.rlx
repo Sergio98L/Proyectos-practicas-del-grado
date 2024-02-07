@@ -1,0 +1,17 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/hlocal/practica5/practica5.srcs/sources_1/imports/practica5/conv_7seg.vhd,1693566764,vhdl,,,,conv_7seg,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/imports/practica5/debouncer.vhd,1693566764,vhdl,,,,debouncer,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/imports/practica5/displays.vhd,1693566764,vhdl,,,,displays,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/imports/practica5/divisor.vhd,1702138882,vhdl,,,,divisor,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/imports/practica5/sintesis_tragaperras.vhd,1693566764,vhdl,,,,sintesis_tragaperras,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/new/atraer_leds.vhd,1702148442,vhdl,,,,atraer_leds,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/new/contadorMod10.vhd,1702146669,vhdl,,,,contadormod10,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/new/controller.vhd,1702237522,vhdl,,,,controller,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/new/data_path.vhd,1702152468,vhdl,,,,data_path,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/new/generador_efectos.vhd,1702149657,vhdl,,,,generador_efectos,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/new/lose_leds.vhd,1702147893,vhdl,,,,lose_leds,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/new/tragaperras.vhd,1702152973,vhdl,,,,tragaperras,,,,,,,,
+C:/hlocal/practica5/practica5.srcs/sources_1/new/win_leds.vhd,1702147492,vhdl,,,,win_leds,,,,,,,,

@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/devl/projnav/user_logic.xst" -ofn "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/devl/projnav/user_logic.syr" 
+xst -intstyle ise -ifn "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/devl/projnav/user_logic.xst" -ofn "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/devl/projnav/user_logic.syr" 
+xst -intstyle ise -ifn "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/devl/projnav/user_logic.xst" -ofn "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/devl/projnav/user_logic.syr" 
+xst -intstyle ise -ifn "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/devl/projnav/user_logic.xst" -ofn "C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/devl/projnav/user_logic.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1000-ft256-5 user_logic.ngc user_logic.ngd  
+map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off -c 100 -o user_logic_map.ncd user_logic.ngd user_logic.pcf 
+par -w -intstyle ise -ol high -t 1 user_logic_map.ncd user_logic.ncd user_logic.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml user_logic.twx user_logic.ncd -o user_logic.twr user_logic.pcf 

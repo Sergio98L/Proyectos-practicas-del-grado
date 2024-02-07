@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Users\VUser\Desktop\Practica4SEDiciembre/drivers/pantalla_v1_00_a/data/pantalla_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Sun Dec 17 19:01:28 2023 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER pantalla
+
+  OPTION supported_peripherals = (pantalla);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

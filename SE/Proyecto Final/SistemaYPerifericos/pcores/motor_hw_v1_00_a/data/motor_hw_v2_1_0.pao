@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          C:/Users/VUser/Desktop/Practica5SE/pcores/motor_hw_v1_00_a/data/motor_hw_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Jan 22 16:18:31 2024 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib motor_hw_v1_00_a user_logic vhdl
+lib motor_hw_v1_00_a motor_hw vhdl
+lib motor_hw_v1_00_a motorstep vhdl
+lib motor_hw_v1_00_a 100_k_counter vhdl

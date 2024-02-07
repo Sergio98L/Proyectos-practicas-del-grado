@@ -1,0 +1,9 @@
+-p
+xc3s1000ft256-5
+-lang
+vhdl
+-intstyle
+default
+-msg
+__xps/ise/xmsgprops.lst
+system.mhs

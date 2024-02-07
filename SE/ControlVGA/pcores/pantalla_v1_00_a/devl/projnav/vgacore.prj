@@ -1,0 +1,2 @@
+vhdl work "../../hdl/vhdl/debouncer.vhd"
+vhdl work "../../hdl/vhdl/vgacore.vhd"

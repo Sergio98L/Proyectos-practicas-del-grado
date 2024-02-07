@@ -1,0 +1,16 @@
+V3 7
+FL C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd 2023/12/17.20:31:40 P.15xf
+EN work/debouncer 1702843912 \
+      FL C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/debouncer/debouncerArch 1702843913 \
+      FL C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd \
+      EN work/debouncer 1702843912
+FL C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd 2023/12/17.21:11:36 P.15xf
+EN work/vgacore 1702843914 \
+      FL C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/vgacore/vgacore_arch 1702843915 \
+      FL C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd \
+      EN work/vgacore 1702843914 CP debouncer

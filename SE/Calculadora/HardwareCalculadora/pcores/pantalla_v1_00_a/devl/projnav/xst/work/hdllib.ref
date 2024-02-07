@@ -1,0 +1,4 @@
+AR vgacore vgacore_arch C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl03 1702843915
+AR debouncer debouncerarch C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl01 1702843913
+EN debouncer NULL C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/debouncer.vhd sub00/vhpl00 1702843912
+EN vgacore NULL C:/Users/VUser/Desktop/Practica4SEDiciembre/pcores/pantalla_v1_00_a/hdl/vhdl/vgacore.vhd sub00/vhpl02 1702843914

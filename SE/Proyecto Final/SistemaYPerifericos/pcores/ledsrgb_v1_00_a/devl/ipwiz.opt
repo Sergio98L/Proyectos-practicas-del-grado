@@ -1,0 +1,10 @@
+-batch 
+-create ledsrgb 
+-ver 1.00.a 
+-dir "C:\Users\VUser\Desktop\Practica5SE" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 3 
+-xps 
+-ise 
+-driver 

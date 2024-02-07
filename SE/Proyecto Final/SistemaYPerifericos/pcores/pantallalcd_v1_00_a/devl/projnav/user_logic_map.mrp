@@ -1,0 +1,243 @@
+Release 14.1 Map P.15xf (nt64)
+Xilinx Mapping Report File for Design 'user_logic'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1000-ft256-5 -cm area -ir off -pr off
+-c 100 -o user_logic_map.ncd user_logic.ngd user_logic.pcf 
+Target Device  : xc3s1000
+Target Package : ft256
+Target Speed   : -5
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Tue Jan 23 19:20:57 2024
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:           154 out of  15,360    1%
+  Number of 4 input LUTs:               793 out of  15,360    5%
+Logic Distribution:
+  Number of occupied Slices:            451 out of   7,680    5%
+    Number of Slices containing only related logic:     451 out of     451 100%
+    Number of Slices containing unrelated logic:          0 out of     451   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         873 out of  15,360    5%
+    Number used as logic:               473
+    Number used as a route-thru:         80
+    Number used for Dual Port RAMs:     320
+      (Two LUTs used per Dual Port RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 71 out of     173   41%
+  Number of BUFGMUXs:                     2 out of       8   25%
+
+Average Fanout of Non-Clock Nets:                4.11
+
+Peak Memory Usage:  263 MB
+Total REAL time to MAP completion:  15 secs 
+Total CPU time to MAP completion:   0 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'8080@licalu.fdi.ucm.es'.
+INFO:Security:53 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:54 - 'xc3s1000' is a WebPack part.
+INFO:LIT:243 - Logical network WFIFO2IP_AlmostEmpty has no load.
+INFO:LIT:395 - The above info message is repeated 211 more times for the
+   following (max. 5 shown):
+   Bus2IP_Data<0>,
+   Bus2IP_Data<1>,
+   Bus2IP_Data<2>,
+   Bus2IP_Data<3>,
+   Bus2IP_Data<4>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Bus2IP_Clk                         | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Bus2IP_Reset                       | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| IP2Bus_Data<0>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<1>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<2>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<3>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<4>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<5>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<6>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<7>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<8>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<9>                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<10>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<11>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<12>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<13>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<14>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<15>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<16>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<17>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<18>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<19>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<20>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<21>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<22>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<23>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<24>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<25>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<26>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<27>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<28>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<29>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<30>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Data<31>                    | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_Error                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_RdAck                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2Bus_WrAck                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| IP2WFIFO_RdReq                     | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| WFIFO2IP_Data<5>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<6>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<7>                   | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<13>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<14>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<15>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<19>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<20>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<21>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<22>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<23>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<24>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<25>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<26>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<27>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<28>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<29>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<30>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Data<31>                  | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_Empty                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| WFIFO2IP_RdAck                     | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| cntl_mux                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| lcd_data_ba_rso_rc_rst2<0>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_data_ba_rso_rc_rst2<1>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_data_ba_rso_rc_rst2<2>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_data_ba_rso_rc_rst2<3>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_data_ba_rso_rc_rst2<4>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_data_ba_rso_rc_rst2<5>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_data_ba_rso_rc_rst2<6>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_data_ba_rso_rc_rst2<7>         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_e_ba_ro                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_rs_ba_cso                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| lcd_rw_ba_cc                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

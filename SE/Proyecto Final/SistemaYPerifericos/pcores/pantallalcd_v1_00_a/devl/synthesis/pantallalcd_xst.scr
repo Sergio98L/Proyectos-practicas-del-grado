@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Users\VUser\Desktop\Practica5SE\pcores\pantallalcd_v1_00_a\devl\synthesis\pantallalcd_xst.prj"
+-top pantallalcd
+-p virtex6
+-ofn "C:\Users\VUser\Desktop\Practica5SE\pcores\pantallalcd_v1_00_a\devl\synthesis\pantallalcd_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib pantallalcd_v1_00_a

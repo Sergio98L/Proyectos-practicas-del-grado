@@ -1,0 +1,14 @@
+##############################################################################
+## Filename:          C:/Users/VUser/Desktop/Practica5SE/pcores/pantallalcd_v1_00_a/data/pantallalcd_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Mon Dec 18 20:41:54 2023 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib wrpfifo_v5_01_a  all 
+lib pantallalcd_v1_00_a user_logic vhdl
+lib pantallalcd_v1_00_a pantallalcd vhdl
+lib pantallalcd_v1_00_a lcd_controller vhdl
+lib pantallalcd_v1_00_a bannerDesp vhdl
+

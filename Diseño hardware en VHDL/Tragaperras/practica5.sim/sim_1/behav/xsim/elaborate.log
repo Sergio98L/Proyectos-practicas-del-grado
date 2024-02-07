@@ -1,0 +1,30 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sintesis_tragaperras_behav xil_defaultlib.sintesis_tragaperras -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture debouncerarch of entity xil_defaultlib.debouncer [debouncer_default]
+Compiling architecture divisor_arch of entity xil_defaultlib.divisor [divisor_default]
+Compiling architecture behavioral of entity xil_defaultlib.contadorMod10 [contadormod10_default]
+Compiling architecture behavioral of entity xil_defaultlib.atraer_leds [atraer_leds_default]
+Compiling architecture behavioral of entity xil_defaultlib.win_leds [win_leds_default]
+Compiling architecture behavioral of entity xil_defaultlib.lose_leds [lose_leds_default]
+Compiling architecture behavioral of entity xil_defaultlib.generador_efectos [generador_efectos_default]
+Compiling architecture structural of entity xil_defaultlib.data_path [data_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.controller [controller_default]
+Compiling architecture structural of entity xil_defaultlib.tragaperras [tragaperras_default]
+Compiling architecture behavioral of entity xil_defaultlib.conv_7seg [conv_7seg_default]
+Compiling architecture behavioral of entity xil_defaultlib.displays [displays_default]
+Compiling architecture tragaperrasarch of entity xil_defaultlib.sintesis_tragaperras
+Built simulation snapshot sintesis_tragaperras_behav

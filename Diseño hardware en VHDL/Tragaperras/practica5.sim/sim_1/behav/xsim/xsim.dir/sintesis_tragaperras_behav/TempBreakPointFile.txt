@@ -1,0 +1,6 @@
+Breakpoint File Version 1.0
+70,true,"C:/hlocal/practica5/practica5.srcs/sources_1/new/controller.vhd"
+80,true,"C:/hlocal/practica5/practica5.srcs/sources_1/new/controller.vhd"
+90,true,"C:/hlocal/practica5/practica5.srcs/sources_1/new/controller.vhd"
+98,true,"C:/hlocal/practica5/practica5.srcs/sources_1/new/controller.vhd"
+106,true,"C:/hlocal/practica5/practica5.srcs/sources_1/new/controller.vhd"

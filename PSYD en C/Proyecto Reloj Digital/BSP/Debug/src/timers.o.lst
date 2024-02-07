@@ -1,0 +1,1327 @@
+   1              		.cpu arm7tdmi
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 18, 4
+  11              		.file	"timers.c"
+  21              	.Ltext0:
+  22              		.file 1 "../src/timers.c"
+ 1909              		.align	2
+ 1910              	loop_ms:
+ 1911 0000 00000000 		.space	4
+ 1912              		.align	2
+ 1913              	loop_s:
+ 1914 0004 00000000 		.space	4
+ 1915              		.text
+ 1916              		.align	2
+ 1917              		.global	timers_init
+ 1919              	timers_init:
+ 1920              	.LFB0:
+   1:../src/timers.c **** 
+   2:../src/timers.c **** #include <s3c44b0x.h>
+   3:../src/timers.c **** #include <s3cev40.h>
+   4:../src/timers.c **** #include <timers.h>
+   5:../src/timers.c **** 
+   6:../src/timers.c **** extern void isr_TIMER0_dummy( void );
+   7:../src/timers.c **** 
+   8:../src/timers.c **** static uint32 loop_ms = 0;
+   9:../src/timers.c **** static uint32 loop_s = 0;
+  10:../src/timers.c **** 
+  11:../src/timers.c **** static void sw_delay_init( void );
+  12:../src/timers.c **** 
+  13:../src/timers.c **** void timers_init( void )
+  14:../src/timers.c **** {
+ 1921              		.loc 1 14 0
+ 1922              		.cfi_startproc
+ 1923              		@ Function supports interworking.
+ 1924              		@ args = 0, pretend = 0, frame = 0
+ 1925              		@ frame_needed = 1, uses_anonymous_args = 0
+ 1926 0000 0DC0A0E1 		mov	ip, sp
+ 1927              	.LCFI0:
+ 1928              		.cfi_def_cfa_register 12
+ 1929 0004 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 1930 0008 04B04CE2 		sub	fp, ip, #4
+ 1931              		.cfi_offset 14, -8
+ 1932              		.cfi_offset 13, -12
+ 1933              		.cfi_offset 11, -16
+ 1934              	.LCFI1:
+ 1935              		.cfi_def_cfa 11, 4
+  15:../src/timers.c ****     TCFG0 = 0x00000000;
+ 1936              		.loc 1 15 0
+ 1937 000c BC309FE5 		ldr	r3, .L2
+ 1938 0010 0020A0E3 		mov	r2, #0
+ 1939 0014 002083E5 		str	r2, [r3, #0]
+  16:../src/timers.c ****     TCFG1 = 0x00000000;
+ 1940              		.loc 1 16 0
+ 1941 0018 B4309FE5 		ldr	r3, .L2+4
+ 1942 001c 0020A0E3 		mov	r2, #0
+ 1943 0020 002083E5 		str	r2, [r3, #0]
+  17:../src/timers.c **** 
+  18:../src/timers.c ****     TCNTB0 = 0x00000000;
+ 1944              		.loc 1 18 0
+ 1945 0024 AC309FE5 		ldr	r3, .L2+8
+ 1946 0028 0020A0E3 		mov	r2, #0
+ 1947 002c 002083E5 		str	r2, [r3, #0]
+  19:../src/timers.c ****     TCMPB0 = 0x00000000;
+ 1948              		.loc 1 19 0
+ 1949 0030 A4309FE5 		ldr	r3, .L2+12
+ 1950 0034 0020A0E3 		mov	r2, #0
+ 1951 0038 002083E5 		str	r2, [r3, #0]
+  20:../src/timers.c ****     TCNTB1 = 0x00000000;
+ 1952              		.loc 1 20 0
+ 1953 003c 9C309FE5 		ldr	r3, .L2+16
+ 1954 0040 0020A0E3 		mov	r2, #0
+ 1955 0044 002083E5 		str	r2, [r3, #0]
+  21:../src/timers.c ****     TCMPB1 = 0x00000000;
+ 1956              		.loc 1 21 0
+ 1957 0048 94309FE5 		ldr	r3, .L2+20
+ 1958 004c 0020A0E3 		mov	r2, #0
+ 1959 0050 002083E5 		str	r2, [r3, #0]
+  22:../src/timers.c ****     TCNTB2 = 0x00000000;
+ 1960              		.loc 1 22 0
+ 1961 0054 8C309FE5 		ldr	r3, .L2+24
+ 1962 0058 0020A0E3 		mov	r2, #0
+ 1963 005c 002083E5 		str	r2, [r3, #0]
+  23:../src/timers.c ****     TCMPB2 = 0x00000000;
+ 1964              		.loc 1 23 0
+ 1965 0060 84309FE5 		ldr	r3, .L2+28
+ 1966 0064 0020A0E3 		mov	r2, #0
+ 1967 0068 002083E5 		str	r2, [r3, #0]
+  24:../src/timers.c ****     TCNTB3 = 0x00000000;
+ 1968              		.loc 1 24 0
+ 1969 006c 7C309FE5 		ldr	r3, .L2+32
+ 1970 0070 0020A0E3 		mov	r2, #0
+ 1971 0074 002083E5 		str	r2, [r3, #0]
+  25:../src/timers.c ****     TCMPB3 = 0x00000000;
+ 1972              		.loc 1 25 0
+ 1973 0078 74309FE5 		ldr	r3, .L2+36
+ 1974 007c 0020A0E3 		mov	r2, #0
+ 1975 0080 002083E5 		str	r2, [r3, #0]
+  26:../src/timers.c ****     TCNTB4 = 0x00000000;
+ 1976              		.loc 1 26 0
+ 1977 0084 6C309FE5 		ldr	r3, .L2+40
+ 1978 0088 0020A0E3 		mov	r2, #0
+ 1979 008c 002083E5 		str	r2, [r3, #0]
+  27:../src/timers.c ****     TCMPB4 = 0x00000000;
+ 1980              		.loc 1 27 0
+ 1981 0090 64309FE5 		ldr	r3, .L2+44
+ 1982 0094 0020A0E3 		mov	r2, #0
+ 1983 0098 002083E5 		str	r2, [r3, #0]
+  28:../src/timers.c ****     TCNTB5 = 0x00000000;
+ 1984              		.loc 1 28 0
+ 1985 009c 5C309FE5 		ldr	r3, .L2+48
+ 1986 00a0 0020A0E3 		mov	r2, #0
+ 1987 00a4 002083E5 		str	r2, [r3, #0]
+  29:../src/timers.c **** 
+  30:../src/timers.c ****     TCON = (1<<1) | (1<<9) | (1<<13) | (1<<17) | (1<<21) | (1<<25);
+ 1988              		.loc 1 30 0
+ 1989 00a8 54309FE5 		ldr	r3, .L2+52
+ 1990 00ac 54209FE5 		ldr	r2, .L2+56
+ 1991 00b0 002083E5 		str	r2, [r3, #0]
+  31:../src/timers.c ****     TCON = (0<<1) | (0<<9) | (0<<13) | (0<<17) | (0<<21) | (0<<25);
+ 1992              		.loc 1 31 0
+ 1993 00b4 48309FE5 		ldr	r3, .L2+52
+ 1994 00b8 0020A0E3 		mov	r2, #0
+ 1995 00bc 002083E5 		str	r2, [r3, #0]
+  32:../src/timers.c **** 
+  33:../src/timers.c ****     sw_delay_init();
+ 1996              		.loc 1 33 0
+ 1997 00c0 110000EB 		bl	sw_delay_init
+  34:../src/timers.c **** }
+ 1998              		.loc 1 34 0
+ 1999 00c4 0CD04BE2 		sub	sp, fp, #12
+ 2000 00c8 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2001 00cc 1EFF2FE1 		bx	lr
+ 2002              	.L3:
+ 2003              		.align	2
+ 2004              	.L2:
+ 2005 00d0 0000D501 		.word	30736384
+ 2006 00d4 0400D501 		.word	30736388
+ 2007 00d8 0C00D501 		.word	30736396
+ 2008 00dc 1000D501 		.word	30736400
+ 2009 00e0 1800D501 		.word	30736408
+ 2010 00e4 1C00D501 		.word	30736412
+ 2011 00e8 2400D501 		.word	30736420
+ 2012 00ec 2800D501 		.word	30736424
+ 2013 00f0 3000D501 		.word	30736432
+ 2014 00f4 3400D501 		.word	30736436
+ 2015 00f8 3C00D501 		.word	30736444
+ 2016 00fc 4000D501 		.word	30736448
+ 2017 0100 4800D501 		.word	30736456
+ 2018 0104 0800D501 		.word	30736392
+ 2019 0108 02222202 		.word	35791362
+ 2020              		.cfi_endproc
+ 2021              	.LFE0:
+ 2023              		.global	__aeabi_uldivmod
+ 2024              		.align	2
+ 2026              	sw_delay_init:
+ 2027              	.LFB1:
+  35:../src/timers.c **** 
+  36:../src/timers.c **** static void sw_delay_init( void )
+  37:../src/timers.c **** {
+ 2028              		.loc 1 37 0
+ 2029              		.cfi_startproc
+ 2030              		@ Function supports interworking.
+ 2031              		@ args = 0, pretend = 0, frame = 8
+ 2032              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2033 010c 0DC0A0E1 		mov	ip, sp
+ 2034              	.LCFI2:
+ 2035              		.cfi_def_cfa_register 12
+ 2036 0110 10D82DE9 		stmfd	sp!, {r4, fp, ip, lr, pc}
+ 2037 0114 04B04CE2 		sub	fp, ip, #4
+ 2038              		.cfi_offset 14, -8
+ 2039              		.cfi_offset 13, -12
+ 2040              		.cfi_offset 11, -16
+ 2041              		.cfi_offset 4, -20
+ 2042              	.LCFI3:
+ 2043              		.cfi_def_cfa 11, 4
+ 2044 0118 0CD04DE2 		sub	sp, sp, #12
+  38:../src/timers.c ****     uint32 i;
+  39:../src/timers.c ****     
+  40:../src/timers.c ****     timer3_start();
+ 2045              		.loc 1 40 0
+ 2046 011c FEFFFFEB 		bl	timer3_start
+  41:../src/timers.c ****     for( i=1000000; i; i--);
+ 2047              		.loc 1 41 0
+ 2048 0120 88309FE5 		ldr	r3, .L7
+ 2049 0124 18300BE5 		str	r3, [fp, #-24]
+ 2050 0128 020000EA 		b	.L5
+ 2051              	.L6:
+ 2052              		.loc 1 41 0 is_stmt 0 discriminator 2
+ 2053 012c 18301BE5 		ldr	r3, [fp, #-24]
+ 2054 0130 013043E2 		sub	r3, r3, #1
+ 2055 0134 18300BE5 		str	r3, [fp, #-24]
+ 2056              	.L5:
+ 2057              		.loc 1 41 0 discriminator 1
+ 2058 0138 18301BE5 		ldr	r3, [fp, #-24]
+ 2059 013c 000053E3 		cmp	r3, #0
+ 2060 0140 F9FFFF1A 		bne	.L6
+  42:../src/timers.c ****     loop_s = ((uint64)1000000*10000)/timer3_stop();
+ 2061              		.loc 1 42 0 is_stmt 1
+ 2062 0144 FEFFFFEB 		bl	timer3_stop
+ 2063 0148 0030A0E1 		mov	r3, r0
+ 2064 014c 0320A0E1 		mov	r2, r3
+ 2065 0150 0230A0E1 		mov	r3, r2
+ 2066 0154 0040A0E3 		mov	r4, #0
+ 2067 0158 1503A0E3 		mov	r0, #1409286144
+ 2068 015c BE0A80E2 		add	r0, r0, #778240
+ 2069 0160 010B80E2 		add	r0, r0, #1024
+ 2070 0164 0210A0E3 		mov	r1, #2
+ 2071 0168 0320A0E1 		mov	r2, r3
+ 2072 016c 0430A0E1 		mov	r3, r4
+ 2073 0170 FEFFFFEB 		bl	__aeabi_uldivmod
+ 2074 0174 0030A0E1 		mov	r3, r0
+ 2075 0178 0140A0E1 		mov	r4, r1
+ 2076 017c 0320A0E1 		mov	r2, r3
+ 2077 0180 2C309FE5 		ldr	r3, .L7+4
+ 2078 0184 002083E5 		str	r2, [r3, #0]
+  43:../src/timers.c ****     loop_ms = loop_s / 1000;
+ 2079              		.loc 1 43 0
+ 2080 0188 24309FE5 		ldr	r3, .L7+4
+ 2081 018c 002093E5 		ldr	r2, [r3, #0]
+ 2082 0190 20309FE5 		ldr	r3, .L7+8
+ 2083 0194 921383E0 		umull	r1, r3, r2, r3
+ 2084 0198 2323A0E1 		mov	r2, r3, lsr #6
+ 2085 019c 18309FE5 		ldr	r3, .L7+12
+ 2086 01a0 002083E5 		str	r2, [r3, #0]
+  44:../src/timers.c **** };
+ 2087              		.loc 1 44 0
+ 2088 01a4 10D04BE2 		sub	sp, fp, #16
+ 2089 01a8 10689DE8 		ldmfd	sp, {r4, fp, sp, lr}
+ 2090 01ac 1EFF2FE1 		bx	lr
+ 2091              	.L8:
+ 2092              		.align	2
+ 2093              	.L7:
+ 2094 01b0 40420F00 		.word	1000000
+ 2095 01b4 04000000 		.word	loop_s
+ 2096 01b8 D34D6210 		.word	274877907
+ 2097 01bc 00000000 		.word	loop_ms
+ 2098              		.cfi_endproc
+ 2099              	.LFE1:
+ 2101              		.align	2
+ 2102              		.global	timer3_delay_ms
+ 2104              	timer3_delay_ms:
+ 2105              	.LFB2:
+  45:../src/timers.c **** 
+  46:../src/timers.c **** void timer3_delay_ms( uint16 n )
+  47:../src/timers.c **** {
+ 2106              		.loc 1 47 0
+ 2107              		.cfi_startproc
+ 2108              		@ Function supports interworking.
+ 2109              		@ args = 0, pretend = 0, frame = 8
+ 2110              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2111 01c0 0DC0A0E1 		mov	ip, sp
+ 2112              	.LCFI4:
+ 2113              		.cfi_def_cfa_register 12
+ 2114 01c4 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2115 01c8 04B04CE2 		sub	fp, ip, #4
+ 2116              		.cfi_offset 14, -8
+ 2117              		.cfi_offset 13, -12
+ 2118              		.cfi_offset 11, -16
+ 2119              	.LCFI5:
+ 2120              		.cfi_def_cfa 11, 4
+ 2121 01cc 08D04DE2 		sub	sp, sp, #8
+ 2122 01d0 0030A0E1 		mov	r3, r0
+ 2123 01d4 BE304BE1 		strh	r3, [fp, #-14]	@ movhi
+  48:../src/timers.c ****     for( ; n; n-- )
+ 2124              		.loc 1 48 0
+ 2125 01d8 250000EA 		b	.L10
+ 2126              	.L13:
+  49:../src/timers.c ****     {
+  50:../src/timers.c ****         /* Ajustamos el retardo
+  51:../src/timers.c ****         N=0
+  52:../src/timers.c ****         D=2
+  53:../src/timers.c ****         C=32000
+  54:../src/timers.c ****         */
+  55:../src/timers.c **** 
+  56:../src/timers.c **** 	TCFG0 = (TCFG0 & ~(0xff << 8)); // PRESCALER =0
+ 2127              		.loc 1 56 0
+ 2128 01dc A8309FE5 		ldr	r3, .L14
+ 2129 01e0 A4209FE5 		ldr	r2, .L14
+ 2130 01e4 002092E5 		ldr	r2, [r2, #0]
+ 2131 01e8 FF2CC2E3 		bic	r2, r2, #65280
+ 2132 01ec 002083E5 		str	r2, [r3, #0]
+  57:../src/timers.c **** 	TCFG1 = (TCFG1 & ~(0xf << 12)); // DIVISOR=2
+ 2133              		.loc 1 57 0
+ 2134 01f0 98309FE5 		ldr	r3, .L14+4
+ 2135 01f4 94209FE5 		ldr	r2, .L14+4
+ 2136 01f8 002092E5 		ldr	r2, [r2, #0]
+ 2137 01fc 0F2AC2E3 		bic	r2, r2, #61440
+ 2138 0200 002083E5 		str	r2, [r3, #0]
+  58:../src/timers.c **** 	TCNTB3 = 32000; //C
+ 2139              		.loc 1 58 0
+ 2140 0204 88309FE5 		ldr	r3, .L14+8
+ 2141 0208 7D2CA0E3 		mov	r2, #32000
+ 2142 020c 002083E5 		str	r2, [r3, #0]
+  59:../src/timers.c **** 
+  60:../src/timers.c **** 	TCON = (TCON & ~(0xf << 16)) | (1 << 17);
+ 2143              		.loc 1 60 0
+ 2144 0210 80309FE5 		ldr	r3, .L14+12
+ 2145 0214 7C209FE5 		ldr	r2, .L14+12
+ 2146 0218 002092E5 		ldr	r2, [r2, #0]
+ 2147 021c 0F28C2E3 		bic	r2, r2, #983040
+ 2148 0220 022882E3 		orr	r2, r2, #131072
+ 2149 0224 002083E5 		str	r2, [r3, #0]
+  61:../src/timers.c **** 	TCON = (TCON & ~(0xf << 16)) | (1 << 16);
+ 2150              		.loc 1 61 0
+ 2151 0228 68309FE5 		ldr	r3, .L14+12
+ 2152 022c 64209FE5 		ldr	r2, .L14+12
+ 2153 0230 002092E5 		ldr	r2, [r2, #0]
+ 2154 0234 0F28C2E3 		bic	r2, r2, #983040
+ 2155 0238 012882E3 		orr	r2, r2, #65536
+ 2156 023c 002083E5 		str	r2, [r3, #0]
+  62:../src/timers.c **** 
+  63:../src/timers.c **** 	while( !TCNTO3 );
+ 2157              		.loc 1 63 0
+ 2158 0240 0000A0E1 		mov	r0, r0	@ nop
+ 2159              	.L11:
+ 2160              		.loc 1 63 0 is_stmt 0 discriminator 1
+ 2161 0244 50309FE5 		ldr	r3, .L14+16
+ 2162 0248 003093E5 		ldr	r3, [r3, #0]
+ 2163 024c 000053E3 		cmp	r3, #0
+ 2164 0250 FBFFFF0A 		beq	.L11
+  64:../src/timers.c **** 	while( TCNTO3 );
+ 2165              		.loc 1 64 0 is_stmt 1
+ 2166 0254 0000A0E1 		mov	r0, r0	@ nop
+ 2167              	.L12:
+ 2168              		.loc 1 64 0 is_stmt 0 discriminator 1
+ 2169 0258 3C309FE5 		ldr	r3, .L14+16
+ 2170 025c 003093E5 		ldr	r3, [r3, #0]
+ 2171 0260 000053E3 		cmp	r3, #0
+ 2172 0264 FBFFFF1A 		bne	.L12
+  48:../src/timers.c ****     for( ; n; n-- )
+ 2173              		.loc 1 48 0 is_stmt 1
+ 2174 0268 BE305BE1 		ldrh	r3, [fp, #-14]	@ movhi
+ 2175 026c 013043E2 		sub	r3, r3, #1
+ 2176 0270 BE304BE1 		strh	r3, [fp, #-14]	@ movhi
+ 2177              	.L10:
+  48:../src/timers.c ****     for( ; n; n-- )
+ 2178              		.loc 1 48 0 is_stmt 0 discriminator 1
+ 2179 0274 BE305BE1 		ldrh	r3, [fp, #-14]
+ 2180 0278 000053E3 		cmp	r3, #0
+ 2181 027c D6FFFF1A 		bne	.L13
+  65:../src/timers.c **** 
+  66:../src/timers.c ****     }
+  67:../src/timers.c **** }
+ 2182              		.loc 1 67 0 is_stmt 1
+ 2183 0280 0CD04BE2 		sub	sp, fp, #12
+ 2184 0284 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2185 0288 1EFF2FE1 		bx	lr
+ 2186              	.L15:
+ 2187              		.align	2
+ 2188              	.L14:
+ 2189 028c 0000D501 		.word	30736384
+ 2190 0290 0400D501 		.word	30736388
+ 2191 0294 3000D501 		.word	30736432
+ 2192 0298 0800D501 		.word	30736392
+ 2193 029c 3800D501 		.word	30736440
+ 2194              		.cfi_endproc
+ 2195              	.LFE2:
+ 2197              		.align	2
+ 2198              		.global	sw_delay_ms
+ 2200              	sw_delay_ms:
+ 2201              	.LFB3:
+  68:../src/timers.c **** 
+  69:../src/timers.c **** void sw_delay_ms( uint16 n )
+  70:../src/timers.c **** {
+ 2202              		.loc 1 70 0
+ 2203              		.cfi_startproc
+ 2204              		@ Function supports interworking.
+ 2205              		@ args = 0, pretend = 0, frame = 16
+ 2206              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2207 02a0 0DC0A0E1 		mov	ip, sp
+ 2208              	.LCFI6:
+ 2209              		.cfi_def_cfa_register 12
+ 2210 02a4 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2211 02a8 04B04CE2 		sub	fp, ip, #4
+ 2212              		.cfi_offset 14, -8
+ 2213              		.cfi_offset 13, -12
+ 2214              		.cfi_offset 11, -16
+ 2215              	.LCFI7:
+ 2216              		.cfi_def_cfa 11, 4
+ 2217 02ac 10D04DE2 		sub	sp, sp, #16
+ 2218 02b0 0030A0E1 		mov	r3, r0
+ 2219 02b4 B6314BE1 		strh	r3, [fp, #-22]	@ movhi
+  71:../src/timers.c ****     uint32 i;
+  72:../src/timers.c ****     
+  73:../src/timers.c ****     for( i=loop_ms*n; i; i-- );
+ 2220              		.loc 1 73 0
+ 2221 02b8 B6315BE1 		ldrh	r3, [fp, #-22]
+ 2222 02bc 30209FE5 		ldr	r2, .L19
+ 2223 02c0 002092E5 		ldr	r2, [r2, #0]
+ 2224 02c4 920303E0 		mul	r3, r2, r3
+ 2225 02c8 10300BE5 		str	r3, [fp, #-16]
+ 2226 02cc 020000EA 		b	.L17
+ 2227              	.L18:
+ 2228              		.loc 1 73 0 is_stmt 0 discriminator 2
+ 2229 02d0 10301BE5 		ldr	r3, [fp, #-16]
+ 2230 02d4 013043E2 		sub	r3, r3, #1
+ 2231 02d8 10300BE5 		str	r3, [fp, #-16]
+ 2232              	.L17:
+ 2233              		.loc 1 73 0 discriminator 1
+ 2234 02dc 10301BE5 		ldr	r3, [fp, #-16]
+ 2235 02e0 000053E3 		cmp	r3, #0
+ 2236 02e4 F9FFFF1A 		bne	.L18
+  74:../src/timers.c **** }
+ 2237              		.loc 1 74 0 is_stmt 1
+ 2238 02e8 0CD04BE2 		sub	sp, fp, #12
+ 2239 02ec 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2240 02f0 1EFF2FE1 		bx	lr
+ 2241              	.L20:
+ 2242              		.align	2
+ 2243              	.L19:
+ 2244 02f4 00000000 		.word	loop_ms
+ 2245              		.cfi_endproc
+ 2246              	.LFE3:
+ 2248              		.align	2
+ 2249              		.global	timer3_delay_s
+ 2251              	timer3_delay_s:
+ 2252              	.LFB4:
+  75:../src/timers.c **** 
+  76:../src/timers.c **** void timer3_delay_s( uint16 n )
+  77:../src/timers.c **** {
+ 2253              		.loc 1 77 0
+ 2254              		.cfi_startproc
+ 2255              		@ Function supports interworking.
+ 2256              		@ args = 0, pretend = 0, frame = 8
+ 2257              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2258 02f8 0DC0A0E1 		mov	ip, sp
+ 2259              	.LCFI8:
+ 2260              		.cfi_def_cfa_register 12
+ 2261 02fc 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2262 0300 04B04CE2 		sub	fp, ip, #4
+ 2263              		.cfi_offset 14, -8
+ 2264              		.cfi_offset 13, -12
+ 2265              		.cfi_offset 11, -16
+ 2266              	.LCFI9:
+ 2267              		.cfi_def_cfa 11, 4
+ 2268 0304 08D04DE2 		sub	sp, sp, #8
+ 2269 0308 0030A0E1 		mov	r3, r0
+ 2270 030c BE304BE1 		strh	r3, [fp, #-14]	@ movhi
+  78:../src/timers.c **** 	 for( ; n; n-- )
+ 2271              		.loc 1 78 0
+ 2272 0310 270000EA 		b	.L22
+ 2273              	.L25:
+  79:../src/timers.c **** 	 {
+  80:../src/timers.c **** 
+  81:../src/timers.c **** 	TCFG0 = (TCFG0 & ~(0xff << 8)) | (63 << 8);
+ 2274              		.loc 1 81 0
+ 2275 0314 B0309FE5 		ldr	r3, .L26
+ 2276 0318 AC209FE5 		ldr	r2, .L26
+ 2277 031c 002092E5 		ldr	r2, [r2, #0]
+ 2278 0320 FF2CC2E3 		bic	r2, r2, #65280
+ 2279 0324 3F2C82E3 		orr	r2, r2, #16128
+ 2280 0328 002083E5 		str	r2, [r3, #0]
+  82:../src/timers.c **** 	TCFG1 = (TCFG1 & ~(0xf << 12)) | (4 << 12);
+ 2281              		.loc 1 82 0
+ 2282 032c 9C309FE5 		ldr	r3, .L26+4
+ 2283 0330 98209FE5 		ldr	r2, .L26+4
+ 2284 0334 002092E5 		ldr	r2, [r2, #0]
+ 2285 0338 0F2AC2E3 		bic	r2, r2, #61440
+ 2286 033c 012982E3 		orr	r2, r2, #16384
+ 2287 0340 002083E5 		str	r2, [r3, #0]
+  83:../src/timers.c **** 
+  84:../src/timers.c **** 	TCNTB3 = 31250;
+ 2288              		.loc 1 84 0
+ 2289 0344 88309FE5 		ldr	r3, .L26+8
+ 2290 0348 88209FE5 		ldr	r2, .L26+12
+ 2291 034c 002083E5 		str	r2, [r3, #0]
+  85:../src/timers.c **** 
+  86:../src/timers.c **** 	TCON = (TCON & ~(0xf << 16)) | (1 << 17);
+ 2292              		.loc 1 86 0
+ 2293 0350 84309FE5 		ldr	r3, .L26+16
+ 2294 0354 80209FE5 		ldr	r2, .L26+16
+ 2295 0358 002092E5 		ldr	r2, [r2, #0]
+ 2296 035c 0F28C2E3 		bic	r2, r2, #983040
+ 2297 0360 022882E3 		orr	r2, r2, #131072
+ 2298 0364 002083E5 		str	r2, [r3, #0]
+  87:../src/timers.c **** 	TCON = (TCON & ~(0xf << 16)) | (1 << 16);
+ 2299              		.loc 1 87 0
+ 2300 0368 6C309FE5 		ldr	r3, .L26+16
+ 2301 036c 68209FE5 		ldr	r2, .L26+16
+ 2302 0370 002092E5 		ldr	r2, [r2, #0]
+ 2303 0374 0F28C2E3 		bic	r2, r2, #983040
+ 2304 0378 012882E3 		orr	r2, r2, #65536
+ 2305 037c 002083E5 		str	r2, [r3, #0]
+  88:../src/timers.c **** 
+  89:../src/timers.c **** 	while( !TCNTO3 );
+ 2306              		.loc 1 89 0
+ 2307 0380 0000A0E1 		mov	r0, r0	@ nop
+ 2308              	.L23:
+ 2309              		.loc 1 89 0 is_stmt 0 discriminator 1
+ 2310 0384 54309FE5 		ldr	r3, .L26+20
+ 2311 0388 003093E5 		ldr	r3, [r3, #0]
+ 2312 038c 000053E3 		cmp	r3, #0
+ 2313 0390 FBFFFF0A 		beq	.L23
+  90:../src/timers.c **** 	while( TCNTO3 );
+ 2314              		.loc 1 90 0 is_stmt 1
+ 2315 0394 0000A0E1 		mov	r0, r0	@ nop
+ 2316              	.L24:
+ 2317              		.loc 1 90 0 is_stmt 0 discriminator 1
+ 2318 0398 40309FE5 		ldr	r3, .L26+20
+ 2319 039c 003093E5 		ldr	r3, [r3, #0]
+ 2320 03a0 000053E3 		cmp	r3, #0
+ 2321 03a4 FBFFFF1A 		bne	.L24
+  78:../src/timers.c **** 	 for( ; n; n-- )
+ 2322              		.loc 1 78 0 is_stmt 1
+ 2323 03a8 BE305BE1 		ldrh	r3, [fp, #-14]	@ movhi
+ 2324 03ac 013043E2 		sub	r3, r3, #1
+ 2325 03b0 BE304BE1 		strh	r3, [fp, #-14]	@ movhi
+ 2326              	.L22:
+  78:../src/timers.c **** 	 for( ; n; n-- )
+ 2327              		.loc 1 78 0 is_stmt 0 discriminator 1
+ 2328 03b4 BE305BE1 		ldrh	r3, [fp, #-14]
+ 2329 03b8 000053E3 		cmp	r3, #0
+ 2330 03bc D4FFFF1A 		bne	.L25
+  91:../src/timers.c **** 
+  92:../src/timers.c **** 	 }
+  93:../src/timers.c **** }
+ 2331              		.loc 1 93 0 is_stmt 1
+ 2332 03c0 0CD04BE2 		sub	sp, fp, #12
+ 2333 03c4 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2334 03c8 1EFF2FE1 		bx	lr
+ 2335              	.L27:
+ 2336              		.align	2
+ 2337              	.L26:
+ 2338 03cc 0000D501 		.word	30736384
+ 2339 03d0 0400D501 		.word	30736388
+ 2340 03d4 3000D501 		.word	30736432
+ 2341 03d8 127A0000 		.word	31250
+ 2342 03dc 0800D501 		.word	30736392
+ 2343 03e0 3800D501 		.word	30736440
+ 2344              		.cfi_endproc
+ 2345              	.LFE4:
+ 2347              		.align	2
+ 2348              		.global	sw_delay_s
+ 2350              	sw_delay_s:
+ 2351              	.LFB5:
+  94:../src/timers.c **** 
+  95:../src/timers.c **** void sw_delay_s( uint16 n )
+  96:../src/timers.c **** {
+ 2352              		.loc 1 96 0
+ 2353              		.cfi_startproc
+ 2354              		@ Function supports interworking.
+ 2355              		@ args = 0, pretend = 0, frame = 16
+ 2356              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2357 03e4 0DC0A0E1 		mov	ip, sp
+ 2358              	.LCFI10:
+ 2359              		.cfi_def_cfa_register 12
+ 2360 03e8 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2361 03ec 04B04CE2 		sub	fp, ip, #4
+ 2362              		.cfi_offset 14, -8
+ 2363              		.cfi_offset 13, -12
+ 2364              		.cfi_offset 11, -16
+ 2365              	.LCFI11:
+ 2366              		.cfi_def_cfa 11, 4
+ 2367 03f0 10D04DE2 		sub	sp, sp, #16
+ 2368 03f4 0030A0E1 		mov	r3, r0
+ 2369 03f8 B6314BE1 		strh	r3, [fp, #-22]	@ movhi
+  97:../src/timers.c ****     uint32 i;
+  98:../src/timers.c ****     
+  99:../src/timers.c ****     for( i=loop_s*n; i; i-- );
+ 2370              		.loc 1 99 0
+ 2371 03fc B6315BE1 		ldrh	r3, [fp, #-22]
+ 2372 0400 30209FE5 		ldr	r2, .L31
+ 2373 0404 002092E5 		ldr	r2, [r2, #0]
+ 2374 0408 920303E0 		mul	r3, r2, r3
+ 2375 040c 10300BE5 		str	r3, [fp, #-16]
+ 2376 0410 020000EA 		b	.L29
+ 2377              	.L30:
+ 2378              		.loc 1 99 0 is_stmt 0 discriminator 2
+ 2379 0414 10301BE5 		ldr	r3, [fp, #-16]
+ 2380 0418 013043E2 		sub	r3, r3, #1
+ 2381 041c 10300BE5 		str	r3, [fp, #-16]
+ 2382              	.L29:
+ 2383              		.loc 1 99 0 discriminator 1
+ 2384 0420 10301BE5 		ldr	r3, [fp, #-16]
+ 2385 0424 000053E3 		cmp	r3, #0
+ 2386 0428 F9FFFF1A 		bne	.L30
+ 100:../src/timers.c **** }
+ 2387              		.loc 1 100 0 is_stmt 1
+ 2388 042c 0CD04BE2 		sub	sp, fp, #12
+ 2389 0430 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2390 0434 1EFF2FE1 		bx	lr
+ 2391              	.L32:
+ 2392              		.align	2
+ 2393              	.L31:
+ 2394 0438 04000000 		.word	loop_s
+ 2395              		.cfi_endproc
+ 2396              	.LFE5:
+ 2398              		.align	2
+ 2399              		.global	timer3_start
+ 2401              	timer3_start:
+ 2402              	.LFB6:
+ 101:../src/timers.c **** 
+ 102:../src/timers.c **** void timer3_start( void ) 
+ 103:../src/timers.c **** {
+ 2403              		.loc 1 103 0
+ 2404              		.cfi_startproc
+ 2405              		@ Function supports interworking.
+ 2406              		@ args = 0, pretend = 0, frame = 0
+ 2407              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2408 043c 0DC0A0E1 		mov	ip, sp
+ 2409              	.LCFI12:
+ 2410              		.cfi_def_cfa_register 12
+ 2411 0440 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2412 0444 04B04CE2 		sub	fp, ip, #4
+ 2413              		.cfi_offset 14, -8
+ 2414              		.cfi_offset 13, -12
+ 2415              		.cfi_offset 11, -16
+ 2416              	.LCFI13:
+ 2417              		.cfi_def_cfa 11, 4
+ 104:../src/timers.c ****     TCFG0 = (TCFG0 & ~(0xff << 8)) | (199 << 8);    
+ 2418              		.loc 1 104 0
+ 2419 0448 84309FE5 		ldr	r3, .L35
+ 2420 044c 80209FE5 		ldr	r2, .L35
+ 2421 0450 002092E5 		ldr	r2, [r2, #0]
+ 2422 0454 FF2CC2E3 		bic	r2, r2, #65280
+ 2423 0458 C72C82E3 		orr	r2, r2, #50944
+ 2424 045c 002083E5 		str	r2, [r3, #0]
+ 105:../src/timers.c ****     TCFG1 = (TCFG1 & ~(0xf << 12)) | (4 << 12);
+ 2425              		.loc 1 105 0
+ 2426 0460 70309FE5 		ldr	r3, .L35+4
+ 2427 0464 6C209FE5 		ldr	r2, .L35+4
+ 2428 0468 002092E5 		ldr	r2, [r2, #0]
+ 2429 046c 0F2AC2E3 		bic	r2, r2, #61440
+ 2430 0470 012982E3 		orr	r2, r2, #16384
+ 2431 0474 002083E5 		str	r2, [r3, #0]
+ 106:../src/timers.c ****     
+ 107:../src/timers.c ****     TCNTB3 = 0xffff; 
+ 2432              		.loc 1 107 0
+ 2433 0478 5C309FE5 		ldr	r3, .L35+8
+ 2434 047c 5C209FE5 		ldr	r2, .L35+12
+ 2435 0480 002083E5 		str	r2, [r3, #0]
+ 108:../src/timers.c ****     TCON = (TCON & ~(0xf << 16)) | (1 << 17);
+ 2436              		.loc 1 108 0
+ 2437 0484 58309FE5 		ldr	r3, .L35+16
+ 2438 0488 54209FE5 		ldr	r2, .L35+16
+ 2439 048c 002092E5 		ldr	r2, [r2, #0]
+ 2440 0490 0F28C2E3 		bic	r2, r2, #983040
+ 2441 0494 022882E3 		orr	r2, r2, #131072
+ 2442 0498 002083E5 		str	r2, [r3, #0]
+ 109:../src/timers.c ****     TCON = (TCON & ~(0xf << 16)) | (1 << 16);
+ 2443              		.loc 1 109 0
+ 2444 049c 40309FE5 		ldr	r3, .L35+16
+ 2445 04a0 3C209FE5 		ldr	r2, .L35+16
+ 2446 04a4 002092E5 		ldr	r2, [r2, #0]
+ 2447 04a8 0F28C2E3 		bic	r2, r2, #983040
+ 2448 04ac 012882E3 		orr	r2, r2, #65536
+ 2449 04b0 002083E5 		str	r2, [r3, #0]
+ 110:../src/timers.c ****     while( !TCNTO3 );
+ 2450              		.loc 1 110 0
+ 2451 04b4 0000A0E1 		mov	r0, r0	@ nop
+ 2452              	.L34:
+ 2453              		.loc 1 110 0 is_stmt 0 discriminator 1
+ 2454 04b8 28309FE5 		ldr	r3, .L35+20
+ 2455 04bc 003093E5 		ldr	r3, [r3, #0]
+ 2456 04c0 000053E3 		cmp	r3, #0
+ 2457 04c4 FBFFFF0A 		beq	.L34
+ 111:../src/timers.c **** }
+ 2458              		.loc 1 111 0 is_stmt 1
+ 2459 04c8 0CD04BE2 		sub	sp, fp, #12
+ 2460 04cc 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2461 04d0 1EFF2FE1 		bx	lr
+ 2462              	.L36:
+ 2463              		.align	2
+ 2464              	.L35:
+ 2465 04d4 0000D501 		.word	30736384
+ 2466 04d8 0400D501 		.word	30736388
+ 2467 04dc 3000D501 		.word	30736432
+ 2468 04e0 FFFF0000 		.word	65535
+ 2469 04e4 0800D501 		.word	30736392
+ 2470 04e8 3800D501 		.word	30736440
+ 2471              		.cfi_endproc
+ 2472              	.LFE6:
+ 2474              		.align	2
+ 2475              		.global	timer3_stop
+ 2477              	timer3_stop:
+ 2478              	.LFB7:
+ 112:../src/timers.c **** 
+ 113:../src/timers.c **** uint16 timer3_stop( void )
+ 114:../src/timers.c **** {
+ 2479              		.loc 1 114 0
+ 2480              		.cfi_startproc
+ 2481              		@ Function supports interworking.
+ 2482              		@ args = 0, pretend = 0, frame = 0
+ 2483              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2484 04ec 0DC0A0E1 		mov	ip, sp
+ 2485              	.LCFI14:
+ 2486              		.cfi_def_cfa_register 12
+ 2487 04f0 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2488 04f4 04B04CE2 		sub	fp, ip, #4
+ 2489              		.cfi_offset 14, -8
+ 2490              		.cfi_offset 13, -12
+ 2491              		.cfi_offset 11, -16
+ 2492              	.LCFI15:
+ 2493              		.cfi_def_cfa 11, 4
+ 115:../src/timers.c ****     TCON &= ~(1 << 16);
+ 2494              		.loc 1 115 0
+ 2495 04f8 38309FE5 		ldr	r3, .L38
+ 2496 04fc 34209FE5 		ldr	r2, .L38
+ 2497 0500 002092E5 		ldr	r2, [r2, #0]
+ 2498 0504 0128C2E3 		bic	r2, r2, #65536
+ 2499 0508 002083E5 		str	r2, [r3, #0]
+ 116:../src/timers.c ****     return 0xffff - TCNTO3;
+ 2500              		.loc 1 116 0
+ 2501 050c 28309FE5 		ldr	r3, .L38+4
+ 2502 0510 003093E5 		ldr	r3, [r3, #0]
+ 2503 0514 0338A0E1 		mov	r3, r3, asl #16
+ 2504 0518 2338A0E1 		mov	r3, r3, lsr #16
+ 2505 051c 0330E0E1 		mvn	r3, r3
+ 2506 0520 0338A0E1 		mov	r3, r3, asl #16
+ 2507 0524 2338A0E1 		mov	r3, r3, lsr #16
+ 117:../src/timers.c **** }
+ 2508              		.loc 1 117 0
+ 2509 0528 0300A0E1 		mov	r0, r3
+ 2510 052c 0CD04BE2 		sub	sp, fp, #12
+ 2511 0530 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2512 0534 1EFF2FE1 		bx	lr
+ 2513              	.L39:
+ 2514              		.align	2
+ 2515              	.L38:
+ 2516 0538 0800D501 		.word	30736392
+ 2517 053c 3800D501 		.word	30736440
+ 2518              		.cfi_endproc
+ 2519              	.LFE7:
+ 2521              		.align	2
+ 2522              		.global	timer3_start_timeout
+ 2524              	timer3_start_timeout:
+ 2525              	.LFB8:
+ 118:../src/timers.c **** 
+ 119:../src/timers.c **** void timer3_start_timeout( uint16 n ) 
+ 120:../src/timers.c **** {
+ 2526              		.loc 1 120 0
+ 2527              		.cfi_startproc
+ 2528              		@ Function supports interworking.
+ 2529              		@ args = 0, pretend = 0, frame = 8
+ 2530              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2531 0540 0DC0A0E1 		mov	ip, sp
+ 2532              	.LCFI16:
+ 2533              		.cfi_def_cfa_register 12
+ 2534 0544 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2535 0548 04B04CE2 		sub	fp, ip, #4
+ 2536              		.cfi_offset 14, -8
+ 2537              		.cfi_offset 13, -12
+ 2538              		.cfi_offset 11, -16
+ 2539              	.LCFI17:
+ 2540              		.cfi_def_cfa 11, 4
+ 2541 054c 08D04DE2 		sub	sp, sp, #8
+ 2542 0550 0030A0E1 		mov	r3, r0
+ 2543 0554 BE304BE1 		strh	r3, [fp, #-14]	@ movhi
+ 121:../src/timers.c ****     TCFG0 = (TCFG0 & ~(0xff << 8)) | (199 << 8);          
+ 2544              		.loc 1 121 0
+ 2545 0558 84309FE5 		ldr	r3, .L42
+ 2546 055c 80209FE5 		ldr	r2, .L42
+ 2547 0560 002092E5 		ldr	r2, [r2, #0]
+ 2548 0564 FF2CC2E3 		bic	r2, r2, #65280
+ 2549 0568 C72C82E3 		orr	r2, r2, #50944
+ 2550 056c 002083E5 		str	r2, [r3, #0]
+ 122:../src/timers.c ****     TCFG1 = (TCFG1 & ~(0xf << 12)) | (4 << 12);
+ 2551              		.loc 1 122 0
+ 2552 0570 70309FE5 		ldr	r3, .L42+4
+ 2553 0574 6C209FE5 		ldr	r2, .L42+4
+ 2554 0578 002092E5 		ldr	r2, [r2, #0]
+ 2555 057c 0F2AC2E3 		bic	r2, r2, #61440
+ 2556 0580 012982E3 		orr	r2, r2, #16384
+ 2557 0584 002083E5 		str	r2, [r3, #0]
+ 123:../src/timers.c ****     
+ 124:../src/timers.c ****     TCNTB3 = n; 
+ 2558              		.loc 1 124 0
+ 2559 0588 5C309FE5 		ldr	r3, .L42+8
+ 2560 058c BE205BE1 		ldrh	r2, [fp, #-14]
+ 2561 0590 002083E5 		str	r2, [r3, #0]
+ 125:../src/timers.c ****     TCON = (TCON & ~(0xf << 16)) | (1 << 17);
+ 2562              		.loc 1 125 0
+ 2563 0594 54309FE5 		ldr	r3, .L42+12
+ 2564 0598 50209FE5 		ldr	r2, .L42+12
+ 2565 059c 002092E5 		ldr	r2, [r2, #0]
+ 2566 05a0 0F28C2E3 		bic	r2, r2, #983040
+ 2567 05a4 022882E3 		orr	r2, r2, #131072
+ 2568 05a8 002083E5 		str	r2, [r3, #0]
+ 126:../src/timers.c ****     TCON = (TCON & ~(0xf << 16)) | (1 << 16);
+ 2569              		.loc 1 126 0
+ 2570 05ac 3C309FE5 		ldr	r3, .L42+12
+ 2571 05b0 38209FE5 		ldr	r2, .L42+12
+ 2572 05b4 002092E5 		ldr	r2, [r2, #0]
+ 2573 05b8 0F28C2E3 		bic	r2, r2, #983040
+ 2574 05bc 012882E3 		orr	r2, r2, #65536
+ 2575 05c0 002083E5 		str	r2, [r3, #0]
+ 127:../src/timers.c ****     while( !TCNTO3 );
+ 2576              		.loc 1 127 0
+ 2577 05c4 0000A0E1 		mov	r0, r0	@ nop
+ 2578              	.L41:
+ 2579              		.loc 1 127 0 is_stmt 0 discriminator 1
+ 2580 05c8 24309FE5 		ldr	r3, .L42+16
+ 2581 05cc 003093E5 		ldr	r3, [r3, #0]
+ 2582 05d0 000053E3 		cmp	r3, #0
+ 2583 05d4 FBFFFF0A 		beq	.L41
+ 128:../src/timers.c **** }
+ 2584              		.loc 1 128 0 is_stmt 1
+ 2585 05d8 0CD04BE2 		sub	sp, fp, #12
+ 2586 05dc 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2587 05e0 1EFF2FE1 		bx	lr
+ 2588              	.L43:
+ 2589              		.align	2
+ 2590              	.L42:
+ 2591 05e4 0000D501 		.word	30736384
+ 2592 05e8 0400D501 		.word	30736388
+ 2593 05ec 3000D501 		.word	30736432
+ 2594 05f0 0800D501 		.word	30736392
+ 2595 05f4 3800D501 		.word	30736440
+ 2596              		.cfi_endproc
+ 2597              	.LFE8:
+ 2599              		.align	2
+ 2600              		.global	timer3_timeout
+ 2602              	timer3_timeout:
+ 2603              	.LFB9:
+ 129:../src/timers.c **** 
+ 130:../src/timers.c **** uint16 timer3_timeout( )
+ 131:../src/timers.c **** {
+ 2604              		.loc 1 131 0
+ 2605              		.cfi_startproc
+ 2606              		@ Function supports interworking.
+ 2607              		@ args = 0, pretend = 0, frame = 0
+ 2608              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2609 05f8 0DC0A0E1 		mov	ip, sp
+ 2610              	.LCFI18:
+ 2611              		.cfi_def_cfa_register 12
+ 2612 05fc 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2613 0600 04B04CE2 		sub	fp, ip, #4
+ 2614              		.cfi_offset 14, -8
+ 2615              		.cfi_offset 13, -12
+ 2616              		.cfi_offset 11, -16
+ 2617              	.LCFI19:
+ 2618              		.cfi_def_cfa 11, 4
+ 132:../src/timers.c ****     return !TCNTO3;
+ 2619              		.loc 1 132 0
+ 2620 0604 24309FE5 		ldr	r3, .L45
+ 2621 0608 003093E5 		ldr	r3, [r3, #0]
+ 2622 060c 000053E3 		cmp	r3, #0
+ 2623 0610 0030A013 		movne	r3, #0
+ 2624 0614 0130A003 		moveq	r3, #1
+ 2625 0618 0338A0E1 		mov	r3, r3, asl #16
+ 2626 061c 2338A0E1 		mov	r3, r3, lsr #16
+ 133:../src/timers.c **** }    
+ 2627              		.loc 1 133 0
+ 2628 0620 0300A0E1 		mov	r0, r3
+ 2629 0624 0CD04BE2 		sub	sp, fp, #12
+ 2630 0628 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2631 062c 1EFF2FE1 		bx	lr
+ 2632              	.L46:
+ 2633              		.align	2
+ 2634              	.L45:
+ 2635 0630 3800D501 		.word	30736440
+ 2636              		.cfi_endproc
+ 2637              	.LFE9:
+ 2639              		.global	__aeabi_uidiv
+ 2640              		.align	2
+ 2641              		.global	timer0_open_tick
+ 2643              	timer0_open_tick:
+ 2644              	.LFB10:
+ 134:../src/timers.c **** 
+ 135:../src/timers.c **** void timer0_open_tick( void (*isr)(void), uint16 tps )
+ 136:../src/timers.c **** {
+ 2645              		.loc 1 136 0
+ 2646              		.cfi_startproc
+ 2647              		@ Function supports interworking.
+ 2648              		@ args = 0, pretend = 0, frame = 8
+ 2649              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2650 0634 0DC0A0E1 		mov	ip, sp
+ 2651              	.LCFI20:
+ 2652              		.cfi_def_cfa_register 12
+ 2653 0638 10D82DE9 		stmfd	sp!, {r4, fp, ip, lr, pc}
+ 2654 063c 04B04CE2 		sub	fp, ip, #4
+ 2655              		.cfi_offset 14, -8
+ 2656              		.cfi_offset 13, -12
+ 2657              		.cfi_offset 11, -16
+ 2658              		.cfi_offset 4, -20
+ 2659              	.LCFI21:
+ 2660              		.cfi_def_cfa 11, 4
+ 2661 0640 0CD04DE2 		sub	sp, sp, #12
+ 2662 0644 18000BE5 		str	r0, [fp, #-24]
+ 2663 0648 0130A0E1 		mov	r3, r1
+ 2664 064c BA314BE1 		strh	r3, [fp, #-26]	@ movhi
+ 137:../src/timers.c ****     pISR_TIMER0 = (uint32)isr;
+ 2665              		.loc 1 137 0
+ 2666 0650 F4319FE5 		ldr	r3, .L52
+ 2667 0654 18201BE5 		ldr	r2, [fp, #-24]
+ 2668 0658 002083E5 		str	r2, [r3, #0]
+ 138:../src/timers.c ****     I_ISPC      = ~BIT_TIMER0;
+ 2669              		.loc 1 138 0
+ 2670 065c EC319FE5 		ldr	r3, .L52+4
+ 2671 0660 022AE0E3 		mvn	r2, #8192
+ 2672 0664 002083E5 		str	r2, [r3, #0]
+ 139:../src/timers.c ****     INTMSK     &= ~(BIT_GLOBAL | BIT_TIMER0);
+ 2673              		.loc 1 139 0
+ 2674 0668 E4219FE5 		ldr	r2, .L52+8
+ 2675 066c E0319FE5 		ldr	r3, .L52+8
+ 2676 0670 003093E5 		ldr	r3, [r3, #0]
+ 2677 0674 0133C3E3 		bic	r3, r3, #67108864
+ 2678 0678 023AC3E3 		bic	r3, r3, #8192
+ 2679 067c 003082E5 		str	r3, [r2, #0]
+ 140:../src/timers.c **** 
+ 141:../src/timers.c ****     if( tps > 0 && tps <= 10 ) {
+ 2680              		.loc 1 141 0
+ 2681 0680 BA315BE1 		ldrh	r3, [fp, #-26]
+ 2682 0684 000053E3 		cmp	r3, #0
+ 2683 0688 1800000A 		beq	.L48
+ 2684              		.loc 1 141 0 is_stmt 0 discriminator 1
+ 2685 068c BA315BE1 		ldrh	r3, [fp, #-26]
+ 2686 0690 0A0053E3 		cmp	r3, #10
+ 2687 0694 1500008A 		bhi	.L48
+ 142:../src/timers.c ****         TCFG0  = (TCFG0 & ~(0xff)) | (99);
+ 2688              		.loc 1 142 0 is_stmt 1
+ 2689 0698 B8319FE5 		ldr	r3, .L52+12
+ 2690 069c B4219FE5 		ldr	r2, .L52+12
+ 2691 06a0 002092E5 		ldr	r2, [r2, #0]
+ 2692 06a4 FF20C2E3 		bic	r2, r2, #255
+ 2693 06a8 632082E3 		orr	r2, r2, #99
+ 2694 06ac 002083E5 		str	r2, [r3, #0]
+ 143:../src/timers.c ****         TCFG1  = (TCFG1 & ~(0xf)) | (3);
+ 2695              		.loc 1 143 0
+ 2696 06b0 A4319FE5 		ldr	r3, .L52+16
+ 2697 06b4 A0219FE5 		ldr	r2, .L52+16
+ 2698 06b8 002092E5 		ldr	r2, [r2, #0]
+ 2699 06bc 0F20C2E3 		bic	r2, r2, #15
+ 2700 06c0 032082E3 		orr	r2, r2, #3
+ 2701 06c4 002083E5 		str	r2, [r3, #0]
+ 144:../src/timers.c ****         TCNTB0 = (40000U / tps);
+ 2702              		.loc 1 144 0
+ 2703 06c8 90419FE5 		ldr	r4, .L52+20
+ 2704 06cc BA315BE1 		ldrh	r3, [fp, #-26]
+ 2705 06d0 8C019FE5 		ldr	r0, .L52+24
+ 2706 06d4 0310A0E1 		mov	r1, r3
+ 2707 06d8 FEFFFFEB 		bl	__aeabi_uidiv
+ 2708 06dc 0030A0E1 		mov	r3, r0
+ 2709 06e0 0338A0E1 		mov	r3, r3, asl #16
+ 2710 06e4 2338A0E1 		mov	r3, r3, lsr #16
+ 2711 06e8 003084E5 		str	r3, [r4, #0]
+ 2712 06ec 470000EA 		b	.L49
+ 2713              	.L48:
+ 145:../src/timers.c **** 
+ 146:../src/timers.c ****     } else if( tps > 10 && tps <= 100 ) {
+ 2714              		.loc 1 146 0
+ 2715 06f0 BA315BE1 		ldrh	r3, [fp, #-26]
+ 2716 06f4 0A0053E3 		cmp	r3, #10
+ 2717 06f8 1600009A 		bls	.L50
+ 2718              		.loc 1 146 0 is_stmt 0 discriminator 1
+ 2719 06fc BA315BE1 		ldrh	r3, [fp, #-26]
+ 2720 0700 640053E3 		cmp	r3, #100
+ 2721 0704 1300008A 		bhi	.L50
+ 147:../src/timers.c ****         TCFG0  = (TCFG0 & ~(0xff)) | (9);
+ 2722              		.loc 1 147 0 is_stmt 1
+ 2723 0708 48319FE5 		ldr	r3, .L52+12
+ 2724 070c 44219FE5 		ldr	r2, .L52+12
+ 2725 0710 002092E5 		ldr	r2, [r2, #0]
+ 2726 0714 FF20C2E3 		bic	r2, r2, #255
+ 2727 0718 092082E3 		orr	r2, r2, #9
+ 2728 071c 002083E5 		str	r2, [r3, #0]
+ 148:../src/timers.c ****         TCFG1  = (TCFG1 & ~(0xf)) | (3);
+ 2729              		.loc 1 148 0
+ 2730 0720 34319FE5 		ldr	r3, .L52+16
+ 2731 0724 30219FE5 		ldr	r2, .L52+16
+ 2732 0728 002092E5 		ldr	r2, [r2, #0]
+ 2733 072c 0F20C2E3 		bic	r2, r2, #15
+ 2734 0730 032082E3 		orr	r2, r2, #3
+ 2735 0734 002083E5 		str	r2, [r3, #0]
+ 149:../src/timers.c ****         TCNTB0 = (400000U / (uint32) tps);
+ 2736              		.loc 1 149 0
+ 2737 0738 20419FE5 		ldr	r4, .L52+20
+ 2738 073c BA315BE1 		ldrh	r3, [fp, #-26]
+ 2739 0740 20019FE5 		ldr	r0, .L52+28
+ 2740 0744 0310A0E1 		mov	r1, r3
+ 2741 0748 FEFFFFEB 		bl	__aeabi_uidiv
+ 2742 074c 0030A0E1 		mov	r3, r0
+ 2743 0750 003084E5 		str	r3, [r4, #0]
+ 2744 0754 2D0000EA 		b	.L49
+ 2745              	.L50:
+ 150:../src/timers.c **** 
+ 151:../src/timers.c ****     } else if( tps > 100 && tps <= 1000 ) {
+ 2746              		.loc 1 151 0
+ 2747 0758 BA315BE1 		ldrh	r3, [fp, #-26]
+ 2748 075c 640053E3 		cmp	r3, #100
+ 2749 0760 1600009A 		bls	.L51
+ 2750              		.loc 1 151 0 is_stmt 0 discriminator 1
+ 2751 0764 BA315BE1 		ldrh	r3, [fp, #-26]
+ 2752 0768 FA0F53E3 		cmp	r3, #1000
+ 2753 076c 1300008A 		bhi	.L51
+ 152:../src/timers.c ****         TCFG0  = (TCFG0 & ~(0xff)) | (1);
+ 2754              		.loc 1 152 0 is_stmt 1
+ 2755 0770 E0309FE5 		ldr	r3, .L52+12
+ 2756 0774 DC209FE5 		ldr	r2, .L52+12
+ 2757 0778 002092E5 		ldr	r2, [r2, #0]
+ 2758 077c FF20C2E3 		bic	r2, r2, #255
+ 2759 0780 012082E3 		orr	r2, r2, #1
+ 2760 0784 002083E5 		str	r2, [r3, #0]
+ 153:../src/timers.c ****         TCFG1  = (TCFG1 & ~(0xf)) | (2);
+ 2761              		.loc 1 153 0
+ 2762 0788 CC309FE5 		ldr	r3, .L52+16
+ 2763 078c C8209FE5 		ldr	r2, .L52+16
+ 2764 0790 002092E5 		ldr	r2, [r2, #0]
+ 2765 0794 0F20C2E3 		bic	r2, r2, #15
+ 2766 0798 022082E3 		orr	r2, r2, #2
+ 2767 079c 002083E5 		str	r2, [r3, #0]
+ 154:../src/timers.c ****         TCNTB0 = (4000000U / (uint32) tps);
+ 2768              		.loc 1 154 0
+ 2769 07a0 B8409FE5 		ldr	r4, .L52+20
+ 2770 07a4 BA315BE1 		ldrh	r3, [fp, #-26]
+ 2771 07a8 BC009FE5 		ldr	r0, .L52+32
+ 2772 07ac 0310A0E1 		mov	r1, r3
+ 2773 07b0 FEFFFFEB 		bl	__aeabi_uidiv
+ 2774 07b4 0030A0E1 		mov	r3, r0
+ 2775 07b8 003084E5 		str	r3, [r4, #0]
+ 2776 07bc 130000EA 		b	.L49
+ 2777              	.L51:
+ 155:../src/timers.c **** 
+ 156:../src/timers.c ****     } else if ( tps > 1000 ) {
+ 2778              		.loc 1 156 0
+ 2779 07c0 BA315BE1 		ldrh	r3, [fp, #-26]
+ 2780 07c4 FA0F53E3 		cmp	r3, #1000
+ 2781 07c8 1000009A 		bls	.L49
+ 157:../src/timers.c ****         TCFG0  = (TCFG0 & ~(0xff));
+ 2782              		.loc 1 157 0
+ 2783 07cc 84309FE5 		ldr	r3, .L52+12
+ 2784 07d0 80209FE5 		ldr	r2, .L52+12
+ 2785 07d4 002092E5 		ldr	r2, [r2, #0]
+ 2786 07d8 FF20C2E3 		bic	r2, r2, #255
+ 2787 07dc 002083E5 		str	r2, [r3, #0]
+ 158:../src/timers.c ****         TCFG1  = (TCFG1 & ~(0xf));
+ 2788              		.loc 1 158 0
+ 2789 07e0 74309FE5 		ldr	r3, .L52+16
+ 2790 07e4 70209FE5 		ldr	r2, .L52+16
+ 2791 07e8 002092E5 		ldr	r2, [r2, #0]
+ 2792 07ec 0F20C2E3 		bic	r2, r2, #15
+ 2793 07f0 002083E5 		str	r2, [r3, #0]
+ 159:../src/timers.c ****         TCNTB0 = (32000000U / (uint32) tps);
+ 2794              		.loc 1 159 0
+ 2795 07f4 64409FE5 		ldr	r4, .L52+20
+ 2796 07f8 BA315BE1 		ldrh	r3, [fp, #-26]
+ 2797 07fc 6C009FE5 		ldr	r0, .L52+36
+ 2798 0800 0310A0E1 		mov	r1, r3
+ 2799 0804 FEFFFFEB 		bl	__aeabi_uidiv
+ 2800 0808 0030A0E1 		mov	r3, r0
+ 2801 080c 003084E5 		str	r3, [r4, #0]
+ 2802              	.L49:
+ 160:../src/timers.c ****     }
+ 161:../src/timers.c **** 
+ 162:../src/timers.c ****     TCON = (TCON & ~(0x3)) | (1<<3) | (1<<1);
+ 2803              		.loc 1 162 0
+ 2804 0810 5C309FE5 		ldr	r3, .L52+40
+ 2805 0814 58209FE5 		ldr	r2, .L52+40
+ 2806 0818 002092E5 		ldr	r2, [r2, #0]
+ 2807 081c 0B20C2E3 		bic	r2, r2, #11
+ 2808 0820 0A2082E3 		orr	r2, r2, #10
+ 2809 0824 002083E5 		str	r2, [r3, #0]
+ 163:../src/timers.c ****     TCON = (TCON & ~(0x3)) | (1<<3) | (1<<0);
+ 2810              		.loc 1 163 0
+ 2811 0828 44309FE5 		ldr	r3, .L52+40
+ 2812 082c 40209FE5 		ldr	r2, .L52+40
+ 2813 0830 002092E5 		ldr	r2, [r2, #0]
+ 2814 0834 0B20C2E3 		bic	r2, r2, #11
+ 2815 0838 092082E3 		orr	r2, r2, #9
+ 2816 083c 002083E5 		str	r2, [r3, #0]
+ 164:../src/timers.c **** }
+ 2817              		.loc 1 164 0
+ 2818 0840 10D04BE2 		sub	sp, fp, #16
+ 2819 0844 10689DE8 		ldmfd	sp, {r4, fp, sp, lr}
+ 2820 0848 1EFF2FE1 		bx	lr
+ 2821              	.L53:
+ 2822              		.align	2
+ 2823              	.L52:
+ 2824 084c 54FF7F0C 		.word	209715028
+ 2825 0850 2400E001 		.word	31457316
+ 2826 0854 0C00E001 		.word	31457292
+ 2827 0858 0000D501 		.word	30736384
+ 2828 085c 0400D501 		.word	30736388
+ 2829 0860 0C00D501 		.word	30736396
+ 2830 0864 409C0000 		.word	40000
+ 2831 0868 801A0600 		.word	400000
+ 2832 086c 00093D00 		.word	4000000
+ 2833 0870 0048E801 		.word	32000000
+ 2834 0874 0800D501 		.word	30736392
+ 2835              		.cfi_endproc
+ 2836              	.LFE10:
+ 2838              		.align	2
+ 2839              		.global	timer0_open_ms
+ 2841              	timer0_open_ms:
+ 2842              	.LFB11:
+ 165:../src/timers.c **** 
+ 166:../src/timers.c **** void timer0_open_ms( void (*isr)(void), uint16 ms, uint8 mode )
+ 167:../src/timers.c **** {
+ 2843              		.loc 1 167 0
+ 2844              		.cfi_startproc
+ 2845              		@ Function supports interworking.
+ 2846              		@ args = 0, pretend = 0, frame = 8
+ 2847              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2848 0878 0DC0A0E1 		mov	ip, sp
+ 2849              	.LCFI22:
+ 2850              		.cfi_def_cfa_register 12
+ 2851 087c 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2852 0880 04B04CE2 		sub	fp, ip, #4
+ 2853              		.cfi_offset 14, -8
+ 2854              		.cfi_offset 13, -12
+ 2855              		.cfi_offset 11, -16
+ 2856              	.LCFI23:
+ 2857              		.cfi_def_cfa 11, 4
+ 2858 0884 08D04DE2 		sub	sp, sp, #8
+ 2859 0888 10000BE5 		str	r0, [fp, #-16]
+ 2860 088c 0230A0E1 		mov	r3, r2
+ 2861 0890 B2114BE1 		strh	r1, [fp, #-18]	@ movhi
+ 2862 0894 13304BE5 		strb	r3, [fp, #-19]
+ 168:../src/timers.c **** 	pISR_TIMER0 = (uint32)isr;
+ 2863              		.loc 1 168 0
+ 2864 0898 C8309FE5 		ldr	r3, .L55
+ 2865 089c 10201BE5 		ldr	r2, [fp, #-16]
+ 2866 08a0 002083E5 		str	r2, [r3, #0]
+ 169:../src/timers.c **** 	I_ISPC      = ~BIT_TIMER0;
+ 2867              		.loc 1 169 0
+ 2868 08a4 C0309FE5 		ldr	r3, .L55+4
+ 2869 08a8 022AE0E3 		mvn	r2, #8192
+ 2870 08ac 002083E5 		str	r2, [r3, #0]
+ 170:../src/timers.c **** 	INTMSK     &= ~(BIT_GLOBAL | BIT_TIMER0);
+ 2871              		.loc 1 170 0
+ 2872 08b0 B8209FE5 		ldr	r2, .L55+8
+ 2873 08b4 B4309FE5 		ldr	r3, .L55+8
+ 2874 08b8 003093E5 		ldr	r3, [r3, #0]
+ 2875 08bc 0133C3E3 		bic	r3, r3, #67108864
+ 2876 08c0 023AC3E3 		bic	r3, r3, #8192
+ 2877 08c4 003082E5 		str	r3, [r2, #0]
+ 171:../src/timers.c **** 
+ 172:../src/timers.c ****     TCFG0 = (TCFG0 & ~(0xff)) | (199);
+ 2878              		.loc 1 172 0
+ 2879 08c8 A4309FE5 		ldr	r3, .L55+12
+ 2880 08cc A0209FE5 		ldr	r2, .L55+12
+ 2881 08d0 002092E5 		ldr	r2, [r2, #0]
+ 2882 08d4 FF20C2E3 		bic	r2, r2, #255
+ 2883 08d8 C72082E3 		orr	r2, r2, #199
+ 2884 08dc 002083E5 		str	r2, [r3, #0]
+ 173:../src/timers.c ****     TCFG1 = (TCFG1 & ~(0xf)) | (4);
+ 2885              		.loc 1 173 0
+ 2886 08e0 90309FE5 		ldr	r3, .L55+16
+ 2887 08e4 8C209FE5 		ldr	r2, .L55+16
+ 2888 08e8 002092E5 		ldr	r2, [r2, #0]
+ 2889 08ec 0F20C2E3 		bic	r2, r2, #15
+ 2890 08f0 042082E3 		orr	r2, r2, #4
+ 2891 08f4 002083E5 		str	r2, [r3, #0]
+ 174:../src/timers.c ****     TCNTB0 = 10*ms;
+ 2892              		.loc 1 174 0
+ 2893 08f8 7C109FE5 		ldr	r1, .L55+20
+ 2894 08fc B2215BE1 		ldrh	r2, [fp, #-18]
+ 2895 0900 0230A0E1 		mov	r3, r2
+ 2896 0904 0331A0E1 		mov	r3, r3, asl #2
+ 2897 0908 023083E0 		add	r3, r3, r2
+ 2898 090c 8330A0E1 		mov	r3, r3, asl #1
+ 2899 0910 003081E5 		str	r3, [r1, #0]
+ 175:../src/timers.c **** 
+ 176:../src/timers.c ****     TCON = (TCON & ~(0xf)) | (mode<<0x3) | (1<<0x1);
+ 2900              		.loc 1 176 0
+ 2901 0914 64309FE5 		ldr	r3, .L55+24
+ 2902 0918 60209FE5 		ldr	r2, .L55+24
+ 2903 091c 002092E5 		ldr	r2, [r2, #0]
+ 2904 0920 0F10C2E3 		bic	r1, r2, #15
+ 2905 0924 13205BE5 		ldrb	r2, [fp, #-19]	@ zero_extendqisi2
+ 2906 0928 8221A0E1 		mov	r2, r2, asl #3
+ 2907 092c 022081E1 		orr	r2, r1, r2
+ 2908 0930 022082E3 		orr	r2, r2, #2
+ 2909 0934 002083E5 		str	r2, [r3, #0]
+ 177:../src/timers.c ****     TCON = (TCON & ~(0Xf)) | (mode<<0x3) | (1<<0x0);
+ 2910              		.loc 1 177 0
+ 2911 0938 40309FE5 		ldr	r3, .L55+24
+ 2912 093c 3C209FE5 		ldr	r2, .L55+24
+ 2913 0940 002092E5 		ldr	r2, [r2, #0]
+ 2914 0944 0F10C2E3 		bic	r1, r2, #15
+ 2915 0948 13205BE5 		ldrb	r2, [fp, #-19]	@ zero_extendqisi2
+ 2916 094c 8221A0E1 		mov	r2, r2, asl #3
+ 2917 0950 022081E1 		orr	r2, r1, r2
+ 2918 0954 012082E3 		orr	r2, r2, #1
+ 2919 0958 002083E5 		str	r2, [r3, #0]
+ 178:../src/timers.c **** }
+ 2920              		.loc 1 178 0
+ 2921 095c 0CD04BE2 		sub	sp, fp, #12
+ 2922 0960 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2923 0964 1EFF2FE1 		bx	lr
+ 2924              	.L56:
+ 2925              		.align	2
+ 2926              	.L55:
+ 2927 0968 54FF7F0C 		.word	209715028
+ 2928 096c 2400E001 		.word	31457316
+ 2929 0970 0C00E001 		.word	31457292
+ 2930 0974 0000D501 		.word	30736384
+ 2931 0978 0400D501 		.word	30736388
+ 2932 097c 0C00D501 		.word	30736396
+ 2933 0980 0800D501 		.word	30736392
+ 2934              		.cfi_endproc
+ 2935              	.LFE11:
+ 2937              		.align	2
+ 2938              		.global	timer0_close
+ 2940              	timer0_close:
+ 2941              	.LFB12:
+ 179:../src/timers.c **** 
+ 180:../src/timers.c **** void timer0_close( void )
+ 181:../src/timers.c **** {
+ 2942              		.loc 1 181 0
+ 2943              		.cfi_startproc
+ 2944              		@ Function supports interworking.
+ 2945              		@ args = 0, pretend = 0, frame = 0
+ 2946              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2947 0984 0DC0A0E1 		mov	ip, sp
+ 2948              	.LCFI24:
+ 2949              		.cfi_def_cfa_register 12
+ 2950 0988 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2951 098c 04B04CE2 		sub	fp, ip, #4
+ 2952              		.cfi_offset 14, -8
+ 2953              		.cfi_offset 13, -12
+ 2954              		.cfi_offset 11, -16
+ 2955              	.LCFI25:
+ 2956              		.cfi_def_cfa 11, 4
+ 182:../src/timers.c ****     TCNTB0 = 0;
+ 2957              		.loc 1 182 0
+ 2958 0990 68309FE5 		ldr	r3, .L58
+ 2959 0994 0020A0E3 		mov	r2, #0
+ 2960 0998 002083E5 		str	r2, [r3, #0]
+ 183:../src/timers.c ****     TCMPB0 = 0;
+ 2961              		.loc 1 183 0
+ 2962 099c 60309FE5 		ldr	r3, .L58+4
+ 2963 09a0 0020A0E3 		mov	r2, #0
+ 2964 09a4 002083E5 		str	r2, [r3, #0]
+ 184:../src/timers.c **** 
+ 185:../src/timers.c ****     TCON = (TCON & ~(0x3)) | (1<<1);
+ 2965              		.loc 1 185 0
+ 2966 09a8 58309FE5 		ldr	r3, .L58+8
+ 2967 09ac 54209FE5 		ldr	r2, .L58+8
+ 2968 09b0 002092E5 		ldr	r2, [r2, #0]
+ 2969 09b4 0320C2E3 		bic	r2, r2, #3
+ 2970 09b8 022082E3 		orr	r2, r2, #2
+ 2971 09bc 002083E5 		str	r2, [r3, #0]
+ 186:../src/timers.c ****     TCON = (TCON & ~(0x3));
+ 2972              		.loc 1 186 0
+ 2973 09c0 40309FE5 		ldr	r3, .L58+8
+ 2974 09c4 3C209FE5 		ldr	r2, .L58+8
+ 2975 09c8 002092E5 		ldr	r2, [r2, #0]
+ 2976 09cc 0320C2E3 		bic	r2, r2, #3
+ 2977 09d0 002083E5 		str	r2, [r3, #0]
+ 187:../src/timers.c ****     
+ 188:../src/timers.c ****     INTMSK     |= BIT_TIMER0;
+ 2978              		.loc 1 188 0
+ 2979 09d4 30309FE5 		ldr	r3, .L58+12
+ 2980 09d8 2C209FE5 		ldr	r2, .L58+12
+ 2981 09dc 002092E5 		ldr	r2, [r2, #0]
+ 2982 09e0 022A82E3 		orr	r2, r2, #8192
+ 2983 09e4 002083E5 		str	r2, [r3, #0]
+ 189:../src/timers.c ****     pISR_TIMER0 = isr_TIMER0_dummy;
+ 2984              		.loc 1 189 0
+ 2985 09e8 20309FE5 		ldr	r3, .L58+16
+ 2986 09ec 20209FE5 		ldr	r2, .L58+20
+ 2987 09f0 002083E5 		str	r2, [r3, #0]
+ 190:../src/timers.c **** }
+ 2988              		.loc 1 190 0
+ 2989 09f4 0CD04BE2 		sub	sp, fp, #12
+ 2990 09f8 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2991 09fc 1EFF2FE1 		bx	lr
+ 2992              	.L59:
+ 2993              		.align	2
+ 2994              	.L58:
+ 2995 0a00 0C00D501 		.word	30736396
+ 2996 0a04 1000D501 		.word	30736400
+ 2997 0a08 0800D501 		.word	30736392
+ 2998 0a0c 0C00E001 		.word	31457292
+ 2999 0a10 54FF7F0C 		.word	209715028
+ 3000 0a14 00000000 		.word	isr_TIMER0_dummy
+ 3001              		.cfi_endproc
+ 3002              	.LFE12:
+ 3004              	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 timers.c
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:1909   .bss:00000000 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:1910   .bss:00000000 loop_ms
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:1913   .bss:00000004 loop_s
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:1916   .text:00000000 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:1919   .text:00000000 timers_init
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2026   .text:0000010c sw_delay_init
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2005   .text:000000d0 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2024   .text:0000010c $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2401   .text:0000043c timer3_start
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2477   .text:000004ec timer3_stop
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2094   .text:000001b0 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2101   .text:000001c0 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2104   .text:000001c0 timer3_delay_ms
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2189   .text:0000028c $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2197   .text:000002a0 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2200   .text:000002a0 sw_delay_ms
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2244   .text:000002f4 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2248   .text:000002f8 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2251   .text:000002f8 timer3_delay_s
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2338   .text:000003cc $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2347   .text:000003e4 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2350   .text:000003e4 sw_delay_s
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2394   .text:00000438 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2398   .text:0000043c $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2465   .text:000004d4 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2474   .text:000004ec $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2516   .text:00000538 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2521   .text:00000540 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2524   .text:00000540 timer3_start_timeout
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2591   .text:000005e4 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2599   .text:000005f8 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2602   .text:000005f8 timer3_timeout
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2635   .text:00000630 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2640   .text:00000634 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2643   .text:00000634 timer0_open_tick
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2824   .text:0000084c $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2838   .text:00000878 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2841   .text:00000878 timer0_open_ms
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2927   .text:00000968 $d
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2937   .text:00000984 $a
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2940   .text:00000984 timer0_close
+C:\Users\VUser\AppData\Local\Temp\cc4gPCPA.s:2995   .text:00000a00 $d
+                     .debug_frame:00000010 $d
+
+UNDEFINED SYMBOLS
+__aeabi_uldivmod
+__aeabi_uidiv
+isr_TIMER0_dummy

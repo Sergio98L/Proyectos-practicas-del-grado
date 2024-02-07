@@ -1,0 +1,18 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../practica5.srcs/sources_1/new/atraer_leds.vhd" \
+"../../../../practica5.srcs/sources_1/new/contadorMod10.vhd" \
+"../../../../practica5.srcs/sources_1/new/controller.vhd" \
+"../../../../practica5.srcs/sources_1/imports/practica5/conv_7seg.vhd" \
+"../../../../practica5.srcs/sources_1/new/data_path.vhd" \
+"../../../../practica5.srcs/sources_1/imports/practica5/debouncer.vhd" \
+"../../../../practica5.srcs/sources_1/imports/practica5/displays.vhd" \
+"../../../../practica5.srcs/sources_1/imports/practica5/divisor.vhd" \
+"../../../../practica5.srcs/sources_1/new/generador_efectos.vhd" \
+"../../../../practica5.srcs/sources_1/new/lose_leds.vhd" \
+"../../../../practica5.srcs/sources_1/new/tragaperras.vhd" \
+"../../../../practica5.srcs/sources_1/new/win_leds.vhd" \
+"../../../../practica5.srcs/sources_1/imports/practica5/sintesis_tragaperras.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,9 @@
+-batch 
+-create motor_hw 
+-ver 1.00.a 
+-dir "C:\Users\VUser\Desktop\Practica5SE" 
+-lang vhdl 
+-bus plbv46 s 
+-reg 2 
+-xps 
+-driver 

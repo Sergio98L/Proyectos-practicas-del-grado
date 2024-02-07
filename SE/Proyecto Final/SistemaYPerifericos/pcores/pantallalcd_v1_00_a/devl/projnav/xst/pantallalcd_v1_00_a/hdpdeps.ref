@@ -1,0 +1,10 @@
+V3 6
+FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/user_logic.vhd 2024/01/23.19:20:45 P.15xf
+EN pantallalcd_v1_00_a/user_logic 1706034054 \
+      FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1706034049
+AR pantallalcd_v1_00_a/user_logic/IMP 1706034055 \
+      FL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/user_logic.vhd \
+      EN pantallalcd_v1_00_a/user_logic 1706034054 CP lcd_controller CP bannerDesp

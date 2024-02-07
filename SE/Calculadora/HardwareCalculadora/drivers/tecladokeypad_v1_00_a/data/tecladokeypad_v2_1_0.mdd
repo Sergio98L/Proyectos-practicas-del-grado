@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          C:\Users\VUser\Desktop\Practica5SE/drivers/tecladokeypad_v1_00_a/data/tecladokeypad_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Tue Dec 19 12:01:31 2023 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER tecladokeypad
+
+  OPTION supported_peripherals = (tecladokeypad);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

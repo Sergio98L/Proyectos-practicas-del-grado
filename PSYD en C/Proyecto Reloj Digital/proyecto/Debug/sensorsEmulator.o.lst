@@ -1,0 +1,2271 @@
+   1              		.cpu arm7tdmi
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 6
+  10              		.eabi_attribute 18, 4
+  11              		.file	"sensorsEmulator.c"
+  21              	.Ltext0:
+  22              		.file 1 "../sensorsEmulator.c"
+ 1971              		.align	2
+ 1972              	fifoTX:
+ 1973 0000 00000000 		.space	1030
+ 1973      00000000 
+ 1973      00000000 
+ 1973      00000000 
+ 1973      00000000 
+ 1974              	latidosPorMin:
+ 1975 0406 00       		.space	1
+ 1976              	pasosPorMin:
+ 1977 0407 00       		.space	1
+ 1978              		.section	.rodata
+ 1979              		.align	2
+ 1982              	cntb:
+ 1983 0000 FFFF     		.short	-1
+ 1984 0002 FFFF     		.short	-1
+ 1985 0004 FFFF     		.short	-1
+ 1986 0006 FFFF     		.short	-1
+ 1987 0008 FFFF     		.short	-1
+ 1988 000a FFFF     		.short	-1
+ 1989 000c FFFF     		.short	-1
+ 1990 000e FFFF     		.short	-1
+ 1991 0010 FFFF     		.short	-1
+ 1992 0012 FFFF     		.short	-1
+ 1993 0014 60EA     		.short	-5536
+ 1994 0016 11D5     		.short	-10991
+ 1995 0018 50C3     		.short	-15536
+ 1996 001a 4AB4     		.short	-19382
+ 1997 001c 69A7     		.short	-22679
+ 1998 001e 409C     		.short	-25536
+ 1999 0020 7C92     		.short	-28036
+ 2000 0022 DE89     		.short	-30242
+ 2001 0024 3582     		.short	-32203
+ 2002 0026 5B7B     		.short	31579
+ 2003 0028 3075     		.short	30000
+ 2004 002a 9B6F     		.short	28571
+ 2005 002c 896A     		.short	27273
+ 2006 002e E765     		.short	26087
+ 2007 0030 A861     		.short	25000
+ 2008 0032 C05D     		.short	24000
+ 2009 0034 255A     		.short	23077
+ 2010 0036 CE56     		.short	22222
+ 2011 0038 B553     		.short	21429
+ 2012 003a D250     		.short	20690
+ 2013 003c 204E     		.short	20000
+ 2014 003e 9B4B     		.short	19355
+ 2015 0040 3E49     		.short	18750
+ 2016 0042 0647     		.short	18182
+ 2017 0044 EF44     		.short	17647
+ 2018 0046 F742     		.short	17143
+ 2019 0048 1B41     		.short	16667
+ 2020 004a 583F     		.short	16216
+ 2021 004c AD3D     		.short	15789
+ 2022 004e 193C     		.short	15385
+ 2023 0050 983A     		.short	15000
+ 2024 0052 2A39     		.short	14634
+ 2025 0054 CE37     		.short	14286
+ 2026 0056 8136     		.short	13953
+ 2027 0058 4435     		.short	13636
+ 2028 005a 1534     		.short	13333
+ 2029 005c F332     		.short	13043
+ 2030 005e DE31     		.short	12766
+ 2031 0060 D430     		.short	12500
+ 2032 0062 D52F     		.short	12245
+ 2033 0064 E02E     		.short	12000
+ 2034 0066 F52D     		.short	11765
+ 2035 0068 122D     		.short	11538
+ 2036 006a 392C     		.short	11321
+ 2037 006c 672B     		.short	11111
+ 2038 006e 9D2A     		.short	10909
+ 2039 0070 DA29     		.short	10714
+ 2040 0072 1E29     		.short	10526
+ 2041 0074 6928     		.short	10345
+ 2042 0076 B927     		.short	10169
+ 2043 0078 1027     		.short	10000
+ 2044 007a 6C26     		.short	9836
+ 2045 007c CD25     		.short	9677
+ 2046 007e 3425     		.short	9524
+ 2047 0080 9F24     		.short	9375
+ 2048 0082 0F24     		.short	9231
+ 2049 0084 8323     		.short	9091
+ 2050 0086 FB22     		.short	8955
+ 2051 0088 7822     		.short	8824
+ 2052 008a F821     		.short	8696
+ 2053 008c 7B21     		.short	8571
+ 2054 008e 0321     		.short	8451
+ 2055 0090 8D20     		.short	8333
+ 2056 0092 1B20     		.short	8219
+ 2057 0094 AC1F     		.short	8108
+ 2058 0096 401F     		.short	8000
+ 2059 0098 D71E     		.short	7895
+ 2060 009a 701E     		.short	7792
+ 2061 009c 0C1E     		.short	7692
+ 2062 009e AB1D     		.short	7595
+ 2063 00a0 4C1D     		.short	7500
+ 2064 00a2 EF1C     		.short	7407
+ 2065 00a4 951C     		.short	7317
+ 2066 00a6 3D1C     		.short	7229
+ 2067 00a8 E71B     		.short	7143
+ 2068 00aa 931B     		.short	7059
+ 2069 00ac 411B     		.short	6977
+ 2070 00ae F11A     		.short	6897
+ 2071 00b0 A21A     		.short	6818
+ 2072 00b2 561A     		.short	6742
+ 2073 00b4 0B1A     		.short	6667
+ 2074 00b6 C119     		.short	6593
+ 2075 00b8 7A19     		.short	6522
+ 2076 00ba 3419     		.short	6452
+ 2077 00bc EF18     		.short	6383
+ 2078 00be AC18     		.short	6316
+ 2079 00c0 6A18     		.short	6250
+ 2080 00c2 2A18     		.short	6186
+ 2081 00c4 EA17     		.short	6122
+ 2082 00c6 AD17     		.short	6061
+ 2083 00c8 7017     		.short	6000
+ 2084 00ca 3517     		.short	5941
+ 2085 00cc FA16     		.short	5882
+ 2086 00ce C116     		.short	5825
+ 2087 00d0 8916     		.short	5769
+ 2088 00d2 5216     		.short	5714
+ 2089 00d4 1C16     		.short	5660
+ 2090 00d6 E715     		.short	5607
+ 2091 00d8 B415     		.short	5556
+ 2092 00da 8115     		.short	5505
+ 2093 00dc 4F15     		.short	5455
+ 2094 00de 1D15     		.short	5405
+ 2095 00e0 ED14     		.short	5357
+ 2096 00e2 BE14     		.short	5310
+ 2097 00e4 8F14     		.short	5263
+ 2098 00e6 6114     		.short	5217
+ 2099 00e8 3414     		.short	5172
+ 2100 00ea 0814     		.short	5128
+ 2101 00ec DD13     		.short	5085
+ 2102 00ee B213     		.short	5042
+ 2103 00f0 8813     		.short	5000
+ 2104 00f2 5F13     		.short	4959
+ 2105 00f4 3613     		.short	4918
+ 2106 00f6 0E13     		.short	4878
+ 2107 00f8 E712     		.short	4839
+ 2108 00fa C012     		.short	4800
+ 2109 00fc 9A12     		.short	4762
+ 2110 00fe 7412     		.short	4724
+ 2111 0100 5012     		.short	4688
+ 2112 0102 2B12     		.short	4651
+ 2113 0104 0712     		.short	4615
+ 2114 0106 E411     		.short	4580
+ 2115 0108 C111     		.short	4545
+ 2116 010a 9F11     		.short	4511
+ 2117 010c 7E11     		.short	4478
+ 2118 010e 5C11     		.short	4444
+ 2119 0110 3C11     		.short	4412
+ 2120 0112 1C11     		.short	4380
+ 2121 0114 FC10     		.short	4348
+ 2122 0116 DD10     		.short	4317
+ 2123 0118 BE10     		.short	4286
+ 2124 011a 9F10     		.short	4255
+ 2125 011c 8110     		.short	4225
+ 2126 011e 6410     		.short	4196
+ 2127 0120 4710     		.short	4167
+ 2128 0122 2A10     		.short	4138
+ 2129 0124 0E10     		.short	4110
+ 2130 0126 F20F     		.short	4082
+ 2131 0128 D60F     		.short	4054
+ 2132 012a BB0F     		.short	4027
+ 2133 012c A00F     		.short	4000
+ 2134 012e 860F     		.short	3974
+ 2135 0130 6B0F     		.short	3947
+ 2136 0132 520F     		.short	3922
+ 2137 0134 380F     		.short	3896
+ 2138 0136 1F0F     		.short	3871
+ 2139 0138 060F     		.short	3846
+ 2140 013a EE0E     		.short	3822
+ 2141 013c D50E     		.short	3797
+ 2142 013e BE0E     		.short	3774
+ 2143 0140 A60E     		.short	3750
+ 2144 0142 8F0E     		.short	3727
+ 2145 0144 780E     		.short	3704
+ 2146 0146 610E     		.short	3681
+ 2147 0148 4B0E     		.short	3659
+ 2148 014a 340E     		.short	3636
+ 2149 014c 1E0E     		.short	3614
+ 2150 014e 090E     		.short	3593
+ 2151 0150 F30D     		.short	3571
+ 2152 0152 DE0D     		.short	3550
+ 2153 0154 C90D     		.short	3529
+ 2154 0156 B50D     		.short	3509
+ 2155 0158 A00D     		.short	3488
+ 2156 015a 8C0D     		.short	3468
+ 2157 015c 780D     		.short	3448
+ 2158 015e 650D     		.short	3429
+ 2159 0160 510D     		.short	3409
+ 2160 0162 3E0D     		.short	3390
+ 2161 0164 2B0D     		.short	3371
+ 2162 0166 180D     		.short	3352
+ 2163 0168 050D     		.short	3333
+ 2164 016a F30C     		.short	3315
+ 2165 016c E10C     		.short	3297
+ 2166 016e CF0C     		.short	3279
+ 2167 0170 BD0C     		.short	3261
+ 2168 0172 AB0C     		.short	3243
+ 2169 0174 9A0C     		.short	3226
+ 2170 0176 890C     		.short	3209
+ 2171 0178 770C     		.short	3191
+ 2172 017a 670C     		.short	3175
+ 2173 017c 560C     		.short	3158
+ 2174 017e 450C     		.short	3141
+ 2175 0180 350C     		.short	3125
+ 2176 0182 250C     		.short	3109
+ 2177 0184 150C     		.short	3093
+ 2178 0186 050C     		.short	3077
+ 2179 0188 F50B     		.short	3061
+ 2180 018a E60B     		.short	3046
+ 2181 018c D60B     		.short	3030
+ 2182 018e C70B     		.short	3015
+ 2183 0190 B80B     		.short	3000
+ 2184 0192 A90B     		.short	2985
+ 2185 0194 9A0B     		.short	2970
+ 2186 0196 8C0B     		.short	2956
+ 2187 0198 7D0B     		.short	2941
+ 2188 019a 6F0B     		.short	2927
+ 2189 019c 610B     		.short	2913
+ 2190 019e 530B     		.short	2899
+ 2191 01a0 450B     		.short	2885
+ 2192 01a2 370B     		.short	2871
+ 2193 01a4 290B     		.short	2857
+ 2194 01a6 1C0B     		.short	2844
+ 2195 01a8 0E0B     		.short	2830
+ 2196 01aa 010B     		.short	2817
+ 2197 01ac F40A     		.short	2804
+ 2198 01ae E70A     		.short	2791
+ 2199 01b0 DA0A     		.short	2778
+ 2200 01b2 CD0A     		.short	2765
+ 2201 01b4 C00A     		.short	2752
+ 2202 01b6 B40A     		.short	2740
+ 2203 01b8 A70A     		.short	2727
+ 2204 01ba 9B0A     		.short	2715
+ 2205 01bc 8F0A     		.short	2703
+ 2206 01be 830A     		.short	2691
+ 2207 01c0 770A     		.short	2679
+ 2208 01c2 6B0A     		.short	2667
+ 2209 01c4 5F0A     		.short	2655
+ 2210 01c6 530A     		.short	2643
+ 2211 01c8 480A     		.short	2632
+ 2212 01ca 3C0A     		.short	2620
+ 2213 01cc 310A     		.short	2609
+ 2214 01ce 250A     		.short	2597
+ 2215 01d0 1A0A     		.short	2586
+ 2216 01d2 0F0A     		.short	2575
+ 2217 01d4 040A     		.short	2564
+ 2218 01d6 F909     		.short	2553
+ 2219 01d8 EE09     		.short	2542
+ 2220 01da E409     		.short	2532
+ 2221 01dc D909     		.short	2521
+ 2222 01de CE09     		.short	2510
+ 2223 01e0 C409     		.short	2500
+ 2224 01e2 BA09     		.short	2490
+ 2225 01e4 AF09     		.short	2479
+ 2226 01e6 A509     		.short	2469
+ 2227 01e8 9B09     		.short	2459
+ 2228 01ea 9109     		.short	2449
+ 2229 01ec 8709     		.short	2439
+ 2230 01ee 7D09     		.short	2429
+ 2231 01f0 7309     		.short	2419
+ 2232 01f2 6A09     		.short	2410
+ 2233 01f4 6009     		.short	2400
+ 2234 01f6 5609     		.short	2390
+ 2235 01f8 4D09     		.short	2381
+ 2236 01fa 4409     		.short	2372
+ 2237 01fc 3A09     		.short	2362
+ 2238 01fe 3109     		.short	2353
+ 2239              		.align	2
+ 2240              	.LC0:
+ 2241 0200 0A0A00   		.ascii	"\012\012\000"
+ 2242 0203 00       		.align	2
+ 2243              	.LC1:
+ 2244 0204 2D2D2D2D 		.ascii	"-------------------------------------\012\000"
+ 2244      2D2D2D2D 
+ 2244      2D2D2D2D 
+ 2244      2D2D2D2D 
+ 2244      2D2D2D2D 
+ 2245 022b 00       		.align	2
+ 2246              	.LC2:
+ 2247 022c 456D756C 		.ascii	"Emulador de latidos y pasos arrancado\012\000"
+ 2247      61646F72 
+ 2247      20646520 
+ 2247      6C617469 
+ 2247      646F7320 
+ 2248 0253 00       		.align	2
+ 2249              	.LC3:
+ 2250 0254 20202D20 		.ascii	"  - Latidos por minuto: 28-255\012\000"
+ 2250      4C617469 
+ 2250      646F7320 
+ 2250      706F7220 
+ 2250      6D696E75 
+ 2251              		.align	2
+ 2252              	.LC4:
+ 2253 0274 20202D20 		.ascii	"  - Pasos por minuto:   0/10-200\012\000"
+ 2253      5061736F 
+ 2253      7320706F 
+ 2253      72206D69 
+ 2253      6E75746F 
+ 2254              		.text
+ 2255              		.align	2
+ 2256              		.global	startSensorsEmulator
+ 2258              	startSensorsEmulator:
+ 2259              	.LFB0:
+   1:../sensorsEmulator.c **** #include <s3c44b0x.h>
+   2:../sensorsEmulator.c **** #include <s3cev40.h>
+   3:../sensorsEmulator.c **** #include <common_types.h>
+   4:../sensorsEmulator.c **** #include <system.h>
+   5:../sensorsEmulator.c **** #include "sensorsEmulator.h"
+   6:../sensorsEmulator.c **** 
+   7:../sensorsEmulator.c **** /*******************************************************************/
+   8:../sensorsEmulator.c **** 
+   9:../sensorsEmulator.c **** #define FIFO_SIZE (1024)
+  10:../sensorsEmulator.c **** 
+  11:../sensorsEmulator.c **** typedef struct fifo {
+  12:../sensorsEmulator.c **** 	volatile uint16 head;
+  13:../sensorsEmulator.c **** 	volatile uint16 tail;
+  14:../sensorsEmulator.c **** 	volatile uint16 size;
+  15:../sensorsEmulator.c **** 	uint8 buffer[FIFO_SIZE];
+  16:../sensorsEmulator.c **** } fifo_t;
+  17:../sensorsEmulator.c **** 
+  18:../sensorsEmulator.c **** static void fifo_init( fifo_t *pfifo );
+  19:../sensorsEmulator.c **** static void fifo_enqueue( fifo_t *pfifo, uint8 data );
+  20:../sensorsEmulator.c **** static void fifo_dequeue( fifo_t *pfifo, uint8 *data );
+  21:../sensorsEmulator.c **** static boolean fifo_is_empty( fifo_t *pfifo );
+  22:../sensorsEmulator.c **** static boolean fifo_is_full( fifo_t *pfifo );
+  23:../sensorsEmulator.c **** 
+  24:../sensorsEmulator.c **** static fifo_t fifoTX;
+  25:../sensorsEmulator.c **** 
+  26:../sensorsEmulator.c **** static void uart0int_isrTX( void ) __attribute__ ((interrupt ("IRQ")));
+  27:../sensorsEmulator.c **** static void uart0int_isrRX( void ) __attribute__ ((interrupt ("IRQ")));
+  28:../sensorsEmulator.c **** 
+  29:../sensorsEmulator.c **** static void uart0int_putchar( char ch );
+  30:../sensorsEmulator.c **** static void uart0int_puts( char *s );
+  31:../sensorsEmulator.c **** static void uart0int_putnum( uint8 i );
+  32:../sensorsEmulator.c **** static void uart0int_putMenu( void );
+  33:../sensorsEmulator.c **** 
+  34:../sensorsEmulator.c **** /*******************************************************************/
+  35:../sensorsEmulator.c **** 
+  36:../sensorsEmulator.c **** static volatile uint8 latidosPorMin, pasosPorMin;
+  37:../sensorsEmulator.c **** 
+  38:../sensorsEmulator.c **** static const uint16 cntb[256] =
+  39:../sensorsEmulator.c **** {
+  40:../sensorsEmulator.c ****     65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535, 65535,
+  41:../sensorsEmulator.c ****     60000, 54545, 50000, 46154, 42857, 40000, 37500, 35294, 33333, 31579,
+  42:../sensorsEmulator.c ****     30000, 28571, 27273, 26087, 25000, 24000, 23077, 22222, 21429, 20690,
+  43:../sensorsEmulator.c ****     20000, 19355, 18750, 18182, 17647, 17143, 16667, 16216, 15789, 15385,
+  44:../sensorsEmulator.c ****     15000, 14634, 14286, 13953, 13636, 13333, 13043, 12766, 12500, 12245,
+  45:../sensorsEmulator.c ****     12000, 11765, 11538, 11321, 11111, 10909, 10714, 10526, 10345, 10169,
+  46:../sensorsEmulator.c ****     10000,  9836,  9677,  9524,  9375,  9231,  9091,  8955,  8824,  8696,
+  47:../sensorsEmulator.c ****      8571,  8451,  8333,  8219,  8108,  8000,  7895,  7792,  7692,  7595,
+  48:../sensorsEmulator.c ****      7500,  7407,  7317,  7229,  7143,  7059,  6977,  6897,  6818,  6742,
+  49:../sensorsEmulator.c ****      6667,  6593,  6522,  6452,  6383,  6316,  6250,  6186,  6122,  6061,
+  50:../sensorsEmulator.c ****      6000,  5941,  5882,  5825,  5769,  5714,  5660,  5607,  5556,  5505,
+  51:../sensorsEmulator.c ****      5455,  5405,  5357,  5310,  5263,  5217,  5172,  5128,  5085,  5042,
+  52:../sensorsEmulator.c ****      5000,  4959,  4918,  4878,  4839,  4800,  4762,  4724,  4688,  4651,
+  53:../sensorsEmulator.c ****      4615,  4580,  4545,  4511,  4478,  4444,  4412,  4380,  4348,  4317,
+  54:../sensorsEmulator.c ****      4286,  4255,  4225,  4196,  4167,  4138,  4110,  4082,  4054,  4027,
+  55:../sensorsEmulator.c ****      4000,  3974,  3947,  3922,  3896,  3871,  3846,  3822,  3797,  3774,
+  56:../sensorsEmulator.c ****      3750,  3727,  3704,  3681,  3659,  3636,  3614,  3593,  3571,  3550,
+  57:../sensorsEmulator.c ****      3529,  3509,  3488,  3468,  3448,  3429,  3409,  3390,  3371,  3352,
+  58:../sensorsEmulator.c ****      3333,  3315,  3297,  3279,  3261,  3243,  3226,  3209,  3191,  3175,
+  59:../sensorsEmulator.c ****      3158,  3141,  3125,  3109,  3093,  3077,  3061,  3046,  3030,  3015,
+  60:../sensorsEmulator.c ****      3000,  2985,  2970,  2956,  2941,  2927,  2913,  2899,  2885,  2871,
+  61:../sensorsEmulator.c ****      2857,  2844,  2830,  2817,  2804,  2791,  2778,  2765,  2752,  2740,
+  62:../sensorsEmulator.c ****      2727,  2715,  2703,  2691,  2679,  2667,  2655,  2643,  2632,  2620,
+  63:../sensorsEmulator.c ****      2609,  2597,  2586,  2575,  2564,  2553,  2542,  2532,  2521,  2510,
+  64:../sensorsEmulator.c ****      2500,  2490,  2479,  2469,  2459,  2449,  2439,  2429,  2419,  2410,
+  65:../sensorsEmulator.c ****      2400,  2390,  2381,  2372,  2362,  2353
+  66:../sensorsEmulator.c **** };
+  67:../sensorsEmulator.c **** 
+  68:../sensorsEmulator.c **** /*******************************************************************/
+  69:../sensorsEmulator.c **** 
+  70:../sensorsEmulator.c **** 
+  71:../sensorsEmulator.c **** void startSensorsEmulator( void (*isrBeat)(void), void (*isrStep)(void), uint8 beatPerMin, uint8 st
+  72:../sensorsEmulator.c **** {
+ 2260              		.loc 1 72 0
+ 2261              		.cfi_startproc
+ 2262              		@ Function supports interworking.
+ 2263              		@ args = 0, pretend = 0, frame = 16
+ 2264              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2265 0000 0DC0A0E1 		mov	ip, sp
+ 2266              	.LCFI0:
+ 2267              		.cfi_def_cfa_register 12
+ 2268 0004 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2269 0008 04B04CE2 		sub	fp, ip, #4
+ 2270              		.cfi_offset 14, -8
+ 2271              		.cfi_offset 13, -12
+ 2272              		.cfi_offset 11, -16
+ 2273              	.LCFI1:
+ 2274              		.cfi_def_cfa 11, 4
+ 2275 000c 10D04DE2 		sub	sp, sp, #16
+ 2276 0010 10000BE5 		str	r0, [fp, #-16]
+ 2277 0014 14100BE5 		str	r1, [fp, #-20]
+ 2278 0018 15204BE5 		strb	r2, [fp, #-21]
+ 2279 001c 16304BE5 		strb	r3, [fp, #-22]
+  73:../sensorsEmulator.c **** 
+  74:../sensorsEmulator.c **** 	latidosPorMin = beatPerMin;
+ 2280              		.loc 1 74 0
+ 2281 0020 54329FE5 		ldr	r3, .L2
+ 2282 0024 15205BE5 		ldrb	r2, [fp, #-21]
+ 2283 0028 0020C3E5 		strb	r2, [r3, #0]
+  75:../sensorsEmulator.c **** 	pasosPorMin   = stepPerMin;
+ 2284              		.loc 1 75 0
+ 2285 002c 4C329FE5 		ldr	r3, .L2+4
+ 2286 0030 16205BE5 		ldrb	r2, [fp, #-22]
+ 2287 0034 0020C3E5 		strb	r2, [r3, #0]
+  76:../sensorsEmulator.c **** 
+  77:../sensorsEmulator.c ****     CLKCON |= (1<<10) | (1<<8) | (1<<7) | (1 << 3);            // Activa GPIO, UART0, BDMA y TIMER
+ 2288              		.loc 1 77 0
+ 2289 0038 44229FE5 		ldr	r2, .L2+8
+ 2290 003c 40329FE5 		ldr	r3, .L2+8
+ 2291 0040 003093E5 		ldr	r3, [r3, #0]
+ 2292 0044 163D83E3 		orr	r3, r3, #1408
+ 2293 0048 083083E3 		orr	r3, r3, #8
+ 2294 004c 003082E5 		str	r3, [r2, #0]
+  78:../sensorsEmulator.c **** 
+  79:../sensorsEmulator.c **** 	PCONE = (PCONE & ~(0xf<<2)) | (2<<4) | (2<<2); 	           // PE[2] = RxD0, PE[1] = TxD0
+ 2295              		.loc 1 79 0
+ 2296 0050 30329FE5 		ldr	r3, .L2+12
+ 2297 0054 2C229FE5 		ldr	r2, .L2+12
+ 2298 0058 002092E5 		ldr	r2, [r2, #0]
+ 2299 005c 3C20C2E3 		bic	r2, r2, #60
+ 2300 0060 282082E3 		orr	r2, r2, #40
+ 2301 0064 002083E5 		str	r2, [r3, #0]
+  80:../sensorsEmulator.c **** 	PUPE  |= (1<<2) | (1<<1);						           // Pull-up disable
+ 2302              		.loc 1 80 0
+ 2303 0068 1C329FE5 		ldr	r3, .L2+16
+ 2304 006c 18229FE5 		ldr	r2, .L2+16
+ 2305 0070 002092E5 		ldr	r2, [r2, #0]
+ 2306 0074 062082E3 		orr	r2, r2, #6
+ 2307 0078 002083E5 		str	r2, [r3, #0]
+  81:../sensorsEmulator.c **** 
+  82:../sensorsEmulator.c **** 	UFCON0 = 0;	                                               // FIFOs desactivadas, para activarlas 
+ 2308              		.loc 1 82 0
+ 2309 007c 0C329FE5 		ldr	r3, .L2+20
+ 2310 0080 0020A0E3 		mov	r2, #0
+ 2311 0084 002083E5 		str	r2, [r3, #0]
+  83:../sensorsEmulator.c **** 	UMCON0 = 0;	                                               // Control de flujo manual
+ 2312              		.loc 1 83 0
+ 2313 0088 04329FE5 		ldr	r3, .L2+24
+ 2314 008c 0020A0E3 		mov	r2, #0
+ 2315 0090 002083E5 		str	r2, [r3, #0]
+  84:../sensorsEmulator.c **** 	ULCON0 = (0 << 6) | (0 << 3) | (0 << 2) | (3);   		   // normal (no infrarojos), sin paridad, 1 bi
+ 2316              		.loc 1 84 0
+ 2317 0094 1D36A0E3 		mov	r3, #30408704
+ 2318 0098 0320A0E3 		mov	r2, #3
+ 2319 009c 002083E5 		str	r2, [r3, #0]
+  85:../sensorsEmulator.c **** 	UBRDIV0 = 34;                                              // 115200 baudios asumiendo 64MHz
+ 2320              		.loc 1 85 0
+ 2321 00a0 F0319FE5 		ldr	r3, .L2+28
+ 2322 00a4 2220A0E3 		mov	r2, #34
+ 2323 00a8 002083E5 		str	r2, [r3, #0]
+  86:../sensorsEmulator.c **** 	UCON0 = (0 << 9) | (0 << 8)| (1 << 2) | (1);			   // Tx pulso, Rx pulso, Tx int/polling, Rx int/po
+ 2324              		.loc 1 86 0
+ 2325 00ac E8319FE5 		ldr	r3, .L2+32
+ 2326 00b0 0520A0E3 		mov	r2, #5
+ 2327 00b4 002083E5 		str	r2, [r3, #0]
+  87:../sensorsEmulator.c **** 
+  88:../sensorsEmulator.c **** 	fifo_init( &fifoTX );
+ 2328              		.loc 1 88 0
+ 2329 00b8 E0019FE5 		ldr	r0, .L2+36
+ 2330 00bc 430300EB 		bl	fifo_init
+  89:../sensorsEmulator.c **** 
+  90:../sensorsEmulator.c **** 	pISR_URXD0 = (uint32) uart0int_isrRX;	 			       // Instala la rutina de tratamiento de recepción
+ 2331              		.loc 1 90 0
+ 2332 00c0 DC319FE5 		ldr	r3, .L2+40
+ 2333 00c4 DC219FE5 		ldr	r2, .L2+44
+ 2334 00c8 002083E5 		str	r2, [r3, #0]
+  91:../sensorsEmulator.c **** 	pISR_UTXD0 = (uint32) uart0int_isrTX;	 			       // Instala la rutina de tratamiento de transmisió
+ 2335              		.loc 1 91 0
+ 2336 00cc D8319FE5 		ldr	r3, .L2+48
+ 2337 00d0 D8219FE5 		ldr	r2, .L2+52
+ 2338 00d4 002083E5 		str	r2, [r3, #0]
+  92:../sensorsEmulator.c **** 	I_ISPC	   = (BIT_URXD0 | BIT_UTXD0);		               // Borra los bits de interrupción pendiente
+ 2339              		.loc 1 92 0
+ 2340 00d8 D4319FE5 		ldr	r3, .L2+56
+ 2341 00dc 8820A0E3 		mov	r2, #136
+ 2342 00e0 002083E5 		str	r2, [r3, #0]
+  93:../sensorsEmulator.c **** 	INTMSK    &= ~( BIT_GLOBAL | BIT_URXD0 | BIT_UTXD0 );	   // Desenmascara globalmente las interrupc
+ 2343              		.loc 1 93 0
+ 2344 00e4 CC219FE5 		ldr	r2, .L2+60
+ 2345 00e8 C8319FE5 		ldr	r3, .L2+60
+ 2346 00ec 003093E5 		ldr	r3, [r3, #0]
+ 2347 00f0 0133C3E3 		bic	r3, r3, #67108864
+ 2348 00f4 8830C3E3 		bic	r3, r3, #136
+ 2349 00f8 003082E5 		str	r3, [r2, #0]
+  94:../sensorsEmulator.c **** 
+  95:../sensorsEmulator.c **** 
+  96:../sensorsEmulator.c **** 	TCFG0 = (TCFG0 & ~(0xff << 8)) | (199 << 8);               // T3-T2 PRESCALER = 199 (1/(199+1))
+ 2350              		.loc 1 96 0
+ 2351 00fc B8319FE5 		ldr	r3, .L2+64
+ 2352 0100 B4219FE5 		ldr	r2, .L2+64
+ 2353 0104 002092E5 		ldr	r2, [r2, #0]
+ 2354 0108 FF2CC2E3 		bic	r2, r2, #65280
+ 2355 010c C72C82E3 		orr	r2, r2, #50944
+ 2356 0110 002083E5 		str	r2, [r3, #0]
+  97:../sensorsEmulator.c ****     TCFG1 = (TCFG1 & ~(0xf << 12)) | (4 << 12);                // T3 DIVISOR = 32 (1/32)
+ 2357              		.loc 1 97 0
+ 2358 0114 A4319FE5 		ldr	r3, .L2+68
+ 2359 0118 A0219FE5 		ldr	r2, .L2+68
+ 2360 011c 002092E5 		ldr	r2, [r2, #0]
+ 2361 0120 0F2AC2E3 		bic	r2, r2, #61440
+ 2362 0124 012982E3 		orr	r2, r2, #16384
+ 2363 0128 002083E5 		str	r2, [r3, #0]
+  98:../sensorsEmulator.c ****     TCFG1 = (TCFG1 & ~(0xf << 8))  | (4 << 8);                 // T2 DIVISOR = 32 (1/32)
+ 2364              		.loc 1 98 0
+ 2365 012c 8C319FE5 		ldr	r3, .L2+68
+ 2366 0130 88219FE5 		ldr	r2, .L2+68
+ 2367 0134 002092E5 		ldr	r2, [r2, #0]
+ 2368 0138 0F2CC2E3 		bic	r2, r2, #3840
+ 2369 013c 012B82E3 		orr	r2, r2, #1024
+ 2370 0140 002083E5 		str	r2, [r3, #0]
+  99:../sensorsEmulator.c ****     
+ 100:../sensorsEmulator.c ****     INTMSK |= ( BIT_TIMER3 | BIT_TIMER2 );                     // Enmascara la interrupcion por fin
+ 2371              		.loc 1 100 0
+ 2372 0144 6C319FE5 		ldr	r3, .L2+60
+ 2373 0148 68219FE5 		ldr	r2, .L2+60
+ 2374 014c 002092E5 		ldr	r2, [r2, #0]
+ 2375 0150 032B82E3 		orr	r2, r2, #3072
+ 2376 0154 002083E5 		str	r2, [r3, #0]
+ 101:../sensorsEmulator.c **** 
+ 102:../sensorsEmulator.c ****     pISR_TIMER3 = (uint32) isrBeat;                            // Instala la funcion isr como RTI p
+ 2377              		.loc 1 102 0
+ 2378 0158 64319FE5 		ldr	r3, .L2+72
+ 2379 015c 10201BE5 		ldr	r2, [fp, #-16]
+ 2380 0160 002083E5 		str	r2, [r3, #0]
+ 103:../sensorsEmulator.c ****     pISR_TIMER2 = (uint32) isrStep;                            // Instala la funcion isr como RTI p
+ 2381              		.loc 1 103 0
+ 2382 0164 5C319FE5 		ldr	r3, .L2+76
+ 2383 0168 14201BE5 		ldr	r2, [fp, #-20]
+ 2384 016c 002083E5 		str	r2, [r3, #0]
+ 104:../sensorsEmulator.c **** 
+ 105:../sensorsEmulator.c ****     TCNTB3  = cntb[latidosPorMin];                             // Carga T3
+ 2385              		.loc 1 105 0
+ 2386 0170 54319FE5 		ldr	r3, .L2+80
+ 2387 0174 00219FE5 		ldr	r2, .L2
+ 2388 0178 0020D2E5 		ldrb	r2, [r2, #0]
+ 2389 017c FF2002E2 		and	r2, r2, #255
+ 2390 0180 48119FE5 		ldr	r1, .L2+84
+ 2391 0184 8220A0E1 		mov	r2, r2, asl #1
+ 2392 0188 022081E0 		add	r2, r1, r2
+ 2393 018c B020D2E1 		ldrh	r2, [r2, #0]
+ 2394 0190 002083E5 		str	r2, [r3, #0]
+ 106:../sensorsEmulator.c ****     TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 17);   // Modo interval, carga TCNT3, stop 
+ 2395              		.loc 1 106 0
+ 2396 0194 38319FE5 		ldr	r3, .L2+88
+ 2397 0198 34219FE5 		ldr	r2, .L2+88
+ 2398 019c 002092E5 		ldr	r2, [r2, #0]
+ 2399 01a0 0F28C2E3 		bic	r2, r2, #983040
+ 2400 01a4 0A2882E3 		orr	r2, r2, #655360
+ 2401 01a8 002083E5 		str	r2, [r3, #0]
+ 107:../sensorsEmulator.c ****     TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 16);   // Modo interval, no carga TCNT3, st
+ 2402              		.loc 1 107 0
+ 2403 01ac 20319FE5 		ldr	r3, .L2+88
+ 2404 01b0 1C219FE5 		ldr	r2, .L2+88
+ 2405 01b4 002092E5 		ldr	r2, [r2, #0]
+ 2406 01b8 0F28C2E3 		bic	r2, r2, #983040
+ 2407 01bc 092882E3 		orr	r2, r2, #589824
+ 2408 01c0 002083E5 		str	r2, [r3, #0]
+ 108:../sensorsEmulator.c **** 
+ 109:../sensorsEmulator.c ****     TCNTB2  = cntb[pasosPorMin];                               // Carga T2
+ 2409              		.loc 1 109 0
+ 2410 01c4 0C319FE5 		ldr	r3, .L2+92
+ 2411 01c8 B0209FE5 		ldr	r2, .L2+4
+ 2412 01cc 0020D2E5 		ldrb	r2, [r2, #0]
+ 2413 01d0 FF2002E2 		and	r2, r2, #255
+ 2414 01d4 F4109FE5 		ldr	r1, .L2+84
+ 2415 01d8 8220A0E1 		mov	r2, r2, asl #1
+ 2416 01dc 022081E0 		add	r2, r1, r2
+ 2417 01e0 B020D2E1 		ldrh	r2, [r2, #0]
+ 2418 01e4 002083E5 		str	r2, [r3, #0]
+ 110:../sensorsEmulator.c ****     TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 13);   // Modo interval, carga TCNT2, stop 
+ 2419              		.loc 1 110 0
+ 2420 01e8 E4309FE5 		ldr	r3, .L2+88
+ 2421 01ec E0209FE5 		ldr	r2, .L2+88
+ 2422 01f0 002092E5 		ldr	r2, [r2, #0]
+ 2423 01f4 0F2AC2E3 		bic	r2, r2, #61440
+ 2424 01f8 0A2A82E3 		orr	r2, r2, #40960
+ 2425 01fc 002083E5 		str	r2, [r3, #0]
+ 111:../sensorsEmulator.c ****     TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 12);   // Modo interval, no carga TCNT2, st
+ 2426              		.loc 1 111 0
+ 2427 0200 CC309FE5 		ldr	r3, .L2+88
+ 2428 0204 C8209FE5 		ldr	r2, .L2+88
+ 2429 0208 002092E5 		ldr	r2, [r2, #0]
+ 2430 020c 0F2AC2E3 		bic	r2, r2, #61440
+ 2431 0210 092A82E3 		orr	r2, r2, #36864
+ 2432 0214 002083E5 		str	r2, [r3, #0]
+ 112:../sensorsEmulator.c **** 
+ 113:../sensorsEmulator.c ****     I_ISPC  = BIT_TIMER3 | BIT_TIMER2;                         // Borra el bit de interrupción pend
+ 2433              		.loc 1 113 0
+ 2434 0218 94309FE5 		ldr	r3, .L2+56
+ 2435 021c 032BA0E3 		mov	r2, #3072
+ 2436 0220 002083E5 		str	r2, [r3, #0]
+ 114:../sensorsEmulator.c ****     INTMSK &= ~( BIT_GLOBAL | BIT_TIMER3 | BIT_TIMER2 );       // Desenmascara la interrupción por 
+ 2437              		.loc 1 114 0
+ 2438 0224 8C209FE5 		ldr	r2, .L2+60
+ 2439 0228 88309FE5 		ldr	r3, .L2+60
+ 2440 022c 003093E5 		ldr	r3, [r3, #0]
+ 2441 0230 0133C3E3 		bic	r3, r3, #67108864
+ 2442 0234 033BC3E3 		bic	r3, r3, #3072
+ 2443 0238 003082E5 		str	r3, [r2, #0]
+ 115:../sensorsEmulator.c **** 
+ 116:../sensorsEmulator.c **** 
+ 117:../sensorsEmulator.c **** 	uart0int_puts( "\n\n" );
+ 2444              		.loc 1 117 0
+ 2445 023c 98009FE5 		ldr	r0, .L2+96
+ 2446 0240 650000EB 		bl	uart0int_puts
+ 118:../sensorsEmulator.c **** 	uart0int_puts( "-------------------------------------\n" );
+ 2447              		.loc 1 118 0
+ 2448 0244 94009FE5 		ldr	r0, .L2+100
+ 2449 0248 630000EB 		bl	uart0int_puts
+ 119:../sensorsEmulator.c **** 	uart0int_puts( "Emulador de latidos y pasos arrancado\n" );
+ 2450              		.loc 1 119 0
+ 2451 024c 90009FE5 		ldr	r0, .L2+104
+ 2452 0250 610000EB 		bl	uart0int_puts
+ 120:../sensorsEmulator.c **** 	uart0int_puts( "  - Latidos por minuto: 28-255\n" );
+ 2453              		.loc 1 120 0
+ 2454 0254 8C009FE5 		ldr	r0, .L2+108
+ 2455 0258 5F0000EB 		bl	uart0int_puts
+ 121:../sensorsEmulator.c **** 	uart0int_puts( "  - Pasos por minuto:   0/10-200\n" );
+ 2456              		.loc 1 121 0
+ 2457 025c 88009FE5 		ldr	r0, .L2+112
+ 2458 0260 5D0000EB 		bl	uart0int_puts
+ 122:../sensorsEmulator.c **** 	uart0int_puts( "-------------------------------------\n" );
+ 2459              		.loc 1 122 0
+ 2460 0264 74009FE5 		ldr	r0, .L2+100
+ 2461 0268 5B0000EB 		bl	uart0int_puts
+ 123:../sensorsEmulator.c **** 	uart0int_putMenu();
+ 2462              		.loc 1 123 0
+ 2463 026c 990000EB 		bl	uart0int_putMenu
+ 124:../sensorsEmulator.c **** }
+ 2464              		.loc 1 124 0
+ 2465 0270 0CD04BE2 		sub	sp, fp, #12
+ 2466 0274 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2467 0278 1EFF2FE1 		bx	lr
+ 2468              	.L3:
+ 2469              		.align	2
+ 2470              	.L2:
+ 2471 027c 06040000 		.word	latidosPorMin
+ 2472 0280 07040000 		.word	pasosPorMin
+ 2473 0284 0400D801 		.word	30932996
+ 2474 0288 2800D201 		.word	30539816
+ 2475 028c 3000D201 		.word	30539824
+ 2476 0290 0800D001 		.word	30408712
+ 2477 0294 0C00D001 		.word	30408716
+ 2478 0298 2800D001 		.word	30408744
+ 2479 029c 0400D001 		.word	30408708
+ 2480 02a0 00000000 		.word	fifoTX
+ 2481 02a4 3CFF7F0C 		.word	209715004
+ 2482 02a8 00000000 		.word	uart0int_isrRX
+ 2483 02ac 2CFF7F0C 		.word	209714988
+ 2484 02b0 00000000 		.word	uart0int_isrTX
+ 2485 02b4 2400E001 		.word	31457316
+ 2486 02b8 0C00E001 		.word	31457292
+ 2487 02bc 0000D501 		.word	30736384
+ 2488 02c0 0400D501 		.word	30736388
+ 2489 02c4 48FF7F0C 		.word	209715016
+ 2490 02c8 4CFF7F0C 		.word	209715020
+ 2491 02cc 3000D501 		.word	30736432
+ 2492 02d0 00000000 		.word	cntb
+ 2493 02d4 0800D501 		.word	30736392
+ 2494 02d8 2400D501 		.word	30736420
+ 2495 02dc 00020000 		.word	.LC0
+ 2496 02e0 04020000 		.word	.LC1
+ 2497 02e4 2C020000 		.word	.LC2
+ 2498 02e8 54020000 		.word	.LC3
+ 2499 02ec 74020000 		.word	.LC4
+ 2500              		.cfi_endproc
+ 2501              	.LFE0:
+ 2503              		.align	2
+ 2505              	uart0int_putchar:
+ 2506              	.LFB1:
+ 125:../sensorsEmulator.c **** 
+ 126:../sensorsEmulator.c **** /*******************************************************************/
+ 127:../sensorsEmulator.c **** 
+ 128:../sensorsEmulator.c **** void uart0int_putchar( char ch )
+ 129:../sensorsEmulator.c **** {
+ 2507              		.loc 1 129 0
+ 2508              		.cfi_startproc
+ 2509              		@ Function supports interworking.
+ 2510              		@ args = 0, pretend = 0, frame = 8
+ 2511              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2512 02f0 0DC0A0E1 		mov	ip, sp
+ 2513              	.LCFI2:
+ 2514              		.cfi_def_cfa_register 12
+ 2515 02f4 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2516 02f8 04B04CE2 		sub	fp, ip, #4
+ 2517              		.cfi_offset 14, -8
+ 2518              		.cfi_offset 13, -12
+ 2519              		.cfi_offset 11, -16
+ 2520              	.LCFI3:
+ 2521              		.cfi_def_cfa 11, 4
+ 2522 02fc 08D04DE2 		sub	sp, sp, #8
+ 2523 0300 0030A0E1 		mov	r3, r0
+ 2524 0304 0D304BE5 		strb	r3, [fp, #-13]
+ 130:../sensorsEmulator.c **** 	if( fifo_is_empty( &fifoTX ) )
+ 2525              		.loc 1 130 0
+ 2526 0308 68009FE5 		ldr	r0, .L10
+ 2527 030c 240300EB 		bl	fifo_is_empty
+ 2528 0310 0030A0E1 		mov	r3, r0
+ 2529 0314 000053E3 		cmp	r3, #0
+ 2530 0318 0900000A 		beq	.L9
+ 131:../sensorsEmulator.c **** 	{
+ 132:../sensorsEmulator.c **** 		while( !(UTRSTAT0 & (1 << 1)) );	// Espera por si todavía está transmitiendo el último byte envia
+ 2531              		.loc 1 132 0
+ 2532 031c 0000A0E1 		mov	r0, r0	@ nop
+ 2533              	.L6:
+ 2534              		.loc 1 132 0 is_stmt 0 discriminator 1
+ 2535 0320 54309FE5 		ldr	r3, .L10+4
+ 2536 0324 003093E5 		ldr	r3, [r3, #0]
+ 2537 0328 023003E2 		and	r3, r3, #2
+ 2538 032c 000053E3 		cmp	r3, #0
+ 2539 0330 FAFFFF0A 		beq	.L6
+ 133:../sensorsEmulator.c **** 		UTXH0 = ch;							// Envía el byte, cuando termine la transmisión se genera la primera interrupci
+ 2540              		.loc 1 133 0 is_stmt 1
+ 2541 0334 44309FE5 		ldr	r3, .L10+8
+ 2542 0338 0D205BE5 		ldrb	r2, [fp, #-13]	@ zero_extendqisi2
+ 2543 033c 002083E5 		str	r2, [r3, #0]
+ 2544 0340 090000EA 		b	.L4
+ 2545              	.L9:
+ 134:../sensorsEmulator.c **** 	}
+ 135:../sensorsEmulator.c **** 	else
+ 136:../sensorsEmulator.c **** 	{
+ 137:../sensorsEmulator.c **** 		while( fifo_is_full( &fifoTX ) );
+ 2546              		.loc 1 137 0
+ 2547 0344 0000A0E1 		mov	r0, r0	@ nop
+ 2548              	.L8:
+ 2549              		.loc 1 137 0 is_stmt 0 discriminator 1
+ 2550 0348 28009FE5 		ldr	r0, .L10
+ 2551 034c 250300EB 		bl	fifo_is_full
+ 2552 0350 0030A0E1 		mov	r3, r0
+ 2553 0354 000053E3 		cmp	r3, #0
+ 2554 0358 FAFFFF1A 		bne	.L8
+ 138:../sensorsEmulator.c **** 		fifo_enqueue( &fifoTX, (uint8) ch );
+ 2555              		.loc 1 138 0 is_stmt 1
+ 2556 035c 0D305BE5 		ldrb	r3, [fp, #-13]	@ zero_extendqisi2
+ 2557 0360 10009FE5 		ldr	r0, .L10
+ 2558 0364 0310A0E1 		mov	r1, r3
+ 2559 0368 A90200EB 		bl	fifo_enqueue
+ 2560              	.L4:
+ 139:../sensorsEmulator.c **** 	}
+ 140:../sensorsEmulator.c **** }
+ 2561              		.loc 1 140 0
+ 2562 036c 0CD04BE2 		sub	sp, fp, #12
+ 2563 0370 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2564 0374 1EFF2FE1 		bx	lr
+ 2565              	.L11:
+ 2566              		.align	2
+ 2567              	.L10:
+ 2568 0378 00000000 		.word	fifoTX
+ 2569 037c 1000D001 		.word	30408720
+ 2570 0380 2000D001 		.word	30408736
+ 2571              		.cfi_endproc
+ 2572              	.LFE1:
+ 2574              		.align	2
+ 2576              	uart0int_isrTX:
+ 2577              	.LFB2:
+ 141:../sensorsEmulator.c **** 
+ 142:../sensorsEmulator.c **** void uart0int_isrTX( void )
+ 143:../sensorsEmulator.c **** {
+ 2578              		.loc 1 143 0
+ 2579              		.cfi_startproc
+ 2580              		@ Interrupt Service Routine.
+ 2581              		@ args = 0, pretend = 0, frame = 0
+ 2582              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2583 0384 04C02DE5 		str	ip, [sp, #-4]!
+ 2584 0388 0DC0A0E1 		mov	ip, sp
+ 2585              	.LCFI4:
+ 2586              		.cfi_def_cfa_register 12
+ 2587 038c 0FD82DE9 		stmfd	sp!, {r0, r1, r2, r3, fp, ip, lr, pc}
+ 2588 0390 04B04CE2 		sub	fp, ip, #4
+ 2589              		.cfi_offset 14, -8
+ 2590              		.cfi_offset 13, -12
+ 2591              		.cfi_offset 11, -16
+ 2592              		.cfi_offset 3, -20
+ 2593              		.cfi_offset 2, -24
+ 2594              		.cfi_offset 1, -28
+ 2595              		.cfi_offset 0, -32
+ 2596              	.LCFI5:
+ 2597              		.cfi_def_cfa 11, 4
+ 144:../sensorsEmulator.c ****     I_ISPC = BIT_UTXD0;
+ 2598              		.loc 1 144 0
+ 2599 0394 34309FE5 		ldr	r3, .L14
+ 2600 0398 0820A0E3 		mov	r2, #8
+ 2601 039c 002083E5 		str	r2, [r3, #0]
+ 145:../sensorsEmulator.c **** 	if( !fifo_is_empty( &fifoTX ) )
+ 2602              		.loc 1 145 0
+ 2603 03a0 2C009FE5 		ldr	r0, .L14+4
+ 2604 03a4 FE0200EB 		bl	fifo_is_empty
+ 2605 03a8 0030A0E1 		mov	r3, r0
+ 2606 03ac 000053E3 		cmp	r3, #0
+ 2607 03b0 0200001A 		bne	.L12
+ 146:../sensorsEmulator.c **** 		fifo_dequeue( &fifoTX, (uint8 *) &UTXH0 );
+ 2608              		.loc 1 146 0
+ 2609 03b4 18009FE5 		ldr	r0, .L14+4
+ 2610 03b8 18109FE5 		ldr	r1, .L14+8
+ 2611 03bc C60200EB 		bl	fifo_dequeue
+ 2612              	.L12:
+ 147:../sensorsEmulator.c **** }
+ 2613              		.loc 1 147 0
+ 2614 03c0 1CD04BE2 		sub	sp, fp, #28
+ 2615 03c4 0F689DE8 		ldmfd	sp, {r0, r1, r2, r3, fp, sp, lr}
+ 2616 03c8 04C09DE4 		ldmfd	sp!, {ip}
+ 2617 03cc 04F05EE2 		subs	pc, lr, #4
+ 2618              	.L15:
+ 2619              		.align	2
+ 2620              	.L14:
+ 2621 03d0 2400E001 		.word	31457316
+ 2622 03d4 00000000 		.word	fifoTX
+ 2623 03d8 2000D001 		.word	30408736
+ 2624              		.cfi_endproc
+ 2625              	.LFE2:
+ 2627              		.align	2
+ 2629              	uart0int_puts:
+ 2630              	.LFB3:
+ 148:../sensorsEmulator.c **** 
+ 149:../sensorsEmulator.c **** void uart0int_puts( char *s )
+ 150:../sensorsEmulator.c **** {
+ 2631              		.loc 1 150 0
+ 2632              		.cfi_startproc
+ 2633              		@ Function supports interworking.
+ 2634              		@ args = 0, pretend = 0, frame = 8
+ 2635              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2636 03dc 0DC0A0E1 		mov	ip, sp
+ 2637              	.LCFI6:
+ 2638              		.cfi_def_cfa_register 12
+ 2639 03e0 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2640 03e4 04B04CE2 		sub	fp, ip, #4
+ 2641              		.cfi_offset 14, -8
+ 2642              		.cfi_offset 13, -12
+ 2643              		.cfi_offset 11, -16
+ 2644              	.LCFI7:
+ 2645              		.cfi_def_cfa 11, 4
+ 2646 03e8 08D04DE2 		sub	sp, sp, #8
+ 2647 03ec 10000BE5 		str	r0, [fp, #-16]
+ 151:../sensorsEmulator.c ****     while( *s )
+ 2648              		.loc 1 151 0
+ 2649 03f0 060000EA 		b	.L17
+ 2650              	.L18:
+ 152:../sensorsEmulator.c **** 		uart0int_putchar( *s++ );
+ 2651              		.loc 1 152 0
+ 2652 03f4 10301BE5 		ldr	r3, [fp, #-16]
+ 2653 03f8 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 2654 03fc 10201BE5 		ldr	r2, [fp, #-16]
+ 2655 0400 012082E2 		add	r2, r2, #1
+ 2656 0404 10200BE5 		str	r2, [fp, #-16]
+ 2657 0408 0300A0E1 		mov	r0, r3
+ 2658 040c B7FFFFEB 		bl	uart0int_putchar
+ 2659              	.L17:
+ 151:../sensorsEmulator.c ****     while( *s )
+ 2660              		.loc 1 151 0 discriminator 1
+ 2661 0410 10301BE5 		ldr	r3, [fp, #-16]
+ 2662 0414 0030D3E5 		ldrb	r3, [r3, #0]	@ zero_extendqisi2
+ 2663 0418 000053E3 		cmp	r3, #0
+ 2664 041c F4FFFF1A 		bne	.L18
+ 153:../sensorsEmulator.c **** }
+ 2665              		.loc 1 153 0
+ 2666 0420 0CD04BE2 		sub	sp, fp, #12
+ 2667 0424 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2668 0428 1EFF2FE1 		bx	lr
+ 2669              		.cfi_endproc
+ 2670              	.LFE3:
+ 2672              		.align	2
+ 2674              	uart0int_putnum:
+ 2675              	.LFB4:
+ 154:../sensorsEmulator.c **** 
+ 155:../sensorsEmulator.c **** void uart0int_putnum( uint8 i )
+ 156:../sensorsEmulator.c **** {
+ 2676              		.loc 1 156 0
+ 2677              		.cfi_startproc
+ 2678              		@ Function supports interworking.
+ 2679              		@ args = 0, pretend = 0, frame = 16
+ 2680              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2681 042c 0DC0A0E1 		mov	ip, sp
+ 2682              	.LCFI8:
+ 2683              		.cfi_def_cfa_register 12
+ 2684 0430 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2685 0434 04B04CE2 		sub	fp, ip, #4
+ 2686              		.cfi_offset 14, -8
+ 2687              		.cfi_offset 13, -12
+ 2688              		.cfi_offset 11, -16
+ 2689              	.LCFI9:
+ 2690              		.cfi_def_cfa 11, 4
+ 2691 0438 10D04DE2 		sub	sp, sp, #16
+ 2692 043c 0030A0E1 		mov	r3, r0
+ 2693 0440 15304BE5 		strb	r3, [fp, #-21]
+ 157:../sensorsEmulator.c **** 	char buf[3 + 1];
+ 158:../sensorsEmulator.c **** 	char *p = buf + 3;
+ 2694              		.loc 1 158 0
+ 2695 0444 14304BE2 		sub	r3, fp, #20
+ 2696 0448 033083E2 		add	r3, r3, #3
+ 2697 044c 10300BE5 		str	r3, [fp, #-16]
+ 159:../sensorsEmulator.c **** 
+ 160:../sensorsEmulator.c **** 	*p = '\0';
+ 2698              		.loc 1 160 0
+ 2699 0450 10301BE5 		ldr	r3, [fp, #-16]
+ 2700 0454 0020A0E3 		mov	r2, #0
+ 2701 0458 0020C3E5 		strb	r2, [r3, #0]
+ 2702              	.L20:
+ 161:../sensorsEmulator.c **** 
+ 162:../sensorsEmulator.c ****     do {
+ 163:../sensorsEmulator.c ****         *--p = '0' + (i % 10);
+ 2703              		.loc 1 163 0 discriminator 1
+ 2704 045c 10301BE5 		ldr	r3, [fp, #-16]
+ 2705 0460 013043E2 		sub	r3, r3, #1
+ 2706 0464 10300BE5 		str	r3, [fp, #-16]
+ 2707 0468 15205BE5 		ldrb	r2, [fp, #-21]	@ zero_extendqisi2
+ 2708 046c 60309FE5 		ldr	r3, .L21
+ 2709 0470 921383E0 		umull	r1, r3, r2, r3
+ 2710 0474 A311A0E1 		mov	r1, r3, lsr #3
+ 2711 0478 0130A0E1 		mov	r3, r1
+ 2712 047c 0331A0E1 		mov	r3, r3, asl #2
+ 2713 0480 013083E0 		add	r3, r3, r1
+ 2714 0484 8330A0E1 		mov	r3, r3, asl #1
+ 2715 0488 023063E0 		rsb	r3, r3, r2
+ 2716 048c FF3003E2 		and	r3, r3, #255
+ 2717 0490 303083E2 		add	r3, r3, #48
+ 2718 0494 FF2003E2 		and	r2, r3, #255
+ 2719 0498 10301BE5 		ldr	r3, [fp, #-16]
+ 2720 049c 0020C3E5 		strb	r2, [r3, #0]
+ 164:../sensorsEmulator.c **** 		i /= 10;
+ 2721              		.loc 1 164 0 discriminator 1
+ 2722 04a0 15205BE5 		ldrb	r2, [fp, #-21]	@ zero_extendqisi2
+ 2723 04a4 28309FE5 		ldr	r3, .L21
+ 2724 04a8 921383E0 		umull	r1, r3, r2, r3
+ 2725 04ac A331A0E1 		mov	r3, r3, lsr #3
+ 2726 04b0 15304BE5 		strb	r3, [fp, #-21]
+ 165:../sensorsEmulator.c **** 	} while( i );
+ 2727              		.loc 1 165 0 discriminator 1
+ 2728 04b4 15305BE5 		ldrb	r3, [fp, #-21]	@ zero_extendqisi2
+ 2729 04b8 000053E3 		cmp	r3, #0
+ 2730 04bc E6FFFF1A 		bne	.L20
+ 166:../sensorsEmulator.c **** 
+ 167:../sensorsEmulator.c ****     uart0int_puts( p );
+ 2731              		.loc 1 167 0
+ 2732 04c0 10001BE5 		ldr	r0, [fp, #-16]
+ 2733 04c4 C4FFFFEB 		bl	uart0int_puts
+ 168:../sensorsEmulator.c **** }
+ 2734              		.loc 1 168 0
+ 2735 04c8 0CD04BE2 		sub	sp, fp, #12
+ 2736 04cc 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2737 04d0 1EFF2FE1 		bx	lr
+ 2738              	.L22:
+ 2739              		.align	2
+ 2740              	.L21:
+ 2741 04d4 CDCCCCCC 		.word	-858993459
+ 2742              		.cfi_endproc
+ 2743              	.LFE4:
+ 2745              		.section	.rodata
+ 2746 0296 0000     		.align	2
+ 2747              	.LC5:
+ 2748 0298 0A00     		.ascii	"\012\000"
+ 2749 029a 0000     		.align	2
+ 2750              	.LC6:
+ 2751 029c 4C617469 		.ascii	"Latidos por minuto: \000"
+ 2751      646F7320 
+ 2751      706F7220 
+ 2751      6D696E75 
+ 2751      746F3A20 
+ 2752 02b1 000000   		.align	2
+ 2753              	.LC7:
+ 2754 02b4 202F2050 		.ascii	" / Pasos por minuto: \000"
+ 2754      61736F73 
+ 2754      20706F72 
+ 2754      206D696E 
+ 2754      75746F3A 
+ 2755 02ca 0000     		.align	2
+ 2756              	.LC8:
+ 2757 02cc 20203120 		.ascii	"  1 - Incrementar latidos  (+1) \012\000"
+ 2757      2D20496E 
+ 2757      6372656D 
+ 2757      656E7461 
+ 2757      72206C61 
+ 2758 02ee 0000     		.align	2
+ 2759              	.LC9:
+ 2760 02f0 20203220 		.ascii	"  2 - Incrementar latidos (+10) \012\000"
+ 2760      2D20496E 
+ 2760      6372656D 
+ 2760      656E7461 
+ 2760      72206C61 
+ 2761 0312 0000     		.align	2
+ 2762              	.LC10:
+ 2763 0314 20203320 		.ascii	"  3 - Decrementar latidos  (-1) \012\000"
+ 2763      2D204465 
+ 2763      6372656D 
+ 2763      656E7461 
+ 2763      72206C61 
+ 2764 0336 0000     		.align	2
+ 2765              	.LC11:
+ 2766 0338 20203420 		.ascii	"  4 - Decrementar latidos (-10) \012\000"
+ 2766      2D204465 
+ 2766      6372656D 
+ 2766      656E7461 
+ 2766      72206C61 
+ 2767 035a 0000     		.align	2
+ 2768              	.LC12:
+ 2769 035c 20206420 		.ascii	"  d - Detenerse \012\000"
+ 2769      2D204465 
+ 2769      74656E65 
+ 2769      72736520 
+ 2769      0A00
+ 2770 036e 0000     		.align	2
+ 2771              	.LC13:
+ 2772 0370 20206120 		.ascii	"  a - Comenzar a andar \012\000"
+ 2772      2D20436F 
+ 2772      6D656E7A 
+ 2772      61722061 
+ 2772      20616E64 
+ 2773 0389 000000   		.align	2
+ 2774              	.LC14:
+ 2775 038c 20203520 		.ascii	"  5 - Incrementar pasos    (+1) \012\000"
+ 2775      2D20496E 
+ 2775      6372656D 
+ 2775      656E7461 
+ 2775      72207061 
+ 2776 03ae 0000     		.align	2
+ 2777              	.LC15:
+ 2778 03b0 20203620 		.ascii	"  6 - Incrementar pasos   (+10) \012\000"
+ 2778      2D20496E 
+ 2778      6372656D 
+ 2778      656E7461 
+ 2778      72207061 
+ 2779 03d2 0000     		.align	2
+ 2780              	.LC16:
+ 2781 03d4 20203720 		.ascii	"  7 - Decrementar pasos    (-1) \012\000"
+ 2781      2D204465 
+ 2781      6372656D 
+ 2781      656E7461 
+ 2781      72207061 
+ 2782 03f6 0000     		.align	2
+ 2783              	.LC17:
+ 2784 03f8 20203820 		.ascii	"  8 - Decrementar pasos   (-10) \012\000"
+ 2784      2D204465 
+ 2784      6372656D 
+ 2784      656E7461 
+ 2784      72207061 
+ 2785 041a 0000     		.text
+ 2786              		.align	2
+ 2788              	uart0int_putMenu:
+ 2789              	.LFB5:
+ 169:../sensorsEmulator.c **** 
+ 170:../sensorsEmulator.c **** void uart0int_putMenu( void )
+ 171:../sensorsEmulator.c **** {
+ 2790              		.loc 1 171 0
+ 2791              		.cfi_startproc
+ 2792              		@ Function supports interworking.
+ 2793              		@ args = 0, pretend = 0, frame = 0
+ 2794              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2795 04d8 0DC0A0E1 		mov	ip, sp
+ 2796              	.LCFI10:
+ 2797              		.cfi_def_cfa_register 12
+ 2798 04dc 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 2799 04e0 04B04CE2 		sub	fp, ip, #4
+ 2800              		.cfi_offset 14, -8
+ 2801              		.cfi_offset 13, -12
+ 2802              		.cfi_offset 11, -16
+ 2803              	.LCFI11:
+ 2804              		.cfi_def_cfa 11, 4
+ 172:../sensorsEmulator.c **** 	uart0int_puts( "\n" );
+ 2805              		.loc 1 172 0
+ 2806 04e4 9C009FE5 		ldr	r0, .L24
+ 2807 04e8 BBFFFFEB 		bl	uart0int_puts
+ 173:../sensorsEmulator.c **** 	uart0int_puts( "Latidos por minuto: " );
+ 2808              		.loc 1 173 0
+ 2809 04ec 98009FE5 		ldr	r0, .L24+4
+ 2810 04f0 B9FFFFEB 		bl	uart0int_puts
+ 174:../sensorsEmulator.c **** 	uart0int_putnum( latidosPorMin );
+ 2811              		.loc 1 174 0
+ 2812 04f4 94309FE5 		ldr	r3, .L24+8
+ 2813 04f8 0030D3E5 		ldrb	r3, [r3, #0]
+ 2814 04fc FF3003E2 		and	r3, r3, #255
+ 2815 0500 0300A0E1 		mov	r0, r3
+ 2816 0504 C8FFFFEB 		bl	uart0int_putnum
+ 175:../sensorsEmulator.c **** 	uart0int_puts( " / Pasos por minuto: " );
+ 2817              		.loc 1 175 0
+ 2818 0508 84009FE5 		ldr	r0, .L24+12
+ 2819 050c B2FFFFEB 		bl	uart0int_puts
+ 176:../sensorsEmulator.c **** 	uart0int_putnum( pasosPorMin );
+ 2820              		.loc 1 176 0
+ 2821 0510 80309FE5 		ldr	r3, .L24+16
+ 2822 0514 0030D3E5 		ldrb	r3, [r3, #0]
+ 2823 0518 FF3003E2 		and	r3, r3, #255
+ 2824 051c 0300A0E1 		mov	r0, r3
+ 2825 0520 C1FFFFEB 		bl	uart0int_putnum
+ 177:../sensorsEmulator.c **** 	uart0int_putchar( '\n' );
+ 2826              		.loc 1 177 0
+ 2827 0524 0A00A0E3 		mov	r0, #10
+ 2828 0528 70FFFFEB 		bl	uart0int_putchar
+ 178:../sensorsEmulator.c **** 	uart0int_puts( "  1 - Incrementar latidos  (+1) \n" );
+ 2829              		.loc 1 178 0
+ 2830 052c 68009FE5 		ldr	r0, .L24+20
+ 2831 0530 A9FFFFEB 		bl	uart0int_puts
+ 179:../sensorsEmulator.c **** 	uart0int_puts( "  2 - Incrementar latidos (+10) \n" );
+ 2832              		.loc 1 179 0
+ 2833 0534 64009FE5 		ldr	r0, .L24+24
+ 2834 0538 A7FFFFEB 		bl	uart0int_puts
+ 180:../sensorsEmulator.c **** 	uart0int_puts( "  3 - Decrementar latidos  (-1) \n" );
+ 2835              		.loc 1 180 0
+ 2836 053c 60009FE5 		ldr	r0, .L24+28
+ 2837 0540 A5FFFFEB 		bl	uart0int_puts
+ 181:../sensorsEmulator.c **** 	uart0int_puts( "  4 - Decrementar latidos (-10) \n" );
+ 2838              		.loc 1 181 0
+ 2839 0544 5C009FE5 		ldr	r0, .L24+32
+ 2840 0548 A3FFFFEB 		bl	uart0int_puts
+ 182:../sensorsEmulator.c **** 	uart0int_puts( "  d - Detenerse \n" );
+ 2841              		.loc 1 182 0
+ 2842 054c 58009FE5 		ldr	r0, .L24+36
+ 2843 0550 A1FFFFEB 		bl	uart0int_puts
+ 183:../sensorsEmulator.c **** 	uart0int_puts( "  a - Comenzar a andar \n" );
+ 2844              		.loc 1 183 0
+ 2845 0554 54009FE5 		ldr	r0, .L24+40
+ 2846 0558 9FFFFFEB 		bl	uart0int_puts
+ 184:../sensorsEmulator.c **** 	uart0int_puts( "  5 - Incrementar pasos    (+1) \n" );
+ 2847              		.loc 1 184 0
+ 2848 055c 50009FE5 		ldr	r0, .L24+44
+ 2849 0560 9DFFFFEB 		bl	uart0int_puts
+ 185:../sensorsEmulator.c **** 	uart0int_puts( "  6 - Incrementar pasos   (+10) \n" );
+ 2850              		.loc 1 185 0
+ 2851 0564 4C009FE5 		ldr	r0, .L24+48
+ 2852 0568 9BFFFFEB 		bl	uart0int_puts
+ 186:../sensorsEmulator.c **** 	uart0int_puts( "  7 - Decrementar pasos    (-1) \n" );
+ 2853              		.loc 1 186 0
+ 2854 056c 48009FE5 		ldr	r0, .L24+52
+ 2855 0570 99FFFFEB 		bl	uart0int_puts
+ 187:../sensorsEmulator.c **** 	uart0int_puts( "  8 - Decrementar pasos   (-10) \n" );
+ 2856              		.loc 1 187 0
+ 2857 0574 44009FE5 		ldr	r0, .L24+56
+ 2858 0578 97FFFFEB 		bl	uart0int_puts
+ 188:../sensorsEmulator.c **** }
+ 2859              		.loc 1 188 0
+ 2860 057c 0CD04BE2 		sub	sp, fp, #12
+ 2861 0580 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 2862 0584 1EFF2FE1 		bx	lr
+ 2863              	.L25:
+ 2864              		.align	2
+ 2865              	.L24:
+ 2866 0588 98020000 		.word	.LC5
+ 2867 058c 9C020000 		.word	.LC6
+ 2868 0590 06040000 		.word	latidosPorMin
+ 2869 0594 B4020000 		.word	.LC7
+ 2870 0598 07040000 		.word	pasosPorMin
+ 2871 059c CC020000 		.word	.LC8
+ 2872 05a0 F0020000 		.word	.LC9
+ 2873 05a4 14030000 		.word	.LC10
+ 2874 05a8 38030000 		.word	.LC11
+ 2875 05ac 5C030000 		.word	.LC12
+ 2876 05b0 70030000 		.word	.LC13
+ 2877 05b4 8C030000 		.word	.LC14
+ 2878 05b8 B0030000 		.word	.LC15
+ 2879 05bc D4030000 		.word	.LC16
+ 2880 05c0 F8030000 		.word	.LC17
+ 2881              		.cfi_endproc
+ 2882              	.LFE5:
+ 2884              		.align	2
+ 2886              	uart0int_isrRX:
+ 2887              	.LFB6:
+ 189:../sensorsEmulator.c **** 
+ 190:../sensorsEmulator.c **** void uart0int_isrRX( void )
+ 191:../sensorsEmulator.c **** {
+ 2888              		.loc 1 191 0
+ 2889              		.cfi_startproc
+ 2890              		@ Interrupt Service Routine.
+ 2891              		@ args = 0, pretend = 0, frame = 0
+ 2892              		@ frame_needed = 1, uses_anonymous_args = 0
+ 2893 05c4 04C02DE5 		str	ip, [sp, #-4]!
+ 2894 05c8 0DC0A0E1 		mov	ip, sp
+ 2895              	.LCFI12:
+ 2896              		.cfi_def_cfa_register 12
+ 2897 05cc 0FD82DE9 		stmfd	sp!, {r0, r1, r2, r3, fp, ip, lr, pc}
+ 2898 05d0 04B04CE2 		sub	fp, ip, #4
+ 2899              		.cfi_offset 14, -8
+ 2900              		.cfi_offset 13, -12
+ 2901              		.cfi_offset 11, -16
+ 2902              		.cfi_offset 3, -20
+ 2903              		.cfi_offset 2, -24
+ 2904              		.cfi_offset 1, -28
+ 2905              		.cfi_offset 0, -32
+ 2906              	.LCFI13:
+ 2907              		.cfi_def_cfa 11, 4
+ 192:../sensorsEmulator.c ****     I_ISPC = BIT_URXD0;
+ 2908              		.loc 1 192 0
+ 2909 05d4 D0379FE5 		ldr	r3, .L58
+ 2910 05d8 8020A0E3 		mov	r2, #128
+ 2911 05dc 002083E5 		str	r2, [r3, #0]
+ 193:../sensorsEmulator.c **** 	switch( URXH0 )
+ 2912              		.loc 1 193 0
+ 2913 05e0 C8379FE5 		ldr	r3, .L58+4
+ 2914 05e4 003093E5 		ldr	r3, [r3, #0]
+ 2915 05e8 0A3043E2 		sub	r3, r3, #10
+ 2916 05ec 5A0053E3 		cmp	r3, #90
+ 2917 05f0 03F19F97 		ldrls	pc, [pc, r3, asl #2]
+ 2918 05f4 E40100EA 		b	.L27
+ 2919              	.L39:
+ 2920 05f8 980D0000 		.word	.L57
+ 2921 05fc 8C0D0000 		.word	.L27
+ 2922 0600 8C0D0000 		.word	.L27
+ 2923 0604 8C0D0000 		.word	.L27
+ 2924 0608 8C0D0000 		.word	.L27
+ 2925 060c 8C0D0000 		.word	.L27
+ 2926 0610 8C0D0000 		.word	.L27
+ 2927 0614 8C0D0000 		.word	.L27
+ 2928 0618 8C0D0000 		.word	.L27
+ 2929 061c 8C0D0000 		.word	.L27
+ 2930 0620 8C0D0000 		.word	.L27
+ 2931 0624 8C0D0000 		.word	.L27
+ 2932 0628 8C0D0000 		.word	.L27
+ 2933 062c 8C0D0000 		.word	.L27
+ 2934 0630 8C0D0000 		.word	.L27
+ 2935 0634 8C0D0000 		.word	.L27
+ 2936 0638 8C0D0000 		.word	.L27
+ 2937 063c 8C0D0000 		.word	.L27
+ 2938 0640 8C0D0000 		.word	.L27
+ 2939 0644 8C0D0000 		.word	.L27
+ 2940 0648 8C0D0000 		.word	.L27
+ 2941 064c 8C0D0000 		.word	.L27
+ 2942 0650 8C0D0000 		.word	.L27
+ 2943 0654 8C0D0000 		.word	.L27
+ 2944 0658 8C0D0000 		.word	.L27
+ 2945 065c 8C0D0000 		.word	.L27
+ 2946 0660 8C0D0000 		.word	.L27
+ 2947 0664 8C0D0000 		.word	.L27
+ 2948 0668 8C0D0000 		.word	.L27
+ 2949 066c 8C0D0000 		.word	.L27
+ 2950 0670 8C0D0000 		.word	.L27
+ 2951 0674 8C0D0000 		.word	.L27
+ 2952 0678 8C0D0000 		.word	.L27
+ 2953 067c 8C0D0000 		.word	.L27
+ 2954 0680 8C0D0000 		.word	.L27
+ 2955 0684 8C0D0000 		.word	.L27
+ 2956 0688 8C0D0000 		.word	.L27
+ 2957 068c 8C0D0000 		.word	.L27
+ 2958 0690 8C0D0000 		.word	.L27
+ 2959 0694 64070000 		.word	.L29
+ 2960 0698 00080000 		.word	.L30
+ 2961 069c 9C080000 		.word	.L31
+ 2962 06a0 38090000 		.word	.L32
+ 2963 06a4 CC0A0000 		.word	.L33
+ 2964 06a8 7C0B0000 		.word	.L34
+ 2965 06ac 2C0C0000 		.word	.L35
+ 2966 06b0 DC0C0000 		.word	.L36
+ 2967 06b4 8C0D0000 		.word	.L27
+ 2968 06b8 8C0D0000 		.word	.L27
+ 2969 06bc 8C0D0000 		.word	.L27
+ 2970 06c0 8C0D0000 		.word	.L27
+ 2971 06c4 8C0D0000 		.word	.L27
+ 2972 06c8 8C0D0000 		.word	.L27
+ 2973 06cc 8C0D0000 		.word	.L27
+ 2974 06d0 8C0D0000 		.word	.L27
+ 2975 06d4 500A0000 		.word	.L37
+ 2976 06d8 8C0D0000 		.word	.L27
+ 2977 06dc 8C0D0000 		.word	.L27
+ 2978 06e0 D4090000 		.word	.L38
+ 2979 06e4 8C0D0000 		.word	.L27
+ 2980 06e8 8C0D0000 		.word	.L27
+ 2981 06ec 8C0D0000 		.word	.L27
+ 2982 06f0 8C0D0000 		.word	.L27
+ 2983 06f4 8C0D0000 		.word	.L27
+ 2984 06f8 8C0D0000 		.word	.L27
+ 2985 06fc 8C0D0000 		.word	.L27
+ 2986 0700 8C0D0000 		.word	.L27
+ 2987 0704 8C0D0000 		.word	.L27
+ 2988 0708 8C0D0000 		.word	.L27
+ 2989 070c 8C0D0000 		.word	.L27
+ 2990 0710 8C0D0000 		.word	.L27
+ 2991 0714 8C0D0000 		.word	.L27
+ 2992 0718 8C0D0000 		.word	.L27
+ 2993 071c 8C0D0000 		.word	.L27
+ 2994 0720 8C0D0000 		.word	.L27
+ 2995 0724 8C0D0000 		.word	.L27
+ 2996 0728 8C0D0000 		.word	.L27
+ 2997 072c 8C0D0000 		.word	.L27
+ 2998 0730 8C0D0000 		.word	.L27
+ 2999 0734 8C0D0000 		.word	.L27
+ 3000 0738 8C0D0000 		.word	.L27
+ 3001 073c 8C0D0000 		.word	.L27
+ 3002 0740 8C0D0000 		.word	.L27
+ 3003 0744 8C0D0000 		.word	.L27
+ 3004 0748 8C0D0000 		.word	.L27
+ 3005 074c 8C0D0000 		.word	.L27
+ 3006 0750 8C0D0000 		.word	.L27
+ 3007 0754 500A0000 		.word	.L37
+ 3008 0758 8C0D0000 		.word	.L27
+ 3009 075c 8C0D0000 		.word	.L27
+ 3010 0760 D4090000 		.word	.L38
+ 3011              	.L29:
+ 194:../sensorsEmulator.c **** 	{
+ 195:../sensorsEmulator.c **** 		case '1':
+ 196:../sensorsEmulator.c **** 			latidosPorMin = ( latidosPorMin < 255 ? latidosPorMin+1 : latidosPorMin );
+ 3012              		.loc 1 196 0
+ 3013 0764 48369FE5 		ldr	r3, .L58+8
+ 3014 0768 0030D3E5 		ldrb	r3, [r3, #0]
+ 3015 076c FF3003E2 		and	r3, r3, #255
+ 3016 0770 FF0053E3 		cmp	r3, #255
+ 3017 0774 0500000A 		beq	.L40
+ 3018              		.loc 1 196 0 is_stmt 0 discriminator 1
+ 3019 0778 34369FE5 		ldr	r3, .L58+8
+ 3020 077c 0030D3E5 		ldrb	r3, [r3, #0]
+ 3021 0780 FF3003E2 		and	r3, r3, #255
+ 3022 0784 013083E2 		add	r3, r3, #1
+ 3023 0788 FF3003E2 		and	r3, r3, #255
+ 3024 078c 020000EA 		b	.L41
+ 3025              	.L40:
+ 3026              		.loc 1 196 0 discriminator 2
+ 3027 0790 1C369FE5 		ldr	r3, .L58+8
+ 3028 0794 0030D3E5 		ldrb	r3, [r3, #0]
+ 3029 0798 FF3003E2 		and	r3, r3, #255
+ 3030              	.L41:
+ 3031              		.loc 1 196 0 discriminator 3
+ 3032 079c 10269FE5 		ldr	r2, .L58+8
+ 3033 07a0 0030C2E5 		strb	r3, [r2, #0]
+ 197:../sensorsEmulator.c **** 		    TCNTB3  = cntb[latidosPorMin];                             // Carga T3
+ 3034              		.loc 1 197 0 is_stmt 1 discriminator 3
+ 3035 07a4 0C369FE5 		ldr	r3, .L58+12
+ 3036 07a8 04269FE5 		ldr	r2, .L58+8
+ 3037 07ac 0020D2E5 		ldrb	r2, [r2, #0]
+ 3038 07b0 FF2002E2 		and	r2, r2, #255
+ 3039 07b4 00169FE5 		ldr	r1, .L58+16
+ 3040 07b8 8220A0E1 		mov	r2, r2, asl #1
+ 3041 07bc 022081E0 		add	r2, r1, r2
+ 3042 07c0 B020D2E1 		ldrh	r2, [r2, #0]
+ 3043 07c4 002083E5 		str	r2, [r3, #0]
+ 198:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 17);   // Modo interval, carga TCNT3, sto
+ 3044              		.loc 1 198 0 discriminator 3
+ 3045 07c8 F0359FE5 		ldr	r3, .L58+20
+ 3046 07cc EC259FE5 		ldr	r2, .L58+20
+ 3047 07d0 002092E5 		ldr	r2, [r2, #0]
+ 3048 07d4 0F28C2E3 		bic	r2, r2, #983040
+ 3049 07d8 0A2882E3 		orr	r2, r2, #655360
+ 3050 07dc 002083E5 		str	r2, [r3, #0]
+ 199:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 16);   // Modo interval, no carga TCNT3, 
+ 3051              		.loc 1 199 0 discriminator 3
+ 3052 07e0 D8359FE5 		ldr	r3, .L58+20
+ 3053 07e4 D4259FE5 		ldr	r2, .L58+20
+ 3054 07e8 002092E5 		ldr	r2, [r2, #0]
+ 3055 07ec 0F28C2E3 		bic	r2, r2, #983040
+ 3056 07f0 092882E3 		orr	r2, r2, #589824
+ 3057 07f4 002083E5 		str	r2, [r3, #0]
+ 200:../sensorsEmulator.c **** 			uart0int_putMenu();
+ 3058              		.loc 1 200 0 discriminator 3
+ 3059 07f8 36FFFFEB 		bl	uart0int_putMenu
+ 201:../sensorsEmulator.c **** 			break;
+ 3060              		.loc 1 201 0 discriminator 3
+ 3061 07fc 660100EA 		b	.L26
+ 3062              	.L30:
+ 202:../sensorsEmulator.c **** 		case '2':
+ 203:../sensorsEmulator.c **** 			latidosPorMin = ( latidosPorMin <= 245 ? latidosPorMin+10 : latidosPorMin );
+ 3063              		.loc 1 203 0
+ 3064 0800 AC359FE5 		ldr	r3, .L58+8
+ 3065 0804 0030D3E5 		ldrb	r3, [r3, #0]
+ 3066 0808 FF3003E2 		and	r3, r3, #255
+ 3067 080c F50053E3 		cmp	r3, #245
+ 3068 0810 0500008A 		bhi	.L43
+ 3069              		.loc 1 203 0 is_stmt 0 discriminator 1
+ 3070 0814 98359FE5 		ldr	r3, .L58+8
+ 3071 0818 0030D3E5 		ldrb	r3, [r3, #0]
+ 3072 081c FF3003E2 		and	r3, r3, #255
+ 3073 0820 0A3083E2 		add	r3, r3, #10
+ 3074 0824 FF3003E2 		and	r3, r3, #255
+ 3075 0828 020000EA 		b	.L44
+ 3076              	.L43:
+ 3077              		.loc 1 203 0 discriminator 2
+ 3078 082c 80359FE5 		ldr	r3, .L58+8
+ 3079 0830 0030D3E5 		ldrb	r3, [r3, #0]
+ 3080 0834 FF3003E2 		and	r3, r3, #255
+ 3081              	.L44:
+ 3082              		.loc 1 203 0 discriminator 3
+ 3083 0838 74259FE5 		ldr	r2, .L58+8
+ 3084 083c 0030C2E5 		strb	r3, [r2, #0]
+ 204:../sensorsEmulator.c **** 		    TCNTB3  = cntb[latidosPorMin];                             // Carga T3
+ 3085              		.loc 1 204 0 is_stmt 1 discriminator 3
+ 3086 0840 70359FE5 		ldr	r3, .L58+12
+ 3087 0844 68259FE5 		ldr	r2, .L58+8
+ 3088 0848 0020D2E5 		ldrb	r2, [r2, #0]
+ 3089 084c FF2002E2 		and	r2, r2, #255
+ 3090 0850 64159FE5 		ldr	r1, .L58+16
+ 3091 0854 8220A0E1 		mov	r2, r2, asl #1
+ 3092 0858 022081E0 		add	r2, r1, r2
+ 3093 085c B020D2E1 		ldrh	r2, [r2, #0]
+ 3094 0860 002083E5 		str	r2, [r3, #0]
+ 205:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 17);   // Modo interval, carga TCNT3, sto
+ 3095              		.loc 1 205 0 discriminator 3
+ 3096 0864 54359FE5 		ldr	r3, .L58+20
+ 3097 0868 50259FE5 		ldr	r2, .L58+20
+ 3098 086c 002092E5 		ldr	r2, [r2, #0]
+ 3099 0870 0F28C2E3 		bic	r2, r2, #983040
+ 3100 0874 0A2882E3 		orr	r2, r2, #655360
+ 3101 0878 002083E5 		str	r2, [r3, #0]
+ 206:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 16);   // Modo interval, no carga TCNT3, 
+ 3102              		.loc 1 206 0 discriminator 3
+ 3103 087c 3C359FE5 		ldr	r3, .L58+20
+ 3104 0880 38259FE5 		ldr	r2, .L58+20
+ 3105 0884 002092E5 		ldr	r2, [r2, #0]
+ 3106 0888 0F28C2E3 		bic	r2, r2, #983040
+ 3107 088c 092882E3 		orr	r2, r2, #589824
+ 3108 0890 002083E5 		str	r2, [r3, #0]
+ 207:../sensorsEmulator.c **** 			uart0int_putMenu();
+ 3109              		.loc 1 207 0 discriminator 3
+ 3110 0894 0FFFFFEB 		bl	uart0int_putMenu
+ 208:../sensorsEmulator.c **** 			break;
+ 3111              		.loc 1 208 0 discriminator 3
+ 3112 0898 3F0100EA 		b	.L26
+ 3113              	.L31:
+ 209:../sensorsEmulator.c **** 		case '3':
+ 210:../sensorsEmulator.c **** 			latidosPorMin = ( latidosPorMin > 28 ? latidosPorMin-1 : latidosPorMin );
+ 3114              		.loc 1 210 0
+ 3115 089c 10359FE5 		ldr	r3, .L58+8
+ 3116 08a0 0030D3E5 		ldrb	r3, [r3, #0]
+ 3117 08a4 FF3003E2 		and	r3, r3, #255
+ 3118 08a8 1C0053E3 		cmp	r3, #28
+ 3119 08ac 0500009A 		bls	.L45
+ 3120              		.loc 1 210 0 is_stmt 0 discriminator 1
+ 3121 08b0 FC349FE5 		ldr	r3, .L58+8
+ 3122 08b4 0030D3E5 		ldrb	r3, [r3, #0]
+ 3123 08b8 FF3003E2 		and	r3, r3, #255
+ 3124 08bc 013043E2 		sub	r3, r3, #1
+ 3125 08c0 FF3003E2 		and	r3, r3, #255
+ 3126 08c4 020000EA 		b	.L46
+ 3127              	.L45:
+ 3128              		.loc 1 210 0 discriminator 2
+ 3129 08c8 E4349FE5 		ldr	r3, .L58+8
+ 3130 08cc 0030D3E5 		ldrb	r3, [r3, #0]
+ 3131 08d0 FF3003E2 		and	r3, r3, #255
+ 3132              	.L46:
+ 3133              		.loc 1 210 0 discriminator 3
+ 3134 08d4 D8249FE5 		ldr	r2, .L58+8
+ 3135 08d8 0030C2E5 		strb	r3, [r2, #0]
+ 211:../sensorsEmulator.c **** 		    TCNTB3  = cntb[latidosPorMin];                             // Carga T3
+ 3136              		.loc 1 211 0 is_stmt 1 discriminator 3
+ 3137 08dc D4349FE5 		ldr	r3, .L58+12
+ 3138 08e0 CC249FE5 		ldr	r2, .L58+8
+ 3139 08e4 0020D2E5 		ldrb	r2, [r2, #0]
+ 3140 08e8 FF2002E2 		and	r2, r2, #255
+ 3141 08ec C8149FE5 		ldr	r1, .L58+16
+ 3142 08f0 8220A0E1 		mov	r2, r2, asl #1
+ 3143 08f4 022081E0 		add	r2, r1, r2
+ 3144 08f8 B020D2E1 		ldrh	r2, [r2, #0]
+ 3145 08fc 002083E5 		str	r2, [r3, #0]
+ 212:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 17);   // Modo interval, carga TCNT3, sto
+ 3146              		.loc 1 212 0 discriminator 3
+ 3147 0900 B8349FE5 		ldr	r3, .L58+20
+ 3148 0904 B4249FE5 		ldr	r2, .L58+20
+ 3149 0908 002092E5 		ldr	r2, [r2, #0]
+ 3150 090c 0F28C2E3 		bic	r2, r2, #983040
+ 3151 0910 0A2882E3 		orr	r2, r2, #655360
+ 3152 0914 002083E5 		str	r2, [r3, #0]
+ 213:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 16);   // Modo interval, no carga TCNT3, 
+ 3153              		.loc 1 213 0 discriminator 3
+ 3154 0918 A0349FE5 		ldr	r3, .L58+20
+ 3155 091c 9C249FE5 		ldr	r2, .L58+20
+ 3156 0920 002092E5 		ldr	r2, [r2, #0]
+ 3157 0924 0F28C2E3 		bic	r2, r2, #983040
+ 3158 0928 092882E3 		orr	r2, r2, #589824
+ 3159 092c 002083E5 		str	r2, [r3, #0]
+ 214:../sensorsEmulator.c **** 		    uart0int_putMenu();
+ 3160              		.loc 1 214 0 discriminator 3
+ 3161 0930 E8FEFFEB 		bl	uart0int_putMenu
+ 215:../sensorsEmulator.c **** 			break;
+ 3162              		.loc 1 215 0 discriminator 3
+ 3163 0934 180100EA 		b	.L26
+ 3164              	.L32:
+ 216:../sensorsEmulator.c **** 		case '4':
+ 217:../sensorsEmulator.c **** 			latidosPorMin = ( latidosPorMin >= 38 ? latidosPorMin-10 : latidosPorMin );
+ 3165              		.loc 1 217 0
+ 3166 0938 74349FE5 		ldr	r3, .L58+8
+ 3167 093c 0030D3E5 		ldrb	r3, [r3, #0]
+ 3168 0940 FF3003E2 		and	r3, r3, #255
+ 3169 0944 250053E3 		cmp	r3, #37
+ 3170 0948 0500009A 		bls	.L47
+ 3171              		.loc 1 217 0 is_stmt 0 discriminator 1
+ 3172 094c 60349FE5 		ldr	r3, .L58+8
+ 3173 0950 0030D3E5 		ldrb	r3, [r3, #0]
+ 3174 0954 FF3003E2 		and	r3, r3, #255
+ 3175 0958 0A3043E2 		sub	r3, r3, #10
+ 3176 095c FF3003E2 		and	r3, r3, #255
+ 3177 0960 020000EA 		b	.L48
+ 3178              	.L47:
+ 3179              		.loc 1 217 0 discriminator 2
+ 3180 0964 48349FE5 		ldr	r3, .L58+8
+ 3181 0968 0030D3E5 		ldrb	r3, [r3, #0]
+ 3182 096c FF3003E2 		and	r3, r3, #255
+ 3183              	.L48:
+ 3184              		.loc 1 217 0 discriminator 3
+ 3185 0970 3C249FE5 		ldr	r2, .L58+8
+ 3186 0974 0030C2E5 		strb	r3, [r2, #0]
+ 218:../sensorsEmulator.c **** 		    TCNTB3  = cntb[latidosPorMin];                             // Carga T3
+ 3187              		.loc 1 218 0 is_stmt 1 discriminator 3
+ 3188 0978 38349FE5 		ldr	r3, .L58+12
+ 3189 097c 30249FE5 		ldr	r2, .L58+8
+ 3190 0980 0020D2E5 		ldrb	r2, [r2, #0]
+ 3191 0984 FF2002E2 		and	r2, r2, #255
+ 3192 0988 2C149FE5 		ldr	r1, .L58+16
+ 3193 098c 8220A0E1 		mov	r2, r2, asl #1
+ 3194 0990 022081E0 		add	r2, r1, r2
+ 3195 0994 B020D2E1 		ldrh	r2, [r2, #0]
+ 3196 0998 002083E5 		str	r2, [r3, #0]
+ 219:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 17);   // Modo interval, carga TCNT3, sto
+ 3197              		.loc 1 219 0 discriminator 3
+ 3198 099c 1C349FE5 		ldr	r3, .L58+20
+ 3199 09a0 18249FE5 		ldr	r2, .L58+20
+ 3200 09a4 002092E5 		ldr	r2, [r2, #0]
+ 3201 09a8 0F28C2E3 		bic	r2, r2, #983040
+ 3202 09ac 0A2882E3 		orr	r2, r2, #655360
+ 3203 09b0 002083E5 		str	r2, [r3, #0]
+ 220:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 16)) | (1 << 19) | (1 << 16);   // Modo interval, no carga TCNT3, 
+ 3204              		.loc 1 220 0 discriminator 3
+ 3205 09b4 04349FE5 		ldr	r3, .L58+20
+ 3206 09b8 00249FE5 		ldr	r2, .L58+20
+ 3207 09bc 002092E5 		ldr	r2, [r2, #0]
+ 3208 09c0 0F28C2E3 		bic	r2, r2, #983040
+ 3209 09c4 092882E3 		orr	r2, r2, #589824
+ 3210 09c8 002083E5 		str	r2, [r3, #0]
+ 221:../sensorsEmulator.c **** 			uart0int_putMenu();
+ 3211              		.loc 1 221 0 discriminator 3
+ 3212 09cc C1FEFFEB 		bl	uart0int_putMenu
+ 222:../sensorsEmulator.c **** 			break;
+ 3213              		.loc 1 222 0 discriminator 3
+ 3214 09d0 F10000EA 		b	.L26
+ 3215              	.L38:
+ 223:../sensorsEmulator.c **** 		case 'd':
+ 224:../sensorsEmulator.c **** 		case 'D':
+ 225:../sensorsEmulator.c **** 			pasosPorMin = 0;
+ 3216              		.loc 1 225 0
+ 3217 09d4 E8339FE5 		ldr	r3, .L58+24
+ 3218 09d8 0020A0E3 		mov	r2, #0
+ 3219 09dc 0020C3E5 		strb	r2, [r3, #0]
+ 226:../sensorsEmulator.c **** 		    TCNTB2  = cntb[pasosPorMin];                               // Carga T2
+ 3220              		.loc 1 226 0
+ 3221 09e0 E0339FE5 		ldr	r3, .L58+28
+ 3222 09e4 D8239FE5 		ldr	r2, .L58+24
+ 3223 09e8 0020D2E5 		ldrb	r2, [r2, #0]
+ 3224 09ec FF2002E2 		and	r2, r2, #255
+ 3225 09f0 C4139FE5 		ldr	r1, .L58+16
+ 3226 09f4 8220A0E1 		mov	r2, r2, asl #1
+ 3227 09f8 022081E0 		add	r2, r1, r2
+ 3228 09fc B020D2E1 		ldrh	r2, [r2, #0]
+ 3229 0a00 002083E5 		str	r2, [r3, #0]
+ 227:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 13);   // Modo interval, carga TCNT2, sto
+ 3230              		.loc 1 227 0
+ 3231 0a04 B4339FE5 		ldr	r3, .L58+20
+ 3232 0a08 B0239FE5 		ldr	r2, .L58+20
+ 3233 0a0c 002092E5 		ldr	r2, [r2, #0]
+ 3234 0a10 0F2AC2E3 		bic	r2, r2, #61440
+ 3235 0a14 0A2A82E3 		orr	r2, r2, #40960
+ 3236 0a18 002083E5 		str	r2, [r3, #0]
+ 228:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 12);   // Modo interval, no carga TCNT2, 
+ 3237              		.loc 1 228 0
+ 3238 0a1c 9C339FE5 		ldr	r3, .L58+20
+ 3239 0a20 98239FE5 		ldr	r2, .L58+20
+ 3240 0a24 002092E5 		ldr	r2, [r2, #0]
+ 3241 0a28 0F2AC2E3 		bic	r2, r2, #61440
+ 3242 0a2c 092A82E3 		orr	r2, r2, #36864
+ 3243 0a30 002083E5 		str	r2, [r3, #0]
+ 229:../sensorsEmulator.c **** 			INTMSK |= BIT_TIMER2;
+ 3244              		.loc 1 229 0
+ 3245 0a34 90339FE5 		ldr	r3, .L58+32
+ 3246 0a38 8C239FE5 		ldr	r2, .L58+32
+ 3247 0a3c 002092E5 		ldr	r2, [r2, #0]
+ 3248 0a40 022B82E3 		orr	r2, r2, #2048
+ 3249 0a44 002083E5 		str	r2, [r3, #0]
+ 230:../sensorsEmulator.c **** 		    uart0int_putMenu();
+ 3250              		.loc 1 230 0
+ 3251 0a48 A2FEFFEB 		bl	uart0int_putMenu
+ 231:../sensorsEmulator.c **** 			break;
+ 3252              		.loc 1 231 0
+ 3253 0a4c D20000EA 		b	.L26
+ 3254              	.L37:
+ 232:../sensorsEmulator.c **** 		case 'a':
+ 233:../sensorsEmulator.c **** 		case 'A':
+ 234:../sensorsEmulator.c **** 			pasosPorMin = 10;
+ 3255              		.loc 1 234 0
+ 3256 0a50 6C339FE5 		ldr	r3, .L58+24
+ 3257 0a54 0A20A0E3 		mov	r2, #10
+ 3258 0a58 0020C3E5 		strb	r2, [r3, #0]
+ 235:../sensorsEmulator.c **** 		    TCNTB2  = cntb[pasosPorMin];                               // Carga T2
+ 3259              		.loc 1 235 0
+ 3260 0a5c 64339FE5 		ldr	r3, .L58+28
+ 3261 0a60 5C239FE5 		ldr	r2, .L58+24
+ 3262 0a64 0020D2E5 		ldrb	r2, [r2, #0]
+ 3263 0a68 FF2002E2 		and	r2, r2, #255
+ 3264 0a6c 48139FE5 		ldr	r1, .L58+16
+ 3265 0a70 8220A0E1 		mov	r2, r2, asl #1
+ 3266 0a74 022081E0 		add	r2, r1, r2
+ 3267 0a78 B020D2E1 		ldrh	r2, [r2, #0]
+ 3268 0a7c 002083E5 		str	r2, [r3, #0]
+ 236:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 13);   // Modo interval, carga TCNT2, sto
+ 3269              		.loc 1 236 0
+ 3270 0a80 38339FE5 		ldr	r3, .L58+20
+ 3271 0a84 34239FE5 		ldr	r2, .L58+20
+ 3272 0a88 002092E5 		ldr	r2, [r2, #0]
+ 3273 0a8c 0F2AC2E3 		bic	r2, r2, #61440
+ 3274 0a90 0A2A82E3 		orr	r2, r2, #40960
+ 3275 0a94 002083E5 		str	r2, [r3, #0]
+ 237:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 12);   // Modo interval, no carga TCNT2, 
+ 3276              		.loc 1 237 0
+ 3277 0a98 20339FE5 		ldr	r3, .L58+20
+ 3278 0a9c 1C239FE5 		ldr	r2, .L58+20
+ 3279 0aa0 002092E5 		ldr	r2, [r2, #0]
+ 3280 0aa4 0F2AC2E3 		bic	r2, r2, #61440
+ 3281 0aa8 092A82E3 		orr	r2, r2, #36864
+ 3282 0aac 002083E5 		str	r2, [r3, #0]
+ 238:../sensorsEmulator.c **** 		    INTMSK &= ~BIT_TIMER2;
+ 3283              		.loc 1 238 0
+ 3284 0ab0 14339FE5 		ldr	r3, .L58+32
+ 3285 0ab4 10239FE5 		ldr	r2, .L58+32
+ 3286 0ab8 002092E5 		ldr	r2, [r2, #0]
+ 3287 0abc 022BC2E3 		bic	r2, r2, #2048
+ 3288 0ac0 002083E5 		str	r2, [r3, #0]
+ 239:../sensorsEmulator.c **** 			uart0int_putMenu();
+ 3289              		.loc 1 239 0
+ 3290 0ac4 83FEFFEB 		bl	uart0int_putMenu
+ 240:../sensorsEmulator.c **** 			break;
+ 3291              		.loc 1 240 0
+ 3292 0ac8 B30000EA 		b	.L26
+ 3293              	.L33:
+ 241:../sensorsEmulator.c **** 		case '5':
+ 242:../sensorsEmulator.c **** 			pasosPorMin = ( pasosPorMin != 0 && pasosPorMin < 200 ? pasosPorMin+1 : pasosPorMin );
+ 3294              		.loc 1 242 0
+ 3295 0acc F0329FE5 		ldr	r3, .L58+24
+ 3296 0ad0 0030D3E5 		ldrb	r3, [r3, #0]
+ 3297 0ad4 FF3003E2 		and	r3, r3, #255
+ 3298 0ad8 000053E3 		cmp	r3, #0
+ 3299 0adc 0A00000A 		beq	.L49
+ 3300              		.loc 1 242 0 is_stmt 0 discriminator 1
+ 3301 0ae0 DC329FE5 		ldr	r3, .L58+24
+ 3302 0ae4 0030D3E5 		ldrb	r3, [r3, #0]
+ 3303 0ae8 FF3003E2 		and	r3, r3, #255
+ 3304 0aec C70053E3 		cmp	r3, #199
+ 3305 0af0 0500008A 		bhi	.L49
+ 3306 0af4 C8329FE5 		ldr	r3, .L58+24
+ 3307 0af8 0030D3E5 		ldrb	r3, [r3, #0]
+ 3308 0afc FF3003E2 		and	r3, r3, #255
+ 3309 0b00 013083E2 		add	r3, r3, #1
+ 3310 0b04 FF3003E2 		and	r3, r3, #255
+ 3311 0b08 020000EA 		b	.L50
+ 3312              	.L49:
+ 3313              		.loc 1 242 0 discriminator 2
+ 3314 0b0c B0329FE5 		ldr	r3, .L58+24
+ 3315 0b10 0030D3E5 		ldrb	r3, [r3, #0]
+ 3316 0b14 FF3003E2 		and	r3, r3, #255
+ 3317              	.L50:
+ 3318              		.loc 1 242 0 discriminator 3
+ 3319 0b18 A4229FE5 		ldr	r2, .L58+24
+ 3320 0b1c 0030C2E5 		strb	r3, [r2, #0]
+ 243:../sensorsEmulator.c **** 		    TCNTB2  = cntb[pasosPorMin];                               // Carga T2
+ 3321              		.loc 1 243 0 is_stmt 1 discriminator 3
+ 3322 0b20 A0329FE5 		ldr	r3, .L58+28
+ 3323 0b24 98229FE5 		ldr	r2, .L58+24
+ 3324 0b28 0020D2E5 		ldrb	r2, [r2, #0]
+ 3325 0b2c FF2002E2 		and	r2, r2, #255
+ 3326 0b30 84129FE5 		ldr	r1, .L58+16
+ 3327 0b34 8220A0E1 		mov	r2, r2, asl #1
+ 3328 0b38 022081E0 		add	r2, r1, r2
+ 3329 0b3c B020D2E1 		ldrh	r2, [r2, #0]
+ 3330 0b40 002083E5 		str	r2, [r3, #0]
+ 244:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 13);   // Modo interval, carga TCNT2, sto
+ 3331              		.loc 1 244 0 discriminator 3
+ 3332 0b44 74329FE5 		ldr	r3, .L58+20
+ 3333 0b48 70229FE5 		ldr	r2, .L58+20
+ 3334 0b4c 002092E5 		ldr	r2, [r2, #0]
+ 3335 0b50 0F2AC2E3 		bic	r2, r2, #61440
+ 3336 0b54 0A2A82E3 		orr	r2, r2, #40960
+ 3337 0b58 002083E5 		str	r2, [r3, #0]
+ 245:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 12);   // Modo interval, no carga TCNT2, 
+ 3338              		.loc 1 245 0 discriminator 3
+ 3339 0b5c 5C329FE5 		ldr	r3, .L58+20
+ 3340 0b60 58229FE5 		ldr	r2, .L58+20
+ 3341 0b64 002092E5 		ldr	r2, [r2, #0]
+ 3342 0b68 0F2AC2E3 		bic	r2, r2, #61440
+ 3343 0b6c 092A82E3 		orr	r2, r2, #36864
+ 3344 0b70 002083E5 		str	r2, [r3, #0]
+ 246:../sensorsEmulator.c **** 			uart0int_putMenu();
+ 3345              		.loc 1 246 0 discriminator 3
+ 3346 0b74 57FEFFEB 		bl	uart0int_putMenu
+ 247:../sensorsEmulator.c **** 			break;
+ 3347              		.loc 1 247 0 discriminator 3
+ 3348 0b78 870000EA 		b	.L26
+ 3349              	.L34:
+ 248:../sensorsEmulator.c **** 		case '6':
+ 249:../sensorsEmulator.c **** 			pasosPorMin = ( pasosPorMin != 0 && pasosPorMin <= 190 ? pasosPorMin+10 : pasosPorMin );
+ 3350              		.loc 1 249 0
+ 3351 0b7c 40329FE5 		ldr	r3, .L58+24
+ 3352 0b80 0030D3E5 		ldrb	r3, [r3, #0]
+ 3353 0b84 FF3003E2 		and	r3, r3, #255
+ 3354 0b88 000053E3 		cmp	r3, #0
+ 3355 0b8c 0A00000A 		beq	.L51
+ 3356              		.loc 1 249 0 is_stmt 0 discriminator 1
+ 3357 0b90 2C329FE5 		ldr	r3, .L58+24
+ 3358 0b94 0030D3E5 		ldrb	r3, [r3, #0]
+ 3359 0b98 FF3003E2 		and	r3, r3, #255
+ 3360 0b9c BE0053E3 		cmp	r3, #190
+ 3361 0ba0 0500008A 		bhi	.L51
+ 3362 0ba4 18329FE5 		ldr	r3, .L58+24
+ 3363 0ba8 0030D3E5 		ldrb	r3, [r3, #0]
+ 3364 0bac FF3003E2 		and	r3, r3, #255
+ 3365 0bb0 0A3083E2 		add	r3, r3, #10
+ 3366 0bb4 FF3003E2 		and	r3, r3, #255
+ 3367 0bb8 020000EA 		b	.L52
+ 3368              	.L51:
+ 3369              		.loc 1 249 0 discriminator 2
+ 3370 0bbc 00329FE5 		ldr	r3, .L58+24
+ 3371 0bc0 0030D3E5 		ldrb	r3, [r3, #0]
+ 3372 0bc4 FF3003E2 		and	r3, r3, #255
+ 3373              	.L52:
+ 3374              		.loc 1 249 0 discriminator 3
+ 3375 0bc8 F4219FE5 		ldr	r2, .L58+24
+ 3376 0bcc 0030C2E5 		strb	r3, [r2, #0]
+ 250:../sensorsEmulator.c **** 		    TCNTB2  = cntb[pasosPorMin];                               // Carga T2
+ 3377              		.loc 1 250 0 is_stmt 1 discriminator 3
+ 3378 0bd0 F0319FE5 		ldr	r3, .L58+28
+ 3379 0bd4 E8219FE5 		ldr	r2, .L58+24
+ 3380 0bd8 0020D2E5 		ldrb	r2, [r2, #0]
+ 3381 0bdc FF2002E2 		and	r2, r2, #255
+ 3382 0be0 D4119FE5 		ldr	r1, .L58+16
+ 3383 0be4 8220A0E1 		mov	r2, r2, asl #1
+ 3384 0be8 022081E0 		add	r2, r1, r2
+ 3385 0bec B020D2E1 		ldrh	r2, [r2, #0]
+ 3386 0bf0 002083E5 		str	r2, [r3, #0]
+ 251:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 13);   // Modo interval, carga TCNT2, sto
+ 3387              		.loc 1 251 0 discriminator 3
+ 3388 0bf4 C4319FE5 		ldr	r3, .L58+20
+ 3389 0bf8 C0219FE5 		ldr	r2, .L58+20
+ 3390 0bfc 002092E5 		ldr	r2, [r2, #0]
+ 3391 0c00 0F2AC2E3 		bic	r2, r2, #61440
+ 3392 0c04 0A2A82E3 		orr	r2, r2, #40960
+ 3393 0c08 002083E5 		str	r2, [r3, #0]
+ 252:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 12);   // Modo interval, no carga TCNT2, 
+ 3394              		.loc 1 252 0 discriminator 3
+ 3395 0c0c AC319FE5 		ldr	r3, .L58+20
+ 3396 0c10 A8219FE5 		ldr	r2, .L58+20
+ 3397 0c14 002092E5 		ldr	r2, [r2, #0]
+ 3398 0c18 0F2AC2E3 		bic	r2, r2, #61440
+ 3399 0c1c 092A82E3 		orr	r2, r2, #36864
+ 3400 0c20 002083E5 		str	r2, [r3, #0]
+ 253:../sensorsEmulator.c **** 		    uart0int_putMenu();
+ 3401              		.loc 1 253 0 discriminator 3
+ 3402 0c24 2BFEFFEB 		bl	uart0int_putMenu
+ 254:../sensorsEmulator.c **** 			break;
+ 3403              		.loc 1 254 0 discriminator 3
+ 3404 0c28 5B0000EA 		b	.L26
+ 3405              	.L35:
+ 255:../sensorsEmulator.c **** 		case '7':
+ 256:../sensorsEmulator.c **** 			pasosPorMin = ( pasosPorMin != 0 && pasosPorMin > 10 ? pasosPorMin-1 : pasosPorMin );
+ 3406              		.loc 1 256 0
+ 3407 0c2c 90319FE5 		ldr	r3, .L58+24
+ 3408 0c30 0030D3E5 		ldrb	r3, [r3, #0]
+ 3409 0c34 FF3003E2 		and	r3, r3, #255
+ 3410 0c38 000053E3 		cmp	r3, #0
+ 3411 0c3c 0A00000A 		beq	.L53
+ 3412              		.loc 1 256 0 is_stmt 0 discriminator 1
+ 3413 0c40 7C319FE5 		ldr	r3, .L58+24
+ 3414 0c44 0030D3E5 		ldrb	r3, [r3, #0]
+ 3415 0c48 FF3003E2 		and	r3, r3, #255
+ 3416 0c4c 0A0053E3 		cmp	r3, #10
+ 3417 0c50 0500009A 		bls	.L53
+ 3418 0c54 68319FE5 		ldr	r3, .L58+24
+ 3419 0c58 0030D3E5 		ldrb	r3, [r3, #0]
+ 3420 0c5c FF3003E2 		and	r3, r3, #255
+ 3421 0c60 013043E2 		sub	r3, r3, #1
+ 3422 0c64 FF3003E2 		and	r3, r3, #255
+ 3423 0c68 020000EA 		b	.L54
+ 3424              	.L53:
+ 3425              		.loc 1 256 0 discriminator 2
+ 3426 0c6c 50319FE5 		ldr	r3, .L58+24
+ 3427 0c70 0030D3E5 		ldrb	r3, [r3, #0]
+ 3428 0c74 FF3003E2 		and	r3, r3, #255
+ 3429              	.L54:
+ 3430              		.loc 1 256 0 discriminator 3
+ 3431 0c78 44219FE5 		ldr	r2, .L58+24
+ 3432 0c7c 0030C2E5 		strb	r3, [r2, #0]
+ 257:../sensorsEmulator.c **** 		    TCNTB2  = cntb[pasosPorMin];                               // Carga T2
+ 3433              		.loc 1 257 0 is_stmt 1 discriminator 3
+ 3434 0c80 40319FE5 		ldr	r3, .L58+28
+ 3435 0c84 38219FE5 		ldr	r2, .L58+24
+ 3436 0c88 0020D2E5 		ldrb	r2, [r2, #0]
+ 3437 0c8c FF2002E2 		and	r2, r2, #255
+ 3438 0c90 24119FE5 		ldr	r1, .L58+16
+ 3439 0c94 8220A0E1 		mov	r2, r2, asl #1
+ 3440 0c98 022081E0 		add	r2, r1, r2
+ 3441 0c9c B020D2E1 		ldrh	r2, [r2, #0]
+ 3442 0ca0 002083E5 		str	r2, [r3, #0]
+ 258:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 13);   // Modo interval, carga TCNT2, sto
+ 3443              		.loc 1 258 0 discriminator 3
+ 3444 0ca4 14319FE5 		ldr	r3, .L58+20
+ 3445 0ca8 10219FE5 		ldr	r2, .L58+20
+ 3446 0cac 002092E5 		ldr	r2, [r2, #0]
+ 3447 0cb0 0F2AC2E3 		bic	r2, r2, #61440
+ 3448 0cb4 0A2A82E3 		orr	r2, r2, #40960
+ 3449 0cb8 002083E5 		str	r2, [r3, #0]
+ 259:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 12);   // Modo interval, no carga TCNT2, 
+ 3450              		.loc 1 259 0 discriminator 3
+ 3451 0cbc FC309FE5 		ldr	r3, .L58+20
+ 3452 0cc0 F8209FE5 		ldr	r2, .L58+20
+ 3453 0cc4 002092E5 		ldr	r2, [r2, #0]
+ 3454 0cc8 0F2AC2E3 		bic	r2, r2, #61440
+ 3455 0ccc 092A82E3 		orr	r2, r2, #36864
+ 3456 0cd0 002083E5 		str	r2, [r3, #0]
+ 260:../sensorsEmulator.c **** 			uart0int_putMenu();
+ 3457              		.loc 1 260 0 discriminator 3
+ 3458 0cd4 FFFDFFEB 		bl	uart0int_putMenu
+ 261:../sensorsEmulator.c **** 			break;
+ 3459              		.loc 1 261 0 discriminator 3
+ 3460 0cd8 2F0000EA 		b	.L26
+ 3461              	.L36:
+ 262:../sensorsEmulator.c **** 		case '8':
+ 263:../sensorsEmulator.c **** 			pasosPorMin = ( pasosPorMin != 0 && pasosPorMin >= 20 ? pasosPorMin-10 : pasosPorMin );
+ 3462              		.loc 1 263 0
+ 3463 0cdc E0309FE5 		ldr	r3, .L58+24
+ 3464 0ce0 0030D3E5 		ldrb	r3, [r3, #0]
+ 3465 0ce4 FF3003E2 		and	r3, r3, #255
+ 3466 0ce8 000053E3 		cmp	r3, #0
+ 3467 0cec 0A00000A 		beq	.L55
+ 3468              		.loc 1 263 0 is_stmt 0 discriminator 1
+ 3469 0cf0 CC309FE5 		ldr	r3, .L58+24
+ 3470 0cf4 0030D3E5 		ldrb	r3, [r3, #0]
+ 3471 0cf8 FF3003E2 		and	r3, r3, #255
+ 3472 0cfc 130053E3 		cmp	r3, #19
+ 3473 0d00 0500009A 		bls	.L55
+ 3474 0d04 B8309FE5 		ldr	r3, .L58+24
+ 3475 0d08 0030D3E5 		ldrb	r3, [r3, #0]
+ 3476 0d0c FF3003E2 		and	r3, r3, #255
+ 3477 0d10 0A3043E2 		sub	r3, r3, #10
+ 3478 0d14 FF3003E2 		and	r3, r3, #255
+ 3479 0d18 020000EA 		b	.L56
+ 3480              	.L55:
+ 3481              		.loc 1 263 0 discriminator 2
+ 3482 0d1c A0309FE5 		ldr	r3, .L58+24
+ 3483 0d20 0030D3E5 		ldrb	r3, [r3, #0]
+ 3484 0d24 FF3003E2 		and	r3, r3, #255
+ 3485              	.L56:
+ 3486              		.loc 1 263 0 discriminator 3
+ 3487 0d28 94209FE5 		ldr	r2, .L58+24
+ 3488 0d2c 0030C2E5 		strb	r3, [r2, #0]
+ 264:../sensorsEmulator.c **** 		    TCNTB2  = cntb[pasosPorMin];                               // Carga T2
+ 3489              		.loc 1 264 0 is_stmt 1 discriminator 3
+ 3490 0d30 90309FE5 		ldr	r3, .L58+28
+ 3491 0d34 88209FE5 		ldr	r2, .L58+24
+ 3492 0d38 0020D2E5 		ldrb	r2, [r2, #0]
+ 3493 0d3c FF2002E2 		and	r2, r2, #255
+ 3494 0d40 74109FE5 		ldr	r1, .L58+16
+ 3495 0d44 8220A0E1 		mov	r2, r2, asl #1
+ 3496 0d48 022081E0 		add	r2, r1, r2
+ 3497 0d4c B020D2E1 		ldrh	r2, [r2, #0]
+ 3498 0d50 002083E5 		str	r2, [r3, #0]
+ 265:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 13);   // Modo interval, carga TCNT2, sto
+ 3499              		.loc 1 265 0 discriminator 3
+ 3500 0d54 64309FE5 		ldr	r3, .L58+20
+ 3501 0d58 60209FE5 		ldr	r2, .L58+20
+ 3502 0d5c 002092E5 		ldr	r2, [r2, #0]
+ 3503 0d60 0F2AC2E3 		bic	r2, r2, #61440
+ 3504 0d64 0A2A82E3 		orr	r2, r2, #40960
+ 3505 0d68 002083E5 		str	r2, [r3, #0]
+ 266:../sensorsEmulator.c **** 		    TCON    = (TCON & ~(0xf << 12)) | (1 << 15) | (1 << 12);   // Modo interval, no carga TCNT2, 
+ 3506              		.loc 1 266 0 discriminator 3
+ 3507 0d6c 4C309FE5 		ldr	r3, .L58+20
+ 3508 0d70 48209FE5 		ldr	r2, .L58+20
+ 3509 0d74 002092E5 		ldr	r2, [r2, #0]
+ 3510 0d78 0F2AC2E3 		bic	r2, r2, #61440
+ 3511 0d7c 092A82E3 		orr	r2, r2, #36864
+ 3512 0d80 002083E5 		str	r2, [r3, #0]
+ 267:../sensorsEmulator.c **** 			uart0int_putMenu();
+ 3513              		.loc 1 267 0 discriminator 3
+ 3514 0d84 D3FDFFEB 		bl	uart0int_putMenu
+ 268:../sensorsEmulator.c **** 			break;
+ 3515              		.loc 1 268 0 discriminator 3
+ 3516 0d88 030000EA 		b	.L26
+ 3517              	.L27:
+ 269:../sensorsEmulator.c **** 	    case '\n':
+ 270:../sensorsEmulator.c **** 			break;
+ 271:../sensorsEmulator.c **** 		default:
+ 272:../sensorsEmulator.c **** 			uart0int_putMenu();
+ 3518              		.loc 1 272 0
+ 3519 0d8c D1FDFFEB 		bl	uart0int_putMenu
+ 273:../sensorsEmulator.c **** 			break;
+ 3520              		.loc 1 273 0
+ 3521 0d90 0000A0E1 		mov	r0, r0	@ nop
+ 3522 0d94 000000EA 		b	.L26
+ 3523              	.L57:
+ 270:../sensorsEmulator.c **** 			break;
+ 3524              		.loc 1 270 0
+ 3525 0d98 0000A0E1 		mov	r0, r0	@ nop
+ 3526              	.L26:
+ 274:../sensorsEmulator.c **** 	}
+ 275:../sensorsEmulator.c **** 
+ 276:../sensorsEmulator.c **** }
+ 3527              		.loc 1 276 0
+ 3528 0d9c 1CD04BE2 		sub	sp, fp, #28
+ 3529 0da0 0F689DE8 		ldmfd	sp, {r0, r1, r2, r3, fp, sp, lr}
+ 3530 0da4 04C09DE4 		ldmfd	sp!, {ip}
+ 3531 0da8 04F05EE2 		subs	pc, lr, #4
+ 3532              	.L59:
+ 3533              		.align	2
+ 3534              	.L58:
+ 3535 0dac 2400E001 		.word	31457316
+ 3536 0db0 2400D001 		.word	30408740
+ 3537 0db4 06040000 		.word	latidosPorMin
+ 3538 0db8 3000D501 		.word	30736432
+ 3539 0dbc 00000000 		.word	cntb
+ 3540 0dc0 0800D501 		.word	30736392
+ 3541 0dc4 07040000 		.word	pasosPorMin
+ 3542 0dc8 2400D501 		.word	30736420
+ 3543 0dcc 0C00E001 		.word	31457292
+ 3544              		.cfi_endproc
+ 3545              	.LFE6:
+ 3547              		.align	2
+ 3549              	fifo_init:
+ 3550              	.LFB7:
+ 277:../sensorsEmulator.c **** 
+ 278:../sensorsEmulator.c **** /*******************************************************************/
+ 279:../sensorsEmulator.c **** 
+ 280:../sensorsEmulator.c **** void fifo_init( fifo_t *pfifo )
+ 281:../sensorsEmulator.c **** {
+ 3551              		.loc 1 281 0
+ 3552              		.cfi_startproc
+ 3553              		@ Function supports interworking.
+ 3554              		@ args = 0, pretend = 0, frame = 8
+ 3555              		@ frame_needed = 1, uses_anonymous_args = 0
+ 3556 0dd0 0DC0A0E1 		mov	ip, sp
+ 3557              	.LCFI14:
+ 3558              		.cfi_def_cfa_register 12
+ 3559 0dd4 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 3560 0dd8 04B04CE2 		sub	fp, ip, #4
+ 3561              		.cfi_offset 14, -8
+ 3562              		.cfi_offset 13, -12
+ 3563              		.cfi_offset 11, -16
+ 3564              	.LCFI15:
+ 3565              		.cfi_def_cfa 11, 4
+ 3566 0ddc 08D04DE2 		sub	sp, sp, #8
+ 3567 0de0 10000BE5 		str	r0, [fp, #-16]
+ 282:../sensorsEmulator.c **** 	pfifo->head = 0;
+ 3568              		.loc 1 282 0
+ 3569 0de4 10301BE5 		ldr	r3, [fp, #-16]
+ 3570 0de8 0020A0E3 		mov	r2, #0
+ 3571 0dec B020C3E1 		strh	r2, [r3, #0]	@ movhi
+ 283:../sensorsEmulator.c **** 	pfifo->tail = 0;
+ 3572              		.loc 1 283 0
+ 3573 0df0 10301BE5 		ldr	r3, [fp, #-16]
+ 3574 0df4 0020A0E3 		mov	r2, #0
+ 3575 0df8 B220C3E1 		strh	r2, [r3, #2]	@ movhi
+ 284:../sensorsEmulator.c **** 	pfifo->size = 0;
+ 3576              		.loc 1 284 0
+ 3577 0dfc 10301BE5 		ldr	r3, [fp, #-16]
+ 3578 0e00 0020A0E3 		mov	r2, #0
+ 3579 0e04 B420C3E1 		strh	r2, [r3, #4]	@ movhi
+ 285:../sensorsEmulator.c **** }
+ 3580              		.loc 1 285 0
+ 3581 0e08 0CD04BE2 		sub	sp, fp, #12
+ 3582 0e0c 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 3583 0e10 1EFF2FE1 		bx	lr
+ 3584              		.cfi_endproc
+ 3585              	.LFE7:
+ 3587              		.align	2
+ 3589              	fifo_enqueue:
+ 3590              	.LFB8:
+ 286:../sensorsEmulator.c **** 
+ 287:../sensorsEmulator.c **** void fifo_enqueue( fifo_t *pfifo, uint8 data )
+ 288:../sensorsEmulator.c **** {
+ 3591              		.loc 1 288 0
+ 3592              		.cfi_startproc
+ 3593              		@ Function supports interworking.
+ 3594              		@ args = 0, pretend = 0, frame = 8
+ 3595              		@ frame_needed = 1, uses_anonymous_args = 0
+ 3596 0e14 0DC0A0E1 		mov	ip, sp
+ 3597              	.LCFI16:
+ 3598              		.cfi_def_cfa_register 12
+ 3599 0e18 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 3600 0e1c 04B04CE2 		sub	fp, ip, #4
+ 3601              		.cfi_offset 14, -8
+ 3602              		.cfi_offset 13, -12
+ 3603              		.cfi_offset 11, -16
+ 3604              	.LCFI17:
+ 3605              		.cfi_def_cfa 11, 4
+ 3606 0e20 08D04DE2 		sub	sp, sp, #8
+ 3607 0e24 10000BE5 		str	r0, [fp, #-16]
+ 3608 0e28 0130A0E1 		mov	r3, r1
+ 3609 0e2c 11304BE5 		strb	r3, [fp, #-17]
+ 289:../sensorsEmulator.c **** 	pfifo->buffer[pfifo->tail++] = data;
+ 3610              		.loc 1 289 0
+ 3611 0e30 10301BE5 		ldr	r3, [fp, #-16]
+ 3612 0e34 B230D3E1 		ldrh	r3, [r3, #2]	@ movhi
+ 3613 0e38 0338A0E1 		mov	r3, r3, asl #16
+ 3614 0e3c 2338A0E1 		mov	r3, r3, lsr #16
+ 3615 0e40 0310A0E1 		mov	r1, r3
+ 3616 0e44 10001BE5 		ldr	r0, [fp, #-16]
+ 3617 0e48 0620A0E3 		mov	r2, #6
+ 3618 0e4c 011080E0 		add	r1, r0, r1
+ 3619 0e50 022081E0 		add	r2, r1, r2
+ 3620 0e54 11105BE5 		ldrb	r1, [fp, #-17]
+ 3621 0e58 0010C2E5 		strb	r1, [r2, #0]
+ 3622 0e5c 013083E2 		add	r3, r3, #1
+ 3623 0e60 0338A0E1 		mov	r3, r3, asl #16
+ 3624 0e64 2328A0E1 		mov	r2, r3, lsr #16
+ 3625 0e68 10301BE5 		ldr	r3, [fp, #-16]
+ 3626 0e6c B220C3E1 		strh	r2, [r3, #2]	@ movhi
+ 290:../sensorsEmulator.c **** 	if( pfifo->tail == FIFO_SIZE )
+ 3627              		.loc 1 290 0
+ 3628 0e70 10301BE5 		ldr	r3, [fp, #-16]
+ 3629 0e74 B230D3E1 		ldrh	r3, [r3, #2]	@ movhi
+ 3630 0e78 0338A0E1 		mov	r3, r3, asl #16
+ 3631 0e7c 2338A0E1 		mov	r3, r3, lsr #16
+ 3632 0e80 010B53E3 		cmp	r3, #1024
+ 3633 0e84 0200001A 		bne	.L62
+ 291:../sensorsEmulator.c **** 		pfifo->tail = 0;
+ 3634              		.loc 1 291 0
+ 3635 0e88 10301BE5 		ldr	r3, [fp, #-16]
+ 3636 0e8c 0020A0E3 		mov	r2, #0
+ 3637 0e90 B220C3E1 		strh	r2, [r3, #2]	@ movhi
+ 3638              	.L62:
+ 292:../sensorsEmulator.c **** 	INT_DISABLE;
+ 3639              		.loc 1 292 0
+ 3640              	@ 292 "../sensorsEmulator.c" 1
+ 3641 0e94 00000FE1 		mrs   r0, cpsr              
+ 3642 0e98 04002DE5 	stmfd sp!, {r0}             
+ 3643 0e9c C00080E3 	orr   r0, r0, #0b11000000   
+ 3644 0ea0 00F021E1 	msr   cpsr_c, r0              
+ 3645              	@ 0 "" 2
+ 293:../sensorsEmulator.c **** 	pfifo->size++;
+ 3646              		.loc 1 293 0
+ 3647 0ea4 10301BE5 		ldr	r3, [fp, #-16]
+ 3648 0ea8 B430D3E1 		ldrh	r3, [r3, #4]	@ movhi
+ 3649 0eac 0338A0E1 		mov	r3, r3, asl #16
+ 3650 0eb0 2338A0E1 		mov	r3, r3, lsr #16
+ 3651 0eb4 013083E2 		add	r3, r3, #1
+ 3652 0eb8 0338A0E1 		mov	r3, r3, asl #16
+ 3653 0ebc 2328A0E1 		mov	r2, r3, lsr #16
+ 3654 0ec0 10301BE5 		ldr	r3, [fp, #-16]
+ 3655 0ec4 B420C3E1 		strh	r2, [r3, #4]	@ movhi
+ 294:../sensorsEmulator.c **** 	INT_ENABLE;
+ 3656              		.loc 1 294 0
+ 3657              	@ 294 "../sensorsEmulator.c" 1
+ 3658 0ec8 04009DE4 		ldmfd sp!, {r0}             
+ 3659 0ecc 00F021E1 	msr   cpsr_c, r0              
+ 3660              	@ 0 "" 2
+ 295:../sensorsEmulator.c **** }
+ 3661              		.loc 1 295 0
+ 3662 0ed0 0CD04BE2 		sub	sp, fp, #12
+ 3663 0ed4 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 3664 0ed8 1EFF2FE1 		bx	lr
+ 3665              		.cfi_endproc
+ 3666              	.LFE8:
+ 3668              		.align	2
+ 3670              	fifo_dequeue:
+ 3671              	.LFB9:
+ 296:../sensorsEmulator.c **** 
+ 297:../sensorsEmulator.c **** void fifo_dequeue( fifo_t *pfifo, uint8 *data )
+ 298:../sensorsEmulator.c **** {
+ 3672              		.loc 1 298 0
+ 3673              		.cfi_startproc
+ 3674              		@ Function supports interworking.
+ 3675              		@ args = 0, pretend = 0, frame = 8
+ 3676              		@ frame_needed = 1, uses_anonymous_args = 0
+ 3677 0edc 0DC0A0E1 		mov	ip, sp
+ 3678              	.LCFI18:
+ 3679              		.cfi_def_cfa_register 12
+ 3680 0ee0 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 3681 0ee4 04B04CE2 		sub	fp, ip, #4
+ 3682              		.cfi_offset 14, -8
+ 3683              		.cfi_offset 13, -12
+ 3684              		.cfi_offset 11, -16
+ 3685              	.LCFI19:
+ 3686              		.cfi_def_cfa 11, 4
+ 3687 0ee8 08D04DE2 		sub	sp, sp, #8
+ 3688 0eec 10000BE5 		str	r0, [fp, #-16]
+ 3689 0ef0 14100BE5 		str	r1, [fp, #-20]
+ 299:../sensorsEmulator.c **** 	*data = pfifo->buffer[pfifo->head++];
+ 3690              		.loc 1 299 0
+ 3691 0ef4 10301BE5 		ldr	r3, [fp, #-16]
+ 3692 0ef8 B030D3E1 		ldrh	r3, [r3, #0]	@ movhi
+ 3693 0efc 0338A0E1 		mov	r3, r3, asl #16
+ 3694 0f00 2338A0E1 		mov	r3, r3, lsr #16
+ 3695 0f04 0310A0E1 		mov	r1, r3
+ 3696 0f08 10001BE5 		ldr	r0, [fp, #-16]
+ 3697 0f0c 0620A0E3 		mov	r2, #6
+ 3698 0f10 011080E0 		add	r1, r0, r1
+ 3699 0f14 022081E0 		add	r2, r1, r2
+ 3700 0f18 0010D2E5 		ldrb	r1, [r2, #0]	@ zero_extendqisi2
+ 3701 0f1c 14201BE5 		ldr	r2, [fp, #-20]
+ 3702 0f20 0010C2E5 		strb	r1, [r2, #0]
+ 3703 0f24 013083E2 		add	r3, r3, #1
+ 3704 0f28 0338A0E1 		mov	r3, r3, asl #16
+ 3705 0f2c 2328A0E1 		mov	r2, r3, lsr #16
+ 3706 0f30 10301BE5 		ldr	r3, [fp, #-16]
+ 3707 0f34 B020C3E1 		strh	r2, [r3, #0]	@ movhi
+ 300:../sensorsEmulator.c **** 	if( pfifo->head == FIFO_SIZE )
+ 3708              		.loc 1 300 0
+ 3709 0f38 10301BE5 		ldr	r3, [fp, #-16]
+ 3710 0f3c B030D3E1 		ldrh	r3, [r3, #0]	@ movhi
+ 3711 0f40 0338A0E1 		mov	r3, r3, asl #16
+ 3712 0f44 2338A0E1 		mov	r3, r3, lsr #16
+ 3713 0f48 010B53E3 		cmp	r3, #1024
+ 3714 0f4c 0200001A 		bne	.L64
+ 301:../sensorsEmulator.c **** 		pfifo->head = 0;
+ 3715              		.loc 1 301 0
+ 3716 0f50 10301BE5 		ldr	r3, [fp, #-16]
+ 3717 0f54 0020A0E3 		mov	r2, #0
+ 3718 0f58 B020C3E1 		strh	r2, [r3, #0]	@ movhi
+ 3719              	.L64:
+ 302:../sensorsEmulator.c **** 	INT_DISABLE;
+ 3720              		.loc 1 302 0
+ 3721              	@ 302 "../sensorsEmulator.c" 1
+ 3722 0f5c 00000FE1 		mrs   r0, cpsr              
+ 3723 0f60 04002DE5 	stmfd sp!, {r0}             
+ 3724 0f64 C00080E3 	orr   r0, r0, #0b11000000   
+ 3725 0f68 00F021E1 	msr   cpsr_c, r0              
+ 3726              	@ 0 "" 2
+ 303:../sensorsEmulator.c **** 	pfifo->size--;
+ 3727              		.loc 1 303 0
+ 3728 0f6c 10301BE5 		ldr	r3, [fp, #-16]
+ 3729 0f70 B430D3E1 		ldrh	r3, [r3, #4]	@ movhi
+ 3730 0f74 0338A0E1 		mov	r3, r3, asl #16
+ 3731 0f78 2338A0E1 		mov	r3, r3, lsr #16
+ 3732 0f7c 013043E2 		sub	r3, r3, #1
+ 3733 0f80 0338A0E1 		mov	r3, r3, asl #16
+ 3734 0f84 2328A0E1 		mov	r2, r3, lsr #16
+ 3735 0f88 10301BE5 		ldr	r3, [fp, #-16]
+ 3736 0f8c B420C3E1 		strh	r2, [r3, #4]	@ movhi
+ 304:../sensorsEmulator.c **** 	INT_ENABLE;
+ 3737              		.loc 1 304 0
+ 3738              	@ 304 "../sensorsEmulator.c" 1
+ 3739 0f90 04009DE4 		ldmfd sp!, {r0}             
+ 3740 0f94 00F021E1 	msr   cpsr_c, r0              
+ 3741              	@ 0 "" 2
+ 305:../sensorsEmulator.c **** }
+ 3742              		.loc 1 305 0
+ 3743 0f98 0CD04BE2 		sub	sp, fp, #12
+ 3744 0f9c 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 3745 0fa0 1EFF2FE1 		bx	lr
+ 3746              		.cfi_endproc
+ 3747              	.LFE9:
+ 3749              		.align	2
+ 3751              	fifo_is_empty:
+ 3752              	.LFB10:
+ 306:../sensorsEmulator.c **** 
+ 307:../sensorsEmulator.c **** boolean fifo_is_empty( fifo_t *pfifo )
+ 308:../sensorsEmulator.c **** {
+ 3753              		.loc 1 308 0
+ 3754              		.cfi_startproc
+ 3755              		@ Function supports interworking.
+ 3756              		@ args = 0, pretend = 0, frame = 8
+ 3757              		@ frame_needed = 1, uses_anonymous_args = 0
+ 3758 0fa4 0DC0A0E1 		mov	ip, sp
+ 3759              	.LCFI20:
+ 3760              		.cfi_def_cfa_register 12
+ 3761 0fa8 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 3762 0fac 04B04CE2 		sub	fp, ip, #4
+ 3763              		.cfi_offset 14, -8
+ 3764              		.cfi_offset 13, -12
+ 3765              		.cfi_offset 11, -16
+ 3766              	.LCFI21:
+ 3767              		.cfi_def_cfa 11, 4
+ 3768 0fb0 08D04DE2 		sub	sp, sp, #8
+ 3769 0fb4 10000BE5 		str	r0, [fp, #-16]
+ 309:../sensorsEmulator.c **** 	return (pfifo->size == 0);
+ 3770              		.loc 1 309 0
+ 3771 0fb8 10301BE5 		ldr	r3, [fp, #-16]
+ 3772 0fbc B430D3E1 		ldrh	r3, [r3, #4]	@ movhi
+ 3773 0fc0 0338A0E1 		mov	r3, r3, asl #16
+ 3774 0fc4 2338A0E1 		mov	r3, r3, lsr #16
+ 3775 0fc8 000053E3 		cmp	r3, #0
+ 3776 0fcc 0030A013 		movne	r3, #0
+ 3777 0fd0 0130A003 		moveq	r3, #1
+ 3778 0fd4 FF3003E2 		and	r3, r3, #255
+ 310:../sensorsEmulator.c **** }
+ 3779              		.loc 1 310 0
+ 3780 0fd8 0300A0E1 		mov	r0, r3
+ 3781 0fdc 0CD04BE2 		sub	sp, fp, #12
+ 3782 0fe0 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 3783 0fe4 1EFF2FE1 		bx	lr
+ 3784              		.cfi_endproc
+ 3785              	.LFE10:
+ 3787              		.align	2
+ 3789              	fifo_is_full:
+ 3790              	.LFB11:
+ 311:../sensorsEmulator.c **** 
+ 312:../sensorsEmulator.c **** boolean fifo_is_full( fifo_t *pfifo )
+ 313:../sensorsEmulator.c **** {
+ 3791              		.loc 1 313 0
+ 3792              		.cfi_startproc
+ 3793              		@ Function supports interworking.
+ 3794              		@ args = 0, pretend = 0, frame = 8
+ 3795              		@ frame_needed = 1, uses_anonymous_args = 0
+ 3796 0fe8 0DC0A0E1 		mov	ip, sp
+ 3797              	.LCFI22:
+ 3798              		.cfi_def_cfa_register 12
+ 3799 0fec 00D82DE9 		stmfd	sp!, {fp, ip, lr, pc}
+ 3800 0ff0 04B04CE2 		sub	fp, ip, #4
+ 3801              		.cfi_offset 14, -8
+ 3802              		.cfi_offset 13, -12
+ 3803              		.cfi_offset 11, -16
+ 3804              	.LCFI23:
+ 3805              		.cfi_def_cfa 11, 4
+ 3806 0ff4 08D04DE2 		sub	sp, sp, #8
+ 3807 0ff8 10000BE5 		str	r0, [fp, #-16]
+ 314:../sensorsEmulator.c **** 	return (pfifo->size == FIFO_SIZE-1);
+ 3808              		.loc 1 314 0
+ 3809 0ffc 10301BE5 		ldr	r3, [fp, #-16]
+ 3810 1000 B430D3E1 		ldrh	r3, [r3, #4]	@ movhi
+ 3811 1004 0338A0E1 		mov	r3, r3, asl #16
+ 3812 1008 2328A0E1 		mov	r2, r3, lsr #16
+ 3813 100c 1C309FE5 		ldr	r3, .L67
+ 3814 1010 030052E1 		cmp	r2, r3
+ 3815 1014 0030A013 		movne	r3, #0
+ 3816 1018 0130A003 		moveq	r3, #1
+ 3817 101c FF3003E2 		and	r3, r3, #255
+ 315:../sensorsEmulator.c **** }
+ 3818              		.loc 1 315 0
+ 3819 1020 0300A0E1 		mov	r0, r3
+ 3820 1024 0CD04BE2 		sub	sp, fp, #12
+ 3821 1028 00689DE8 		ldmfd	sp, {fp, sp, lr}
+ 3822 102c 1EFF2FE1 		bx	lr
+ 3823              	.L68:
+ 3824              		.align	2
+ 3825              	.L67:
+ 3826 1030 FF030000 		.word	1023
+ 3827              		.cfi_endproc
+ 3828              	.LFE11:
+ 3830              	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 sensorsEmulator.c
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:1971   .bss:00000000 $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:1972   .bss:00000000 fifoTX
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:1974   .bss:00000406 latidosPorMin
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:1976   .bss:00000407 pasosPorMin
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:1979   .rodata:00000000 $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:1982   .rodata:00000000 cntb
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2255   .text:00000000 $a
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2258   .text:00000000 startSensorsEmulator
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3549   .text:00000dd0 fifo_init
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2629   .text:000003dc uart0int_puts
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2788   .text:000004d8 uart0int_putMenu
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2471   .text:0000027c $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2886   .text:000005c4 uart0int_isrRX
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2576   .text:00000384 uart0int_isrTX
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2503   .text:000002f0 $a
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2505   .text:000002f0 uart0int_putchar
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3751   .text:00000fa4 fifo_is_empty
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3789   .text:00000fe8 fifo_is_full
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3589   .text:00000e14 fifo_enqueue
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2568   .text:00000378 $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2574   .text:00000384 $a
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3670   .text:00000edc fifo_dequeue
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2621   .text:000003d0 $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2627   .text:000003dc $a
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2674   .text:0000042c uart0int_putnum
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2741   .text:000004d4 $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2786   .text:000004d8 $a
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2866   .text:00000588 $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2884   .text:000005c4 $a
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:2920   .text:000005f8 $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3013   .text:00000764 $a
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3535   .text:00000dac $d
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3547   .text:00000dd0 $a
+C:\Users\VUser\AppData\Local\Temp\ccSC61Wm.s:3826   .text:00001030 $d
+                     .debug_frame:00000010 $d
+
+NO UNDEFINED SYMBOLS

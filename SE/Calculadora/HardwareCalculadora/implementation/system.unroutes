@@ -1,0 +1,63 @@
+Release 14.1 - par P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Dec 19 12:18:15 2023
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 51 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   bram_block_0/BRAM_Din_B<0>
+   bram_block_0/BRAM_Din_B<10>
+   bram_block_0/BRAM_Din_B<11>
+   bram_block_0/BRAM_Din_B<12>
+   bram_block_0/BRAM_Din_B<13>
+   bram_block_0/BRAM_Din_B<14>
+   bram_block_0/BRAM_Din_B<15>
+   bram_block_0/BRAM_Din_B<16>
+   bram_block_0/BRAM_Din_B<17>
+   bram_block_0/BRAM_Din_B<18>
+   bram_block_0/BRAM_Din_B<19>
+   bram_block_0/BRAM_Din_B<1>
+   bram_block_0/BRAM_Din_B<20>
+   bram_block_0/BRAM_Din_B<21>
+   bram_block_0/BRAM_Din_B<22>
+   bram_block_0/BRAM_Din_B<23>
+   bram_block_0/BRAM_Din_B<24>
+   bram_block_0/BRAM_Din_B<25>
+   bram_block_0/BRAM_Din_B<26>
+   bram_block_0/BRAM_Din_B<27>
+   bram_block_0/BRAM_Din_B<28>
+   bram_block_0/BRAM_Din_B<29>
+   bram_block_0/BRAM_Din_B<2>
+   bram_block_0/BRAM_Din_B<30>
+   bram_block_0/BRAM_Din_B<31>
+   bram_block_0/BRAM_Din_B<3>
+   bram_block_0/BRAM_Din_B<4>
+   bram_block_0/BRAM_Din_B<5>
+   bram_block_0/BRAM_Din_B<6>
+   bram_block_0/BRAM_Din_B<7>
+   bram_block_0/BRAM_Din_B<8>
+   bram_block_0/BRAM_Din_B<9>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<0>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<10>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<11>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<12>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<13>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<14>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<15>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<16>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<1>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<2>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<30>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<31>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<3>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<4>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<5>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<6>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<7>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<8>
+   xps_bram_if_cntlr_0_PORTA_BRAM_Addr<9>
+
+

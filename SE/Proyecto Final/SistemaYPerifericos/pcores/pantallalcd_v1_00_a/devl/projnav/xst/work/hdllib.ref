@@ -1,0 +1,4 @@
+EN lcd_controller NULL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/lcd_controller.vhd sub00/vhpl00 1706034050
+EN bannerdesp NULL C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd sub00/vhpl02 1706034052
+AR lcd_controller controller C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/lcd_controller.vhd sub00/vhpl01 1706034051
+AR bannerdesp banner_arch C:/Users/VUser/Desktop/ProyectoFinalSE/pcores/pantallalcd_v1_00_a/hdl/vhdl/bannerDesp.vhd sub00/vhpl03 1706034053

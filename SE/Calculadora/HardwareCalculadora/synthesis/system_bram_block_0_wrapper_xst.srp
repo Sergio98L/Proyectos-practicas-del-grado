@@ -1,0 +1,353 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to U:\hlocal\Intento999Practica2\synthesis\xst_temp_dir\
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_bram_block_0_wrapper_xst.prj"
+Verilog Include Directory          : {"U:\hlocal\Intento999Practica2\pcores\" "C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\software\electronica\xilinx\14.1\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc3s1000ft256-5
+Output File Name                   : "../implementation/system_bram_block_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_bram_block_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" in Library bram_block_0_elaborate_v1_00_a.
+Entity <bram_block_0_elaborate> compiled.
+Entity <bram_block_0_elaborate> (Architecture <STRUCTURE>) compiled.
+Compiling vhdl file "U:/hlocal/Intento999Practica2/hdl/system_bram_block_0_wrapper.vhd" in Library work.
+Entity <system_bram_block_0_wrapper> compiled.
+Entity <system_bram_block_0_wrapper> (Architecture <STRUCTURE>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <system_bram_block_0_wrapper> in library <work> (architecture <STRUCTURE>).
+
+Analyzing hierarchy for entity <bram_block_0_elaborate> in library <bram_block_0_elaborate_v1_00_a> (architecture <STRUCTURE>) with generics.
+	C_FAMILY = "spartan3"
+	C_MEMSIZE = 32768
+	C_NUM_WE = 4
+	C_PORT_AWIDTH = 32
+	C_PORT_DWIDTH = 32
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <system_bram_block_0_wrapper> in library <work> (Architecture <STRUCTURE>).
+    Set user-defined property "KEEP_HIERARCHY =  yes" for unit <system_bram_block_0_wrapper>.
+    Set user-defined property "KEEP_HIERARCHY =  yes" for unit <bram_block_0_elaborate>.
+Entity <system_bram_block_0_wrapper> analyzed. Unit <system_bram_block_0_wrapper> generated.
+
+Analyzing generic Entity <bram_block_0_elaborate> in library <bram_block_0_elaborate_v1_00_a> (Architecture <STRUCTURE>).
+	C_FAMILY = "spartan3"
+	C_MEMSIZE = 32768
+	C_NUM_WE = 4
+	C_PORT_AWIDTH = 32
+	C_PORT_DWIDTH = 32
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 81: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_0> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_0> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 103: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_1> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_1> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 125: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_2> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_2> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 147: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_3> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_3> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 169: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_4> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_4> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 191: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_5> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_5> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 213: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_6> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_6> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 235: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_7> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_7> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 257: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_8> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_8> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 279: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_9> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_9> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 301: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_10> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_10> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 323: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_11> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_11> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 345: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_12> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_12> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 367: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_13> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_13> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 389: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_14> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_14> in unit <bram_block_0_elaborate>.
+WARNING:Xst:2211 - "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd" line 411: Instantiating black box module <RAMB16_S2_S2>.
+    Set user-defined property "WRITE_MODE_A =  WRITE_FIRST" for instance <ramb16_s2_s2_15> in unit <bram_block_0_elaborate>.
+    Set user-defined property "WRITE_MODE_B =  WRITE_FIRST" for instance <ramb16_s2_s2_15> in unit <bram_block_0_elaborate>.
+Entity <bram_block_0_elaborate> analyzed. Unit <bram_block_0_elaborate> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <bram_block_0_elaborate>.
+    Related source file is "U:/hlocal/Intento999Practica2/hdl/elaborate/bram_block_0_elaborate_v1_00_a/hdl/vhdl/bram_block_0_elaborate.vhd".
+WARNING:Xst:647 - Input <BRAM_Addr_A<0:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_A<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<0:16>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BRAM_Addr_B<30:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+Unit <bram_block_0_elaborate> synthesized.
+
+
+Synthesizing Unit <system_bram_block_0_wrapper>.
+    Related source file is "U:/hlocal/Intento999Practica2/hdl/system_bram_block_0_wrapper.vhd".
+Unit <system_bram_block_0_wrapper> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance ramb16_s2_s2_0 in unit ramb16_s2_s2_0 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_1 in unit ramb16_s2_s2_1 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_2 in unit ramb16_s2_s2_2 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_3 in unit ramb16_s2_s2_3 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_4 in unit ramb16_s2_s2_4 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_5 in unit ramb16_s2_s2_5 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_6 in unit ramb16_s2_s2_6 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_7 in unit ramb16_s2_s2_7 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_8 in unit ramb16_s2_s2_8 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_9 in unit ramb16_s2_s2_9 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_10 in unit ramb16_s2_s2_10 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_11 in unit ramb16_s2_s2_11 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_12 in unit ramb16_s2_s2_12 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_13 in unit ramb16_s2_s2_13 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_14 in unit ramb16_s2_s2_14 of type RAMB16_S2_S2 has been replaced by RAMB16
+INFO:Xst:1901 - Instance ramb16_s2_s2_15 in unit ramb16_s2_s2_15 of type RAMB16_S2_S2 has been replaced by RAMB16
+
+Optimizing unit <system_bram_block_0_wrapper> ...
+
+Optimizing unit <bram_block_0_elaborate> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+Top Level Output File Name         : ../implementation/system_bram_block_0_wrapper.ngc
+Output Format                      : ngc
+Optimization Goal                  : speed
+Keep Hierarchy                     : no
+
+Design Statistics
+# IOs                              : 206
+
+Cell Usage :
+# BELS                             : 16
+#      GND                         : 16
+# RAMS                             : 16
+#      RAMB16                      : 16
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1000ft256-5 
+
+ Number of Slices:                        0  out of   7680     0%  
+ Number of IOs:                         206
+ Number of bonded IOBs:                   0  out of    173     0%  
+ Number of BRAMs:                        16  out of     24    66%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                           | Load  |
+-----------------------------------+-------------------------------------------------+-------+
+BRAM_Clk_A                         | NONE(bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
+BRAM_Clk_B                         | NONE(bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0)| 16    |
+-----------------------------------+-------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 0.432ns
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_A'
+  Total number of paths / destination ports: 272 / 272
+-------------------------------------------------------------------------
+Offset:              0.432ns (Levels of Logic = 1)
+  Source:            BRAM_Rst_A (PAD)
+  Destination:       bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0 (RAM)
+  Destination Clock: BRAM_Clk_A rising
+
+  Data Path: BRAM_Rst_A to bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'bram_block_0'
+     begin scope: 'ramb16_s2_s2_0'
+     RAMB16:SSRA               0.432          ramb16_s2_s2_0
+    ----------------------------------------
+    Total                      0.432ns (0.432ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BRAM_Clk_B'
+  Total number of paths / destination ports: 272 / 272
+-------------------------------------------------------------------------
+Offset:              0.432ns (Levels of Logic = 1)
+  Source:            BRAM_Rst_B (PAD)
+  Destination:       bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0 (RAM)
+  Destination Clock: BRAM_Clk_B rising
+
+  Data Path: BRAM_Rst_B to bram_block_0/ramb16_s2_s2_0/ramb16_s2_s2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'bram_block_0'
+     begin scope: 'ramb16_s2_s2_0'
+     RAMB16:SSRB               0.432          ramb16_s2_s2_0
+    ----------------------------------------
+    Total                      0.432ns (0.432ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.79 secs
+ 
+--> 
+
+Total memory usage is 4511424 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   20 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

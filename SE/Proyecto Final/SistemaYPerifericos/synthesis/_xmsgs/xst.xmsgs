@@ -1,0 +1,1284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">INTERRUPT_ACK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">MB_Halted</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">MB_Error</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKSTEP_MASTER_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKSTEP_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">INSTR_ADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">IFETCH</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">I_AS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DATA_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DATA_ADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">D_AS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">READ_STROBE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">WRITE_STROBE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">BYTE_ENABLE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWLEN</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWSIZE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWBURST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWLOCK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWCACHE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWPROT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWQOS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_AWVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_WDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_WSTRB</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_WLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_WVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_BREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARLEN</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARSIZE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARBURST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARLOCK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARCACHE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARPROT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARQOS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_ARVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IP_RREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWLEN</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWSIZE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWBURST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWLOCK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWCACHE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWPROT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWQOS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_AWVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_WDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_WSTRB</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_WLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_WVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_BREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARLEN</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARSIZE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARBURST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARLOCK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARCACHE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARPROT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARQOS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_ARVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DP_RREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWLEN</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWSIZE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWBURST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWLOCK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWCACHE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWPROT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWQOS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_AWUSER</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_WDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_WSTRB</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_WLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_WVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_WUSER</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_BREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARLEN</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARSIZE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARBURST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARLOCK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARCACHE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARPROT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARQOS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_ARUSER</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_IC_RREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWLEN</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWSIZE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWBURST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWLOCK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWCACHE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWPROT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWQOS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_AWUSER</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_WDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_WSTRB</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_WLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_WVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_WUSER</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_BREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARADDR</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARLEN</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARSIZE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARBURST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARLOCK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARCACHE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARPROT</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARQOS</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_ARUSER</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M_AXI_DC_RREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DBG_TDO</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Instruction</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Valid_Instr</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_PC</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Reg_Write</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Reg_Addr</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_MSR_Reg</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_PID_Reg</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_New_Reg_Value</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Exception_Taken</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Exception_Kind</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Jump_Taken</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Delay_Slot</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Data_Address</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Data_Access</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Data_Read</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Data_Write</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Data_Write_Value</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Data_Byte_Enable</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_DCache_Req</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_DCache_Hit</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_DCache_Rdy</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_DCache_Read</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_ICache_Req</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_ICache_Hit</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_ICache_Rdy</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_OF_PipeRun</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_EX_PipeRun</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_MEM_PipeRun</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_MB_Halted</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Trace_Jump_Hit</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL0_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL0_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL0_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL0_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL0_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL0_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL1_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL1_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL1_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL1_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL1_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL1_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL2_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL2_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL2_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL2_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL2_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL2_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL3_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL3_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL3_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL3_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL3_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL3_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL4_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL4_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL4_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL4_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL4_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL4_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL5_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL5_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL5_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL5_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL5_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL5_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL6_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL6_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL6_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL6_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL6_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL6_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL7_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL7_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL7_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL7_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL7_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL7_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL8_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL8_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL8_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL8_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL8_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL8_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL9_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL9_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL9_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL9_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL9_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL9_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL10_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL10_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL10_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL10_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL10_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL10_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL11_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL11_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL11_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL11_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL11_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL11_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL12_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL12_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL12_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL12_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL12_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL12_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL13_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL13_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL13_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL13_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL13_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL13_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL14_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL14_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL14_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL14_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL14_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL14_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL15_S_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL15_S_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL15_M_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL15_M_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL15_M_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">FSL15_M_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M0_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M0_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M0_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S0_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M1_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M1_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M1_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S1_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M2_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M2_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M2_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S2_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M3_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M3_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M3_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S3_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M4_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M4_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M4_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S4_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M5_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M5_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M5_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S5_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M6_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M6_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M6_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S6_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M7_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M7_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M7_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S7_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M8_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M8_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M8_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S8_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M9_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M9_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M9_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S9_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M10_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M10_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M10_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S10_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M11_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M11_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M11_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S11_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M12_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M12_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M12_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S12_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M13_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M13_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M13_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S13_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M14_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M14_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M14_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S14_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M15_AXIS_TLAST</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M15_AXIS_TDATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">M15_AXIS_TVALID</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">S15_AXIS_TREADY</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ICACHE_FSL_IN_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ICACHE_FSL_IN_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ICACHE_FSL_OUT_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ICACHE_FSL_OUT_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ICACHE_FSL_OUT_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">ICACHE_FSL_OUT_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DCACHE_FSL_IN_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DCACHE_FSL_IN_READ</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DCACHE_FSL_OUT_CLK</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DCACHE_FSL_OUT_WRITE</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DCACHE_FSL_OUT_DATA</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">1407</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">DCACHE_FSL_OUT_CONTROL</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_microblaze_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_Rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">MPLB_Rst</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_dcrAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_dcrDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SaddrAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SMRdErr</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SMWrErr</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SMBusy</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SrdBTerm</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SrdComp</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SrdDAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SrdDBus</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SrdWdAddr</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_Srearbitrate</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_Sssize</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_Swait</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SwrBTerm</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SwrComp</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">PLB_SwrDAck</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2008</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Bus_Error_Det</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_plb_v46_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2109</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">BRAM_Din_B</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_bram_block_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2127</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">IP2INTC_Irpt</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_xps_gpio_leds_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2127</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GPIO2_IO_O</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_xps_gpio_leds_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2127</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GPIO2_IO_T</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_xps_gpio_leds_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2180</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">IP2INTC_Irpt</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_xps_gpio_switches_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2180</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GPIO2_IO_O</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_xps_gpio_switches_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2180</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">GPIO2_IO_T</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_xps_gpio_switches_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2233</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Interrupt</arg>&apos; of component &apos;<arg fmt="%s" index="4">system_xps_uartlite_0_wrapper</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2583</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2591</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2599</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2607</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2615</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2623</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2631</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2639</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2647</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2655</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2663</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2671</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2679</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2687</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2695</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/VUser/Desktop/ProyectoFinalSE/hdl/system.vhd</arg>&quot; line <arg fmt="%d" index="2">2703</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">IOBUF</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">microblaze_0_MB_RESET_pin</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">plb_v46_0_PLB_Clk_pin</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">plb_v46_0_SYS_Rst_pin</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_0</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_0</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_1</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_1</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_2</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_2</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_3</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_3</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_4</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_4</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_5</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_5</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_6</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_6</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_7</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_7</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_8</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_8</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_9</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_9</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_10</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_10</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_11</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_11</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_12</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_12</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_13</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_13</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_14</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_14</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">ramb16_s2_s2_15</arg> in unit <arg fmt="%s" index="2">ramb16_s2_s2_15</arg> of type <arg fmt="%s" index="3">RAMB16_S2_S2</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32</arg> in unit <arg fmt="%s" index="2">pantalla_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32</arg> of type <arg fmt="%s" index="3">RAMB16_S36_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">pantallalcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32</arg> in unit <arg fmt="%s" index="2">pantallalcd_0/WRPFIFO_TOP_I/USE_BLOCK_RAM.GEN_BRAM_NOT_V6_S6.I_DP_CORE/Using_RAMB16_S36_S36.BRAM_LOOP[1].I_DPB16_512x32</arg> of type <arg fmt="%s" index="3">RAMB16_S36_S36</arg> has been replaced by <arg fmt="%s" index="4">RAMB16</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1&gt; &lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/sync_reset</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/sync_reset_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_1&gt; &lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_1&gt; &lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">11 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[8].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[7].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST&gt; &lt;plb_v46_0/I_PLB_RST&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1&gt; &lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1&gt; &lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xps_bram_if_cntlr_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ledsrgb_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ledsrgb_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ledsrgb_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">motor_hw_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motor_hw_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;motor_hw_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">motor_hw_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motor_hw_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;motor_hw_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_1&gt; &lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_2_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/sync_reset</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/sync_reset_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_4_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_1&gt; &lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">microblaze_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_1&gt; &lt;microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_gpr_write_addr_3_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_1&gt; &lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_1_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_1&gt; &lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARB_ENCODER/arbAddrSelReg_i_0_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_SHARED.I_PLB_ARBITER_LOGIC/I_ARBCONTROL_SM/arbctrl_sm_cs_FSM_FFd3_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">plb_v46_0/GEN_MPLB_RST[1].I_MPLB_RST</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">plb_v46_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">11 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;plb_v46_0/GEN_MPLB_RST[0].I_MPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[8].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[7].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[6].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[5].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[4].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[3].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[2].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[1].I_SPLB_RST&gt; &lt;plb_v46_0/GEN_SPLB_RST[0].I_SPLB_RST&gt; &lt;plb_v46_0/I_PLB_RST&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_ADDRACK</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">xps_bram_if_cntlr_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;xps_bram_if_cntlr_0/SINGLES_ONLY_SUPPORT.I_SLAVE_SINGLE_ATTACH/I_FLOP_SET_SLBUSY&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ledsrgb_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ledsrgb_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ledsrgb_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;ledsrgb_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">motor_hw_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motor_hw_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;motor_hw_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">motor_hw_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">motor_hw_0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;motor_hw_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

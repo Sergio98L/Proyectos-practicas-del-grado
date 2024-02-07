@@ -1,0 +1,26 @@
+// File: C:\Users\VUser\Desktop\ProyectoFinalSE\implementation\system.bmm
+
+ADDRESS_MAP microblaze_0 MICROBLAZE 100
+	ADDRESS_SPACE bram_block_0_combined COMBINED [0x00000000:0x00007fff]
+		ADDRESS_RANGE RAMB16
+		BUS_BLOCK
+			bram_block_0/bram_block_0/ramb16_s2_s2_0 [31:30] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_1 [29:28] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_2 [27:26] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_3 [25:24] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_4 [23:22] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_5 [21:20] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_6 [19:18] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_7 [17:16] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_8 [15:14] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_9 [13:12] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_10 [11:10] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_11 [9:8] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_12 [7:6] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_13 [5:4] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_14 [3:2] ;
+			bram_block_0/bram_block_0/ramb16_s2_s2_15 [1:0] ;
+		END_BUS_BLOCK;
+		END_ADDRESS_RANGE;
+	END_ADDRESS_SPACE;
+END_ADDRESS_MAP;

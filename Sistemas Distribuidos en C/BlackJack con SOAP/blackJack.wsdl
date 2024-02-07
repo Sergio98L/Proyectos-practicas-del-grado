@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="blackJack"
+  targetNamespace="urn:blackJackns"
+  xmlns:tns="urn:blackJackns"
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:blackJackns="urn:blackJackns"
+  xmlns:SOAP="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns:HTTP="http://schemas.xmlsoap.org/wsdl/http/"
+  xmlns:MIME="http://schemas.xmlsoap.org/wsdl/mime/"
+  xmlns:DIME="http://schemas.xmlsoap.org/ws/2002/04/dime/wsdl/"
+  xmlns:WSDL="http://schemas.xmlsoap.org/wsdl/"
+  xmlns="http://schemas.xmlsoap.org/wsdl/">
+
+<types>
+
+  <schema targetNamespace="urn:blackJackns"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:blackJackns="urn:blackJackns"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified">
+    <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    <simpleType name="tMessage"><!-- blackJackns__tMessage -->
+      <restriction base="blackJackns:tMessage">
+      </restriction>
+    </simpleType>
+    <simpleType name="tDeck"><!-- blackJackns__tDeck -->
+      <restriction base="blackJackns:tDeck">
+      </restriction>
+    </simpleType>
+    <simpleType name="tBlock"><!-- blackJackns__tBlock -->
+      <restriction base="blackJackns:tBlock">
+      </restriction>
+    </simpleType>
+    <complexType name="tMessage"><!-- tMessage -->
+          <sequence>
+            <element name="msg" type="xsd:byte" minOccurs="0" maxOccurs="unbounded"/><!-- tMessage::__size -->
+          </sequence>
+    </complexType>
+    <complexType name="tDeck"><!-- tDeck -->
+          <sequence>
+            <element name="cards" type="xsd:unsignedInt" minOccurs="0" maxOccurs="unbounded"/><!-- tDeck::__size -->
+          </sequence>
+    </complexType>
+    <complexType name="tBlock"><!-- tBlock -->
+          <sequence>
+            <element name="code" type="xsd:int" minOccurs="1" maxOccurs="1"/><!-- tBlock::code -->
+            <element name="msgStruct" type="blackJackns:tMessage" minOccurs="1" maxOccurs="1"/><!-- tBlock::msgStruct -->
+            <element name="deck" type="blackJackns:tDeck" minOccurs="1" maxOccurs="1"/><!-- tBlock::deck -->
+          </sequence>
+    </complexType>
+  </schema>
+
+</types>
+
+<message name="registerRequest">
+  <part name="playerName" type="blackJackns:tMessage"/><!-- blackJackns__register::playerName -->
+</message>
+
+<message name="registerResponse">
+  <part name="result" type="xsd:int"/><!-- blackJackns__register::result -->
+</message>
+
+<message name="getStatusRequest">
+  <part name="playerName" type="blackJackns:tMessage"/><!-- blackJackns__getStatus::playerName -->
+  <part name="idPartida" type="xsd:int"/><!-- blackJackns__getStatus::idPartida -->
+</message>
+
+<message name="getStatusResponse">
+  <part name="gameStatus" type="blackJackns:tBlock"/><!-- blackJackns__getStatus::gameStatus -->
+</message>
+
+<message name="playerMoveRequest">
+  <part name="playerName" type="blackJackns:tMessage"/><!-- blackJackns__playerMove::playerName -->
+  <part name="playerMove" type="xsd:int"/><!-- blackJackns__playerMove::playerMove -->
+  <part name="idPartida" type="xsd:int"/><!-- blackJackns__playerMove::idPartida -->
+</message>
+
+<message name="playerMoveResponse">
+  <part name="gameStatus" type="blackJackns:tBlock"/><!-- blackJackns__playerMove::gameStatus -->
+</message>
+
+<portType name="blackJackPortType">
+  <operation name="register">
+    <documentation>Service definition of function blackJackns__register</documentation>
+    <input message="tns:registerRequest"/>
+    <output message="tns:registerResponse"/>
+  </operation>
+  <operation name="getStatus">
+    <documentation>Service definition of function blackJackns__getStatus</documentation>
+    <input message="tns:getStatusRequest"/>
+    <output message="tns:getStatusResponse"/>
+  </operation>
+  <operation name="playerMove">
+    <documentation>Service definition of function blackJackns__playerMove</documentation>
+    <input message="tns:playerMoveRequest"/>
+    <output message="tns:playerMoveResponse"/>
+  </operation>
+</portType>
+
+<binding name="blackJack" type="tns:blackJackPortType">
+  <SOAP:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="register">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:blackJackns"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:blackJackns"/>
+    </output>
+  </operation>
+  <operation name="getStatus">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:blackJackns"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:blackJackns"/>
+    </output>
+  </operation>
+  <operation name="playerMove">
+    <SOAP:operation style="rpc" soapAction=""/>
+    <input>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:blackJackns"/>
+    </input>
+    <output>
+          <SOAP:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:blackJackns"/>
+    </output>
+  </operation>
+</binding>
+
+<service name="blackJack">
+  <documentation>gSOAP 2.8.75 generated service definition</documentation>
+  <port name="blackJack" binding="tns:blackJack">
+    <SOAP:address location="http//localhost:10000"/>
+  </port>
+</service>
+
+</definitions>

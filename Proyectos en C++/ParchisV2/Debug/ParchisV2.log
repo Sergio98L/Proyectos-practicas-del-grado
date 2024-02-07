@@ -1,0 +1,5 @@
+﻿  ParchisV2.cpp
+C:\Users\Sergi\source\repos\ParchisV2\ParchisV2\ParchisV2.cpp(202,45): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+C:\Users\Sergi\source\repos\ParchisV2\ParchisV2\ParchisV2.cpp(328): warning C4715: 'escogercolor': no todas las rutas de acceso de control devuelven un valor
+C:\Users\Sergi\source\repos\ParchisV2\ParchisV2\ParchisV2.cpp(744): warning C4715: 'colorACadena': no todas las rutas de acceso de control devuelven un valor
+  ParchisV2.vcxproj -> C:\Users\Sergi\source\repos\ParchisV2\Debug\ParchisV2.exe

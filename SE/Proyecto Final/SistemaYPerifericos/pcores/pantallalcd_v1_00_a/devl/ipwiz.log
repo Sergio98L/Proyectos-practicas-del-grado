@@ -1,0 +1,294 @@
+
+----------------------------------------------------------------------------
+--                            Design Analysis                             --
+----------------------------------------------------------------------------
+Analyze pcore pantallalcd ...
+
+INFO:EDK:3195 - leave in port Bus_Burst from component wrpfifo_top grounded as
+   corresponding feature UseSlaveBurst not enabled...
+INFO:EDK:3195 - leave in port IP2WFIFO_RdMark from component wrpfifo_top
+   grounded as corresponding feature UseWriteFifoPacketMode not enabled...
+INFO:EDK:3195 - leave in port IP2WFIFO_RdRestore from component wrpfifo_top
+   grounded as corresponding feature UseWriteFifoPacketMode not enabled...
+INFO:EDK:3195 - leave in port IP2WFIFO_RdRelease from component wrpfifo_top
+   grounded as corresponding feature UseWriteFifoPacketMode not enabled...
+INFO:EDK:3195 - leave out port WFIFO2IP_Occupancy from component wrpfifo_top
+   open as corresponding feature UseWriteFifoVacancyCalculation not enabled...
+INFO:EDK:3196 - leave interrupt source FIFO2IRPT_DeadLock out from component
+   wrpfifo_top open as there is no interrupt controller included...
+
+----------------------------------------------------------------------------
+--                            Design Analysis                             --
+----------------------------------------------------------------------------
+Analyze pcore pantallalcd ...
+
+INFO:EDK:3195 - leave in port Bus_Burst from component wrpfifo_top grounded as
+   corresponding feature UseSlaveBurst not enabled...
+INFO:EDK:3195 - leave in port IP2WFIFO_RdMark from component wrpfifo_top
+   grounded as corresponding feature UseWriteFifoPacketMode not enabled...
+INFO:EDK:3195 - leave in port IP2WFIFO_RdRestore from component wrpfifo_top
+   grounded as corresponding feature UseWriteFifoPacketMode not enabled...
+INFO:EDK:3195 - leave in port IP2WFIFO_RdRelease from component wrpfifo_top
+   grounded as corresponding feature UseWriteFifoPacketMode not enabled...
+INFO:EDK:3195 - leave out port WFIFO2IP_Occupancy from component wrpfifo_top
+   open as corresponding feature UseWriteFifoVacancyCalculation not enabled...
+INFO:EDK:3196 - leave interrupt source FIFO2IRPT_DeadLock out from component
+   wrpfifo_top open as there is no interrupt controller included...
+
+----------------------------------------------------------------------------
+--                            File Generation                             --
+----------------------------------------------------------------------------
+Creating HDL source directory ...
+Generating top peripheral VHDL template ...
+Generating stub user logic VHDL template ...
+HDL templates successfully generated ...
+Creating data directory ...
+Generating XPS inteface files ...
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/inferred_lut4.vhd" in Library proc_common_v3_00_a.
+Entity <inferred_lut4> compiled.
+Entity <inferred_lut4> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pf_counter_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_bit> compiled.
+Entity <pf_counter_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pf_adder_bit.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder_bit> compiled.
+Entity <pf_adder_bit> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pf_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter> compiled.
+Entity <pf_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pf_occ_counter.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter> compiled.
+Entity <pf_occ_counter> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/proc_common_pkg.vhd" in Library proc_common_v3_00_a.
+Package <proc_common_pkg> compiled.
+Package body <proc_common_pkg> compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/or_muxcy.vhd" in Library proc_common_v3_00_a.
+Entity <or_muxcy> compiled.
+Entity <or_muxcy> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/family_support.vhd" in Library proc_common_v3_00_a.
+Package <family_support> compiled.
+Package body <family_support> compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pf_occ_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_occ_counter_top> compiled.
+Entity <pf_occ_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pf_counter_top.vhd" in Library proc_common_v3_00_a.
+Entity <pf_counter_top> compiled.
+Entity <pf_counter_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pf_adder.vhd" in Library proc_common_v3_00_a.
+Entity <pf_adder> compiled.
+Entity <pf_adder> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/coregen_comp_defs.vhd" in Library proc_common_v3_00_a.
+Package <coregen_comp_defs> compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/counter_f.vhd" in Library proc_common_v3_00_a.
+Entity <counter_f> compiled.
+Entity <counter_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/blk_mem_gen_wrapper.vhd" in Library proc_common_v3_00_a.
+Entity <blk_mem_gen_wrapper> compiled.
+Entity <blk_mem_gen_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pf_dpram_select.vhd" in Library proc_common_v3_00_a.
+Entity <pf_dpram_select> compiled.
+Entity <pf_dpram_select> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/srl16_fifo.vhd" in Library proc_common_v3_00_a.
+Entity <srl16_fifo> compiled.
+Entity <srl16_fifo> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/pselect_f.vhd" in Library proc_common_v3_00_a.
+Entity <pselect_f> compiled.
+Entity <pselect_f> (Architecture <imp>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/or_gate128.vhd" in Library proc_common_v3_00_a.
+Entity <or_gate128> compiled.
+Entity <or_gate128> (Architecture <imp>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hd
+l/vhdl/ipif_pkg.vhd" in Library proc_common_v3_00_a.
+Package <ipif_pkg> compiled.
+Package body <ipif_pkg> compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1
+_01_a/hdl/vhdl/plb_address_decoder.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plb_address_decoder> compiled.
+Entity <plb_address_decoder> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vh
+dl/pf_dly1_mux.vhd" in Library wrpfifo_v5_01_a.
+Entity <pf_dly1_mux> compiled.
+Entity <pf_dly1_mux> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1
+_01_a/hdl/vhdl/plb_slave_attachment.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plb_slave_attachment> compiled.
+Entity <plb_slave_attachment> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vh
+dl/ipif_control_wr_dre.vhd" in Library wrpfifo_v5_01_a.
+Entity <ipif_control_wr_dre> compiled.
+Entity <ipif_control_wr_dre> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vh
+dl/wrpfifo_dp_cntl.vhd" in Library wrpfifo_v5_01_a.
+Entity <wrpfifo_dp_cntl> compiled.
+Entity <wrpfifo_dp_cntl> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vh
+dl/blkmem_wrapper.vhd" in Library wrpfifo_v5_01_a.
+Entity <blkmem_wrapper> compiled.
+Entity <blkmem_wrapper> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/wrpfifo_v5_01_a/hdl/vh
+dl/wrpfifo_top.vhd" in Library wrpfifo_v5_01_a.
+Entity <wrpfifo_top> compiled.
+Entity <wrpfifo_top> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Xilinx/14.1/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1
+_01_a/hdl/vhdl/plbv46_slave_single.vhd" in Library plbv46_slave_single_v1_01_a.
+Entity <plbv46_slave_single> compiled.
+Entity <plbv46_slave_single> (Architecture <implementation>) compiled.
+Compiling vhdl file
+"C:/Users/VUser/Desktop/Practica5SE/pcores/pantallalcd_v1_00_a/data/../hdl/vhdl/
+user_logic.vhd" in Library pantallalcd_v1_00_a.
+Entity <user_logic> compiled.
+Entity <user_logic> (Architecture <IMP>) compiled.
+Compiling vhdl file
+"C:/Users/VUser/Desktop/Practica5SE/pcores/pantallalcd_v1_00_a/data/../hdl/vhdl/
+pantallalcd.vhd" in Library pantallalcd_v1_00_a.
+Entity <pantallalcd> compiled.
+Entity <pantallalcd> (Architecture <IMP>) compiled.
+
+
+Analyzing HDL attributes ...
+Entity name = pantallalcd
+INFO:EDK:1607 - IPTYPE set to value : PERIPHERAL
+INFO:EDK:1511 - IMP_NETLIST set to value : TRUE
+INFO:EDK:1486 - HDL set to value : VHDL
+WARNING:EDK:3588 - Unable to delete temporary XST project file
+   C:\Users\VUser\Desktop\Practica5SE\pcores\pantallalcd_v1_00_a\data\_pantallal
+   cd_xst.prj : 13
+XPS interface files successfully generated ...
+Creating development directory ...
+Generating command option file ...
+Generating readme file ...
+Development misc files successfully generated ...
+Creating projnav directory ...
+Generating ProjNav support files ...
+ProjNav support files successfully generated ...
+Creating synthesis directory ...
+Generating XST synthesis support files ...
+XST synthesis support files successfully generated ...
+No BFM simulation files will be generated at this time ...
+Creating software driver data directory ...
+Generating software driver XPS interface (mdd/tcl) files ...
+Software driver data definition file (.mdd) successfully generated ...
+Software driver data generation file (.tcl) successfully generated ...
+Creating software driver src directory ...
+Generating software driver template files ...
+Software driver compile file (Makefile) successfully generated ...
+output user slave register(s) offset to software driver header ...
+output write packet FIFO register(s) offset to software driver header ...
+Software driver header file (.h) successfully generated ...
+Software driver source file (.c) successfully generated ...
+Software driver SelfTest file (.c) successfully generated ...
+Software driver template files successfully generated ...
+
+----------------------------------------------------------------------------
+--                              Final Report                              --
+----------------------------------------------------------------------------
+Thank you for using Create and Import Peripheral Wizard! Please find your
+peripheral hardware templates under
+C:\Users\VUser\Desktop\Practica5SE/pcores/pantallalcd_v1_00_a and peripheral
+software templates under
+C:\Users\VUser\Desktop\Practica5SE/drivers/pantallalcd_v1_00_a respectively.
+
+Peripheral Summary:
+
+  top name       : pantallalcd
+  version        : 1.00.a
+  type           : PLB (v4.6) slave
+  features       : slave attachment
+                   write fifo
+
+Address Block Summary:
+
+  user logic slv : C_BASEADDR + 0x00000000
+                 : C_BASEADDR + 0x000000FF
+  wrfifo reg     : C_BASEADDR + 0x00000100
+                 : C_BASEADDR + 0x000001FF
+  wrfifo data    : C_BASEADDR + 0x00000200
+                 : C_BASEADDR + 0x000002FF
+
+File Summary
+
+  - HDL source -
+  C:\Users\VUser\Desktop\Practica5SE/pcores/pantallalcd_v1_00_a/hdl
+  top entity     : vhdl/pantallalcd.vhd
+  user logic     : vhdl/user_logic.vhd
+
+  - XPS interface -
+  C:\Users\VUser\Desktop\Practica5SE/pcores/pantallalcd_v1_00_a/data
+  mpd            : pantallalcd_v2_1_0.mpd
+  pao            : pantallalcd_v2_1_0.pao
+
+  - ISE project -
+  C:\Users\VUser\Desktop\Practica5SE/pcores/pantallalcd_v1_00_a/devl/projnav
+  ise project    : pantallalcd.xise
+  tcl script     : pantallalcd.tcl
+
+
+  - XST synthesis -
+  C:\Users\VUser\Desktop\Practica5SE/pcores/pantallalcd_v1_00_a/devl/synthesis
+  xst script     : pantallalcd_xst.scr
+  xst project    : pantallalcd_xst.prj
+
+  - Misc file -
+  C:\Users\VUser\Desktop\Practica5SE/pcores/pantallalcd_v1_00_a/devl
+  help           : README.txt
+  option         : ipwiz.opt
+  log            : ipwiz.log
+
+  - Driver source -
+  C:\Users\VUser\Desktop\Practica5SE/drivers/pantallalcd_v1_00_a/src
+  makefile       : Makefile
+  header         : pantallalcd.h
+  source         : pantallalcd.c
+  selftest       : pantallalcd_selftest.c
+
+  - Driver interface -
+  C:\Users\VUser\Desktop\Practica5SE/drivers/pantallalcd_v1_00_a/data
+  mdd            : pantallalcd_v2_1_0.mdd
+  tcl            : pantallalcd_v2_1_0.tcl
+
+
