@@ -1,0 +1,12 @@
+package simulator.model;
+
+import java.util.List;
+
+public interface TrafficSimObserver {
+	void onAdvanceStart(RoadMap map, List<Event> listaEventos, int time);
+	void onAdvanceEnd(RoadMap map, List<Event> listaEventos, int time);
+	void onEventAdded(RoadMap map, List<Event> listaEventos, Event e, int	time);
+	void onReset(RoadMap map, List<Event> listaEventos, int time);
+	void onRegister(RoadMap map, List<Event> listaEventos, int time);
+	void onError(String msg);
+}
