@@ -1,1 +1,1 @@
-Sistemas empotrados usando VHDL y C
+Sistemas empotrados usando VHDL y C en la FPGA Spartan 3
